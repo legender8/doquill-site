@@ -99,24 +99,20 @@ img {
 
 /* Navbar container */
 .dq-navbar {
-  background-color: rgba(11, 15, 30, 0.92);
+  background-color: transparent;
   border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
 }
 
 /* Deepen blur + shadow when sticky */
 .uc-navbar-sticky .dq-navbar {
-  background-color: rgba(11, 15, 30, 0.97);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background-color: transparent;
   box-shadow: 0 1px 24px rgba(0, 0, 0, 0.4);
 }
 
 /* ---- Logo ---- */
 .dq-logo {
   font-family: var(--font-headline);
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1;
