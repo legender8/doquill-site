@@ -1,3 +1,6 @@
+/* Syne 800 — logo only */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
+
 /* ============================================================
    DoQuill — Brand Stylesheet
    All DoQuill overrides live here. Do NOT modify template CSS.
@@ -97,23 +100,29 @@ img {
    Navigation — DoQuill
    ============================================================ */
 
-/* Navbar container */
+/* Navbar container — override template's forced white */
+.dq-navbar,
+.dq-navbar:not(.uc-navbar-transparent),
+.uc-navbar-sticky .dq-navbar {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
 .dq-navbar {
-  background-color: transparent;
   border-bottom: 1px solid var(--border);
 }
 
-/* Deepen blur + shadow when sticky */
 .uc-navbar-sticky .dq-navbar {
-  background-color: transparent;
   box-shadow: 0 1px 24px rgba(0, 0, 0, 0.4);
 }
 
 /* ---- Logo ---- */
-.dq-logo {
-  font-family: var(--font-headline);
-  font-size: 24px;
-  font-weight: 800;
+.dq-logo,
+a.dq-logo {
+  font-family: 'Syne', sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 800 !important;
   letter-spacing: -0.03em;
   line-height: 1;
   display: inline-flex;
@@ -121,11 +130,11 @@ img {
 }
 
 .dq-logo-do {
-  color: var(--brand-navy);
+  color: var(--brand-navy) !important;
 }
 
 .dq-logo-quill {
-  color: var(--brand-green);
+  color: var(--brand-green) !important;
 }
 
 /* ---- Nav links ---- */
