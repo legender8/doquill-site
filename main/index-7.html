@@ -76,9 +76,6 @@
     <link rel="stylesheet" href="../assets/css/theme/main.purge.css">
     <link rel="stylesheet" href="../assets/css/theme/theme-three.purge.css">
 
-    <!-- DoQuill brand overrides — always last -->
-    <link rel="stylesheet" href="../assets/css/doquill.css">
-
     <!-- include scripts -->
     <script src="../assets/js/uni-core/js/uni-core-bundle.min.js"></script>
 </head>
@@ -284,8 +281,8 @@
 
             <header class="uc-offcanvas-header hstack justify-between items-center pb-2 bg-white dark:bg-gray-900">
                 <div class="uc-logo">
-                    <a href="index.html" class="dq-logo text-none">
-                        <span class="dq-logo-do">Do</span><span class="dq-logo-quill">Quill</span>
+                    <a href="index.html" class="h5 text-none text-gray-900 dark:text-white">
+                        <img class="w-32px" src="../assets/images/common/logo-mark.svg" alt="Lexend">
                     </a>
                 </div>
                 <button class="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 icon-3 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all" type="button">
@@ -301,53 +298,77 @@
                     </span>
                 </form>
                 <ul class="nav-y gap-narrow fw-medium fs-6" data-uc-nav>
-                    <li class="uc-parent"><a href="#">Modules</a>
-                        <ul class="uc-nav-sub" data-uc-nav="">
-                            <li><a href="#">Finance</a></li>
-                            <li><a href="#">HR &amp; People</a></li>
-                            <li><a href="#">Operations</a></li>
-                            <li><a href="#">Supply Chain</a></li>
-                            <li><a href="#">Procurement</a></li>
-                            <li><a href="#">Analytics &amp; BI</a></li>
-                            <li><a href="#">Compliance</a></li>
-                            <li><a href="#">AI Automation</a></li>
-                        </ul>
-                    </li>
-                    <li class="uc-parent"><a href="#">Industries</a>
-                        <ul class="uc-nav-sub" data-uc-nav="">
-                            <li><a href="#">Supply Chain</a></li>
-                            <li><a href="#">Mining &amp; Industry</a></li>
-                            <li><a href="#">Construction</a></li>
-                            <li><a href="#">Education</a></li>
-                            <li><a href="#">Professional Services</a></li>
-                            <li><a href="#">Retail &amp; Distribution</a></li>
-                            <li><a href="#">View all 65+</a></li>
-                        </ul>
-                    </li>
-                    <li class="uc-parent"><a href="#">Integrations</a>
-                        <ul class="uc-nav-sub" data-uc-nav="">
-                            <li><a href="#">Payment Gateways</a></li>
-                            <li><a href="#">Communication</a></li>
-                            <li><a href="#">CRM &amp; Sales</a></li>
-                            <li><a href="#">Storage</a></li>
-                            <li><a href="#">Analytics</a></li>
-                            <li><a href="#">Browse all 328+</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="page-features.html">Features</a></li>
                     <li><a href="page-pricing.html">Pricing</a></li>
-                    <li class="uc-parent"><a href="#">Resources</a>
+                    <li><a href="page-about.html">About</a></li>
+                    <li><a href="page-career.html">Career</a></li>
+                    <li><a href="page-contact.html">Contact</a></li>
+                    <li class="uc-parent"><a href="#">Inner Pages</a>
                         <ul class="uc-nav-sub" data-uc-nav="">
-                            <li><a href="#">Blog &amp; Insights</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">API Reference</a></li>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">System Status</a></li>
-                            <li><a href="#">Contact Support</a></li>
+                            <li><a href="page-services.html">Services</a></li>
+                            <li><a href="page-services-detail.html">Services Detail</a></li>
+                            <li><a href="page-integrations.html">Integrations</a></li>
+                            <li><a href="page-team.html">Team</a></li>
+                            <li><a href="components.html">Components</a></li>
+                            <li class="uc-parent"><a href="blog.html">Blog</a>
+                                <ul class="uc-nav-sub">
+                                    <li><a href="blog.html">Full Width</a></li>
+                                    <li><a href="blog-classic.html">Classic</a></li>
+                                    <li><a href="blog-sidebar.html">Sidebar</a></li>
+                                    <li><a href="blog-2cols.html">Grid 2 Cols</a></li>
+                                    <li><a href="blog-3cols.html">Grid 3 Cols</a></li>
+                                    <li><a href="blog-4cols.html">Grid 4 Cols</a></li>
+                                </ul>
+                            </li>
+                            <li class="uc-parent"><a href="blog-details.html">Blog - detail</a>
+                                <ul class="uc-nav-sub">
+                                    <li><a href="blog-details.html">Blog detail</a></li>
+                                    <li><a href="blog-details-2.html">Blog detail - v2</a></li>
+                                    <li><a href="blog-details-3.html">Blog detail - v3</a></li>
+                                </ul>
+                            </li>
+                            <li class="uc-parent"><a href="#">Useful pages</a>
+                                <ul class="uc-nav-sub">
+                                    <li><a href="sign-up.html">Sign up</a></li>
+                                    <li><a href="sign-in.html">Sign in</a></li>
+                                    <li><a href="reset-password.html">Reset password</a></li>
+                                    <li><a href="404.html">404 page</a></li>
+                                    <li><a href="coming-soon.html">Coming soon</a></li>
+                                </ul>
+                            </li>
+                            <li class="uc-parent"><a href="#">Other pages</a>
+                                <ul class="uc-nav-sub">
+                                    <li><a href="page-faq.html">FAQ</a></li>
+                                    <li><a href="page-terms.html">Terms of use</a></li>
+                                    <li><a href="page-privacy.html">Privacy policy</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="uc-parent"><a href="shop.html">Shop</a>
+                        <ul class="uc-nav-sub" data-uc-nav="">
+                            <li class="uc-parent"><a href="shop.html">Shop layouts</a>
+                                <ul class="uc-nav-sub">
+                                    <li><a href="shop.html">Shop 4 cols</a></li>
+                                    <li><a href="shop-3.html">Shop 3 cols</a></li>
+                                    <li><a href="shop-2.html">Shop 2 cols</a></li>
+                                    <li><a href="shop-sidebar.html">Shop with sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="shop-category.html">Archive category</a></li>
+                            <li><a href="shop-product-detail.html">Product detail</a></li>
+                            <li><a href="shop-product-detail-2.html">Product detail - v2</a></li>
+                            <li><a href="shop-cart.html">Cart</a></li>
+                            <li><a href="shop-cart-2.html">Cart - v2</a></li>
+                            <li><a href="shop-checkout.html">Checkout</a></li>
+                            <li><a href="shop-checkout-2.html">Checkout - v2</a></li>
+                            <li><a href="shop-order.html">Order confirmation</a></li>
                         </ul>
                     </li>
                     <li class="hr opacity-10 my-1"></li>
-                    <li><a href="https://app.doquill.com">Log in</a></li>
-                    <li><a href="#" class="dq-mobile-demo-link">Book a demo</a></li>
+                    <li><a href="sign-up.html">Create an account</a></li>
+                    <li><a href="sign-in.html">Log in</a></li>
+                    <li><a href="https://themeforest.net/item/lexend-software-saas-startup-html5-template/51596504">Buy Template</a></li>
                 </ul>
                 <ul class="social-icons nav-x mt-4">
                     <li>
@@ -553,91 +574,406 @@
     </div>
 
     <!-- Header start -->
-    <header class="dq-header uc-navbar-sticky-wrap z-999" data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;">
-        <nav class="uc-navbar-container dq-navbar ft-tertiary z-1" data-anime="translateY: [-20, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 600; delay: 0;">
-            <div class="uc-navbar-main" style="--uc-nav-height: 70px">
+    <div class="uc-banner-top py-1 p-2 m-0 hide-on-sticky text-center bg-gradient-to-r from-primary dark:from-tertiary-200 to-primary-700 dark:to-tertiary text-white dark:text-dark" data-uc-alert="">
+        <a href="#" class="uc-alert-close top-0 end-0" style="margin: 14px;" data-uc-close></a>
+        <p>The Lexend AI automation guide is here. <br class="d-block lg:d-none"> <a href="https://themeforest.net/item/lexend-software-saas-startup-html5-template/51596504/" class="uc-link text-tertiary dark:text-primary border-bottom" target="_blank" rel="nofollow">Check it out!</a></p>
+    </div>
+    <header class="uc-header header-seven uc-navbar-sticky-wrap z-999 " data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;">
+        <nav class="uc-navbar-container uc-navbar-float ft-tertiary z-1" data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;">
+            <div class="uc-navbar-main" style="--uc-nav-height: 64px">
                 <div class="container">
-                    <div class="uc-navbar min-h-70px" data-uc-navbar="animation: uc-animation-slide-top-small; duration: 150;">
-
+                    <div class="uc-navbar min-h-64px text-gray-900 dark:text-white" data-uc-navbar=" animation: uc-animation-slide-top-small; duration: 150;">
                         <div class="uc-navbar-left">
                             <div class="uc-logo">
-                                <a class="dq-logo text-none" href="index.html">
-                                    <span class="dq-logo-do">Do</span><span class="dq-logo-quill">Quill</span>
+                                <a class="panel text-none" href="index-7.html" style="width: 140px;">
+                                    <img class="dark:d-none" src="../assets/images/common/logo-new-light.svg" alt="Lexend">
+                                    <img class="d-none dark:d-block" src="../assets/images/common/logo-new-dark.svg" alt="Lexend">
                                 </a>
                             </div>
-                            <ul class="uc-navbar-nav gap-3 d-none lg:d-flex ltr:ms-4 rtl:me-4">
+                            <ul class="uc-navbar-nav gap-3 d-none lg:d-flex ltr:ms-2 rtl:me-2">
                                 <li>
-                                    <a href="#">Modules <span data-uc-navbar-parent-icon></span></a>
-                                    <div class="uc-dropdown dq-dropdown" data-uc-drop="animation: uc-animation-slide-top-small; animate-out: uc-animation-slide-top-small; duration: 150;">
-                                        <ul class="dq-dropdown-nav">
-                                            <li><a href="#">Finance</a></li>
-                                            <li><a href="#">HR &amp; People</a></li>
-                                            <li><a href="#">Operations</a></li>
-                                            <li><a href="#">Supply Chain</a></li>
-                                            <li><a href="#">Procurement</a></li>
-                                            <li><a href="#">Analytics &amp; BI</a></li>
-                                            <li><a href="#">Compliance</a></li>
-                                            <li><a href="#">AI Automation</a></li>
-                                        </ul>
+                                    <a href="#">Products <span data-uc-navbar-parent-icon></span></a>
+                                    <div class="uc-dropbar uc-dropbar-top p-0 ft-primary text-unset fs-6 fw-normal hide-scrollbar border-top rounded-0 overflow-hidden shadow-xl bg-white dark:bg-gray-900" data-uc-drop=" offset: 0; boundary: true; stretch: x; animation: uc-animation-slide-top-small; animate-out: uc-animation-slide-top-small; duration: 150;">
+                                        <div class="uc-dropbar-content">
+                                            <div class="container">
+                                                <div class="uc-dropbar-inner after-bg">
+                                                    <div class="row gx-5 col-match justify-between">
+                                                        <div class="col-8">
+                                                            <div class="panel vstack gap-4 py-4">
+                                                                <div class="panel vstack gap-4">
+                                                                    <div class="vstack gap-narrow">
+                                                                        <h5 class="h5 xl:h4 fw-medium m-0">Lexend's AI Automation Platform</h5>
+                                                                        <p class="fs-7 text-gray-300">AI-Powered Automation across 500+ apps</p>
+                                                                    </div>
+                                                                    <div class="row child-cols-6 gx-6">
+                                                                        <div class="vstack gap-3">
+                                                                            <h6 class="h6 m-0"><i class="fs-7 unicon-cube fw-bold ltr:me-narrow rtl:ms-narrow"></i> Products</h6>
+                                                                            <div>
+                                                                                <a href="page-features.html" class="hstack items-start gap-2 text-none text-dark dark:text-white hover:text-primary dark:hover:text-tertiary">
+                                                                                    <span class="icon rounded dark:bg-white">
+                                                                                        <img class="w-32px" src="../assets/images/custom-icons/icon-01.svg" alt="icon">
+                                                                                    </span>
+                                                                                    <div class="panel">
+                                                                                        <span class="fs-7 fw-medium mb-narrow text-inherit">Email Template Builder</span>
+                                                                                        <p class="fs-8 text-muted">Design personalized emails that convert</p>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="page-features.html" class="hstack items-start gap-2 text-none text-dark dark:text-white hover:text-primary dark:hover:text-tertiary">
+                                                                                    <span class="icon rounded dark:bg-white">
+                                                                                        <img class="w-32px" src="../assets/images/custom-icons/icon-02.svg" alt="icon">
+                                                                                    </span>
+                                                                                    <div class="panel">
+                                                                                        <span class="fs-7 fw-medium mb-narrow">Landing Page Builder</span>
+                                                                                        <p class="fs-8 text-muted">Deliver the right message to the right user</p>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="page-features.html" class="hstack items-start gap-2 text-none text-dark dark:text-white hover:text-primary dark:hover:text-tertiary">
+                                                                                    <span class="icon rounded dark:bg-white">
+                                                                                        <img class="w-32px" src="../assets/images/custom-icons/icon-03.svg" alt="icon">
+                                                                                    </span>
+                                                                                    <div class="panel">
+                                                                                        <span class="fs-7 fw-medium mb-narrow">Reporting & analytics</span>
+                                                                                        <p class="fs-8 text-muted">Track sales & campaign performance</p>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="page-features.html" class="hstack items-start gap-2 text-none text-dark dark:text-white hover:text-primary dark:hover:text-tertiary">
+                                                                                    <span class="icon rounded dark:bg-white">
+                                                                                        <img class="w-32px" src="../assets/images/custom-icons/icon-07.svg" alt="icon">
+                                                                                    </span>
+                                                                                    <div class="panel">
+                                                                                        <span class="fs-7 fw-medium mb-narrow">Chatbots, Free forever</span>
+                                                                                        <p class="fs-8 text-muted">Track sales & campaign performance</p>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="page-features.html" class="ltr:ms-6 rtl:me-6 text-none fs-8 text-dark dark:text-white hover:text-primary dark:hover:text-tertiary">
+                                                                                    <span class="border-bottom hover:border-primary duration-150">View all products</span>
+                                                                                    <i class="d-inline-flex fs-8 unicon-arrow-up-right fw-bold rtl:rotate-y-180"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="vstack gap-3">
+                                                                            <h6 class="h6 m-0"><i class="fs-7 unicon-gamification fw-bold ltr:me-narrow rtl:ms-narrow"></i> Professional Solutions</h6>
+                                                                            <div>
+                                                                                <a href="page-features.html" class="hstack items-start gap-2 text-none text-dark dark:text-white hover:text-primary dark:hover:text-tertiary">
+                                                                                    <span class="icon rounded dark:bg-white">
+                                                                                        <img class="w-32px" src="../assets/images/custom-icons/icon-04.svg" alt="icon">
+                                                                                    </span>
+                                                                                    <div class="panel">
+                                                                                        <span class="fs-7 fw-medium mb-narrow">AI-Powered Tools</span>
+                                                                                        <p class="fs-8 text-muted">Say hello to your AI growth assistant</p>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="page-features.html" class="hstack items-start gap-2 text-none text-dark dark:text-white hover:text-primary dark:hover:text-tertiary">
+                                                                                    <span class="icon rounded dark:bg-white">
+                                                                                        <img class="w-32px" src="../assets/images/custom-icons/icon-05.svg" alt="icon">
+                                                                                    </span>
+                                                                                    <div class="panel">
+                                                                                        <span class="fs-7 fw-medium mb-narrow">E-commerce and retail</span>
+                                                                                        <p class="fs-8 text-muted">Amplify the conversation across channels</p>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="page-features.html" class="hstack items-start gap-2 text-none text-dark dark:text-white hover:text-primary dark:hover:text-tertiary">
+                                                                                    <span class="icon rounded dark:bg-white">
+                                                                                        <img class="w-32px" src="../assets/images/custom-icons/icon-06.svg" alt="icon">
+                                                                                    </span>
+                                                                                    <div class="panel">
+                                                                                        <span class="fs-7 fw-medium mb-narrow">Large Community</span>
+                                                                                        <p class="fs-8 text-muted">Our services offerings</p>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="page-features.html" class="hstack items-start gap-2 text-none text-dark dark:text-white hover:text-primary dark:hover:text-tertiary">
+                                                                                    <span class="icon rounded dark:bg-white">
+                                                                                        <img class="w-32px" src="../assets/images/custom-icons/icon-08.svg" alt="icon">
+                                                                                    </span>
+                                                                                    <div class="panel">
+                                                                                        <span class="fs-7 fw-medium mb-narrow">AI-Powered Automation</span>
+                                                                                        <p class="fs-8 text-muted">Our services offerings</p>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div>
+                                                                                <a href="page-features.html" class="ltr:ms-6 rtl:me-6 text-none fs-8 text-dark dark:text-white hover:text-primary dark:hover:text-tertiary">
+                                                                                    <span class="border-bottom hover:border-primary duration-150">View all solutions</span>
+                                                                                    <i class="d-inline-flex fs-8 unicon-arrow-up-right fw-bold rtl:rotate-y-180"></i>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="panel vstack gap-4 p-5 bg-gray-25 dark:bg-gray-800 border-start">
+                                                                <div class="panel category-section">
+                                                                    <h5 class="h6">Get started is Easy!</h5>
+                                                                    <ul class="uc-nav uc-navbar-dropdown-nav fs-7 fw-normal row child-cols-12">
+                                                                        <li>
+                                                                            <a href="page-contact.html">Hire an Expert</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Customer stories</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Resources</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="blog-sidebar.html">Blog</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="page-career.html">Career</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="page-contact.html">Help Center</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="panel category-section">
+                                                                    <h5 class="h6">Terms and privacy</h5>
+                                                                    <ul class="uc-nav uc-navbar-dropdown-nav fs-7 fw-normal row child-cols-12">
+                                                                        <li>
+                                                                            <a href="page-terms.html">Terms of service</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="page-privacy.html">Privacy Policy</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uc-dropbar-footer py-2 xl:py-3 border-top bg-white dark:bg-gray-900 dark:text-white">
+                                            <div class="container">
+                                                <ul class="nav-x gap-4 fs-8 fw-medium">
+                                                    <li>
+                                                        <a href="#"><i class="fs-8 unicon-api fw-bold"></i><span class="border-bottom hover:border-primary duration-150">Explore Apps</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fs-8 unicon-airplay fw-bold"></i><span class="border-bottom hover:border-primary duration-150">AI Solutions</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fs-8 unicon-cloud-lightning fw-bold"></i><span class="border-bottom hover:border-primary duration-150">Join Lexend Early Access</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#">Industries <span data-uc-navbar-parent-icon></span></a>
-                                    <div class="uc-dropdown dq-dropdown" data-uc-drop="animation: uc-animation-slide-top-small; animate-out: uc-animation-slide-top-small; duration: 150;">
-                                        <ul class="dq-dropdown-nav">
-                                            <li><a href="#">Supply Chain</a></li>
-                                            <li><a href="#">Mining &amp; Industry</a></li>
-                                            <li><a href="#">Construction</a></li>
-                                            <li><a href="#">Education</a></li>
-                                            <li><a href="#">Professional Services</a></li>
-                                            <li><a href="#">Retail &amp; Distribution</a></li>
-                                            <li class="dq-dropdown-cta"><a href="#">View all 65+ <i class="icon-narrow unicon-arrow-up-right fw-bold"></i></a></li>
-                                        </ul>
+                                    <a href="#">Solutions <span data-uc-navbar-parent-icon></span></a>
+                                    <div class="uc-dropbar uc-dropbar-top p-0 ft-primary text-unset fs-6 fw-normal hide-scrollbar border-top rounded-0 overflow-hidden shadow-xl bg-white dark:bg-gray-900" data-uc-drop=" offset: 0; boundary: true;  stretch: x; animation: uc-animation-slide-top-small; duration: 150;">
+                                        <div class="uc-dropbar-content">
+                                            <div class="container">
+                                                <div class="uc-dropbar-inner after-bg">
+                                                    <div class="row gx-5 col-match justify-between">
+                                                        <div class="col-8">
+                                                            <div class="panel vstack gap-4 py-4">
+                                                                <div class="vstack gap-narrow flex-none">
+                                                                    <h5 class="h5 xl:h4 fw-medium m-0">Workflow quick-start automation guide</h5>
+                                                                    <p class="fs-7 text-gray-300">How Lexend can help you automate your work</p>
+                                                                </div>
+                                                                <div class="row child-cols-4 gx-4 col-match justify-between">
+                                                                    <div>
+                                                                        <h6 class="h6 mb-3"><i class="fs-7 unicon-glyph-square-fill fw-bold ltr:me-narrow rtl:ms-narrow"></i> Automation</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="page-features.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><i class="icon-1 unicon-checkmark fw-bold text-primary"></i></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">To-Do List</b>
+                                                                                        <span class="fs-8 text-muted">Managing multiple software and tools for different tasks.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="page-features.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><i class="icon-1 unicon-chart-pie fw-bold text-primary"></i></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Reports</b>
+                                                                                        <span class="fs-8 text-muted">The latest industry reports, updates and info.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="page-features.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><i class="icon-1 unicon-increase-level fw-bold text-primary"></i></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Spreadsheets</b>
+                                                                                        <span class="fs-8 text-muted">Suite of tools that cover all aspects of your business.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h6 class="h6 mb-3"><i class="fs-7 unicon-glyph-circle-fill fw-bold ltr:me-narrow rtl:ms-narrow"></i> Teaming</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="page-features.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><i class="icon-1 unicon-chart-venn-diagram fw-bold text-primary"></i></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Collaboration</b>
+                                                                                        <span class="fs-8 text-muted">Assign tasks, share files, and communicate with your team.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="page-features.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><i class="icon-1 unicon-chat fw-bold text-primary"></i></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Chatbots</b>
+                                                                                        <span class="fs-8 text-muted">Assign tasks, share files, and communicate with your team.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="page-features.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><i class="icon-1 unicon-checkmark fw-bold text-primary"></i></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">To-Do List</b>
+                                                                                        <span class="fs-8 text-muted">Managing multiple software and tools for different tasks.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h6 class="h6 mb-3"><i class="fs-7 unicon-glyph-caution fw-bold ltr:me-narrow rtl:ms-narrow"></i> Use Case</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="page-features.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><i class="icon-1 unicon-chart-pie fw-bold text-primary"></i></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Reports</b>
+                                                                                        <span class="fs-8 text-muted">The latest industry reports, updates and info.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="page-features.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><i class="icon-1 unicon-increase-level fw-bold text-primary"></i></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Spreadsheets</b>
+                                                                                        <span class="fs-8 text-muted">Suite of tools that cover all aspects of your business.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="page-features.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><i class="icon-1 unicon-chart-venn-diagram fw-bold text-primary"></i></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Collaboration</b>
+                                                                                        <span class="fs-8 text-muted">Assign tasks, share files, and communicate with your team.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="panel vstack gap-4 p-5 bg-gray-25 dark:bg-gray-800 border-start">
+                                                                <div class="row child-cols gx-2">
+                                                                    <div class="col-4">
+                                                                        <div class="featured-image panel" data-uc-lightbox="video-autoplay: true;">
+                                                                            <figure class="featured-image m-0 rounded ratio ratio-1x1  uc-transition-toggle overflow-hidden">
+                                                                                <img class="media-cover image uc-transition-scale-up uc-transition-opaque" src="../assets/images/template/login.webp" alt="Image">
+                                                                            </figure>
+                                                                            <button class="btn btn-md btn-alt-primary bg-tertiary p-0 w-32px h-32px position-absolute bottom-0 ltr:start-0 rtl:end-0 m-1"><i class="icon-narrow unicon-play-filled-alt text-primary"></i></button>
+                                                                            <a href="../assets/images/media/lexend_vid.webm" data-caption="Easy project managment of any complexity." data-attrs="width: 640; height: 480;" class="position-cover"></a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="vstack gap-1">
+                                                                            <span class="fs-6 fw-bold m-0 text-dark dark:text-white">Say goodbye to the hassle of multi-tasks</span>
+                                                                            <p class="fs-7">Managing multiple tasks with AI automation.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="panel category-section">
+                                                                    <h5 class="h6">Start with ease!</h5>
+                                                                    <ul class="uc-nav uc-navbar-dropdown-nav fs-7 fw-normal row child-cols-12">
+                                                                        <li>
+                                                                            <a href="page-contact.html">Hire an Expert</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Customer stories</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Resources</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="blog-sidebar.html">Blog</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="page-career.html">Career</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="page-contact.html">Help Center</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uc-dropbar-footer py-2 xl:py-3 border-top bg-white dark:bg-gray-900 dark:text-white">
+                                            <div class="container">
+                                                <ul class="nav-x gap-4 fs-8 fw-medium">
+                                                    <li>
+                                                        <a href="#"><i class="fs-8 unicon-api fw-bold"></i><span class="border-bottom hover:border-primary duration-150">Explore Apps</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fs-8 unicon-airplay fw-bold"></i><span class="border-bottom hover:border-primary duration-150">AI Solutions</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fs-8 unicon-cloud-lightning fw-bold"></i><span class="border-bottom hover:border-primary duration-150">Join Lexend Early Access</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#">Integrations <span data-uc-navbar-parent-icon></span></a>
-                                    <div class="uc-dropdown dq-dropdown" data-uc-drop="animation: uc-animation-slide-top-small; animate-out: uc-animation-slide-top-small; duration: 150;">
-                                        <ul class="dq-dropdown-nav">
-                                            <li><a href="#">Payment Gateways</a></li>
-                                            <li><a href="#">Communication</a></li>
-                                            <li><a href="#">CRM &amp; Sales</a></li>
-                                            <li><a href="#">Storage</a></li>
-                                            <li><a href="#">Analytics</a></li>
-                                            <li class="dq-dropdown-cta"><a href="#">Browse all 328+ <i class="icon-narrow unicon-arrow-up-right fw-bold"></i></a></li>
-                                        </ul>
-                                    </div>
+                                    <a href="blog-sidebar.html">Insights</a>
                                 </li>
-                                <li><a href="page-pricing.html">Pricing</a></li>
-                                <li>
-                                    <a href="#">Resources <span data-uc-navbar-parent-icon></span></a>
-                                    <div class="uc-dropdown dq-dropdown" data-uc-drop="animation: uc-animation-slide-top-small; animate-out: uc-animation-slide-top-small; duration: 150;">
-                                        <ul class="dq-dropdown-nav">
-                                            <li><a href="#">Blog &amp; Insights</a></li>
-                                            <li><a href="#">Documentation</a></li>
-                                            <li><a href="#">API Reference</a></li>
-                                            <li><a href="#">Help Center</a></li>
-                                            <li><a href="#">System Status</a></li>
-                                            <li><a href="#">Contact Support</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <li><a href="page-pricing-2.html">Pricing</a></li>
+                                <li><a href="components.html"><i class="icon unicon-cube fw-bold ltr:me-narrow rtl:ms-narrow text-primary dark:text-tertiary"></i><span>All components</span></a></li>
                             </ul>
                         </div>
-
                         <div class="uc-navbar-right">
-                            <ul class="nav-x d-none lg:d-flex items-center gap-2 ltr:me-2 rtl:ms-2">
-                                <li><a href="https://app.doquill.com" class="dq-nav-login">Log in</a></li>
+                            <ul class="nav-x d-none lg:d-flex">
+                                <li class="d-none xl:d-inline-flex"><a href="page-contact-2.html">Contact sales</a></li>
+                                <li><a href="sign-in.html">Log in</a></li>
                             </ul>
-                            <a class="dq-btn-demo d-none lg:d-inline-flex" href="#">Book a demo</a>
-                            <a class="d-block lg:d-none ms-2" href="#uc-menu-panel" data-uc-navbar-toggle-icon data-uc-toggle></a>
+                            <a class="btn btn-sm btn-primary text-tertiary dark:bg-tertiary dark:text-primary dark:hover:bg-tertiary fw-bold rounded-pill lg:px-2 text-none hover:contrast-shadow d-none lg:d-inline-flex" href="sign-up.html">Sign up</a>
+                            <a class="d-block lg:d-none" href="#uc-menu-panel" data-uc-navbar-toggle-icon data-uc-toggle></a>
                         </div>
-
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
     <!-- Header end -->
 
     <!-- Wrapper start -->
