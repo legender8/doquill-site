@@ -1,0 +1,240 @@
+/* ============================================================
+   DoQuill — Brand Stylesheet
+   All DoQuill overrides live here. Do NOT modify template CSS.
+   ============================================================ */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* ============================================================
+   CSS Custom Properties — Dark Mode (default)
+   ============================================================ */
+:root {
+  /* Backgrounds */
+  --bg-primary:   #0B0F1E;
+  --bg-card:      #111827;
+  --border:       #1E2640;
+
+  /* Brand */
+  --brand-navy:   #1A2456;
+  --brand-green:  #2ECC71;
+  --green-hover:  #22A85A;
+  --green-glow:   rgba(46, 204, 113, 0.12);
+
+  /* Text */
+  --text-primary:   #FFFFFF;
+  --text-secondary: #B0B7CC;
+  --text-muted:     #6B7399;
+
+  /* Semantic */
+  --amber:   #F5A623;
+  --error:   #EF4444;
+  --success: #10B981;
+
+  /* Typography */
+  --font-headline: 'Syne', sans-serif;
+  --font-body:     'DM Sans', sans-serif;
+}
+
+/* ============================================================
+   CSS Custom Properties — Light Mode
+   ============================================================ */
+[data-theme="light"] {
+  --bg-primary:   #F8FAFC;
+  --bg-card:      #FFFFFF;
+  --border:       #E2E8F0;
+
+  --text-primary:   #0B0F1E;
+  --text-secondary: #4A5568;
+  --text-muted:     #94A3B8;
+
+  /* Brand colours remain consistent across modes */
+  --brand-navy:  #1A2456;
+  --brand-green: #2ECC71;
+  --green-hover: #22A85A;
+  --green-glow:  rgba(46, 204, 113, 0.12);
+
+  --amber:   #F5A623;
+  --error:   #EF4444;
+  --success: #10B981;
+}
+
+/* ============================================================
+   Base — Typography
+   ============================================================ */
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   Base — Global Resets
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--brand-green);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--green-hover);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================================
+   Navigation — DoQuill
+   ============================================================ */
+
+/* Navbar container */
+.dq-navbar {
+  background-color: rgba(11, 15, 30, 0.92);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Deepen blur + shadow when sticky */
+.uc-navbar-sticky .dq-navbar {
+  background-color: rgba(11, 15, 30, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* ---- Logo ---- */
+.dq-logo {
+  font-family: var(--font-headline);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dq-logo-do {
+  color: var(--brand-navy);
+}
+
+.dq-logo-quill {
+  color: var(--brand-green);
+}
+
+/* ---- Nav links ---- */
+.dq-navbar .uc-navbar-nav > li > a {
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.dq-navbar .uc-navbar-nav > li > a:hover {
+  color: var(--text-primary);
+}
+
+/* ---- Dropdowns ---- */
+.dq-dropdown {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 8px;
+  min-width: 210px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+.dq-dropdown-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dq-dropdown-nav li a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 12px;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  text-decoration: none;
+}
+
+.dq-dropdown-nav li a:hover {
+  background-color: var(--green-glow);
+  color: var(--brand-green);
+}
+
+.dq-dropdown-cta a {
+  color: var(--brand-green) !important;
+  font-weight: 500 !important;
+  margin-top: 4px;
+  border-top: 1px solid var(--border);
+  border-radius: 0 0 8px 8px !important;
+}
+
+.dq-dropdown-cta a:hover {
+  background-color: var(--green-glow) !important;
+}
+
+/* ---- Right-side actions ---- */
+.dq-nav-login {
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.dq-nav-login:hover {
+  color: var(--text-primary);
+}
+
+.dq-btn-demo {
+  align-items: center;
+  padding: 10px 22px;
+  background-color: var(--brand-green);
+  color: #0B0F1E !important;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.dq-btn-demo:hover {
+  background-color: var(--green-hover);
+  color: #0B0F1E !important;
+  box-shadow: 0 4px 20px var(--green-glow);
+}
+
+/* Mobile demo link */
+.dq-mobile-demo-link {
+  color: var(--brand-green) !important;
+  font-weight: 600;
+}
