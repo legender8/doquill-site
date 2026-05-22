@@ -1,3 +1,22 @@
+:root {
+  --color-tertiary: #2ECC71 !important;
+  --bs-tertiary: #2ECC71 !important;
+  --bs-tertiary-rgb: 46,204,113 !important;
+  --color-tertiary-300: #EAFAF1 !important;
+  --color-tertiary-500: #2ECC71 !important;
+  --color-tertiary-600: #22A85A !important;
+  --color-tertiary-700: #1A8A46 !important;
+  --color-primary: #0B0F1E !important;
+  --color-primary-700: #0B0F1E !important;
+}
+
+.dark {
+  --color-tertiary: #2ECC71 !important;
+  --bs-tertiary: #2ECC71 !important;
+  --color-tertiary-500: #2ECC71 !important;
+  --color-primary-700: #0B0F1E !important;
+}
+
 /* Syne 800 — logo only */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
 
