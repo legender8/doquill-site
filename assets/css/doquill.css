@@ -229,3 +229,43 @@ a.dq-logo {
   color: var(--brand-green) !important;
   font-weight: 600;
 }
+
+/* ── Light mode hero background ── */
+.hero-seven-scene
+.position-absolute.bg-tertiary-300 {
+  background-color: #EAFAF1 !important;
+}
+
+/* ── All primary buttons ── */
+.btn-primary {
+  background-color: #2ECC71 !important;
+  color: #0B0F1E !important;
+  border-color: #2ECC71 !important;
+}
+.btn-primary:hover {
+  background-color: #22A85A !important;
+}
+
+/* ── Text highlights / accents ── */
+.text-primary,
+.uc-link,
+.dark\:text-tertiary {
+  color: #2ECC71 !important;
+}
+
+/* ── Highlighted spans in headlines ── */
+.bg-tertiary {
+  background-color: #2ECC71 !important;
+  color: #0B0F1E !important;
+}
+
+/* ── Borders and active states ── */
+.border-primary {
+  border-color: #2ECC71 !important;
+}
+
+/* ── Nav Book a demo button ── */
+.dq-btn-demo {
+  background-color: #2ECC71 !important;
+  color: #0B0F1E !important;
+}
