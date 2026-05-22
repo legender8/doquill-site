@@ -230,42 +230,73 @@ a.dq-logo {
   font-weight: 600;
 }
 
-/* ── Light mode hero background ── */
-.hero-seven-scene
+/* ── Hero background light mode ── */
+.hero-seven-scene >
 .position-absolute.bg-tertiary-300 {
   background-color: #EAFAF1 !important;
 }
 
-/* ── All primary buttons ── */
-.btn-primary {
+/* ── Primary buttons — all states ── */
+.btn.btn-primary,
+a.btn.btn-primary,
+button.btn-primary {
   background-color: #2ECC71 !important;
-  color: #0B0F1E !important;
   border-color: #2ECC71 !important;
-}
-.btn-primary:hover {
-  background-color: #22A85A !important;
+  color: #0B0F1E !important;
 }
 
-/* ── Text highlights / accents ── */
-.text-primary,
-.uc-link,
-.dark\:text-tertiary {
-  color: #2ECC71 !important;
+.btn.btn-primary:hover,
+a.btn.btn-primary:hover,
+button.btn-primary:hover {
+  background-color: #22A85A !important;
+  border-color: #22A85A !important;
+}
+
+/* ── Dark mode button override ── */
+.dark .btn.btn-primary,
+.dark a.btn.btn-primary {
+  background-color: #2ECC71 !important;
+  color: #0B0F1E !important;
 }
 
 /* ── Highlighted spans in headlines ── */
-.bg-tertiary {
+span.bg-tertiary,
+.px-1.bg-tertiary {
   background-color: #2ECC71 !important;
   color: #0B0F1E !important;
 }
 
-/* ── Borders and active states ── */
-.border-primary {
-  border-color: #2ECC71 !important;
+.dark span.bg-tertiary,
+.dark .px-1.bg-tertiary {
+  background-color: #2ECC71 !important;
+  color: #0B0F1E !important;
+}
+
+/* ── Green text accents ── */
+.text-primary {
+  color: #2ECC71 !important;
+}
+
+.dark .dark\:text-tertiary {
+  color: #2ECC71 !important;
+}
+
+/* ── Links ── */
+.uc-link {
+  color: #2ECC71 !important;
 }
 
 /* ── Nav Book a demo button ── */
 .dq-btn-demo {
   background-color: #2ECC71 !important;
   color: #0B0F1E !important;
+  border-color: #2ECC71 !important;
+  border-radius: 50px !important;
+  padding: 8px 20px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.dq-btn-demo:hover {
+  background-color: #22A85A !important;
 }
