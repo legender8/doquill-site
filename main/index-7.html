@@ -2,6 +2,17 @@
 <html lang="en" dir="ltr">
 
 <head>
+    <script>
+(function(){
+  if(!localStorage.getItem('darkmode')){
+    localStorage.setItem('darkmode','1');
+  }
+  if(localStorage.getItem('darkmode')==='1'){
+    document.documentElement
+    .classList.add('dark');
+  }
+})();
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lexend</title>
