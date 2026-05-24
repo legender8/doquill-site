@@ -1,20 +1,86 @@
 :root {
   --color-tertiary: #2ECC71 !important;
-  --bs-tertiary: #2ECC71 !important;
+  --color-tertiary-: #2ECC71 !important;
   --bs-tertiary-rgb: 46,204,113 !important;
-  --color-tertiary-300: #EAFAF1 !important;
+  --bs-tertiary--rgb: 46,204,113 !important;
+  --color-tertiary-10: #f0fff6 !important;
+  --color-tertiary-25: #e8fdf0 !important;
+  --color-tertiary-50: #d5fae3 !important;
+  --color-tertiary-100: #aff5ca !important;
+  --color-tertiary-200: #7deed0 !important;
+  --color-tertiary-300: #ffffff !important;
+  --color-tertiary-400: #3dd47a !important;
   --color-tertiary-500: #2ECC71 !important;
   --color-tertiary-600: #22A85A !important;
   --color-tertiary-700: #1A8A46 !important;
-  --color-primary: #0B0F1E !important;
-  --color-primary-700: #0B0F1E !important;
+  --color-tertiary-800: #115c2e !important;
+  --color-tertiary-900: #092e17 !important;
+  --color-tertiary-950: #04170b !important;
+  --color-primary: #1A2456 !important;
+  --bs-primary-rgb: 26,36,86 !important;
+  --color-primary-500: #1A2456 !important;
+  --color-primary-600: #151d47 !important;
+  --color-primary-700: #0f1538 !important;
+  --color-primary-800: #0a0e29 !important;
 }
 
 .dark {
   --color-tertiary: #2ECC71 !important;
-  --bs-tertiary: #2ECC71 !important;
+  --color-tertiary-: #2ECC71 !important;
+  --bs-tertiary-rgb: 46,204,113 !important;
+  --bs-tertiary--rgb: 46,204,113 !important;
+  --color-tertiary-300: #EAFAF1 !important;
   --color-tertiary-500: #2ECC71 !important;
+  --color-primary: #1A2456 !important;
   --color-primary-700: #0B0F1E !important;
+}
+
+/* Force white background on light mode hero */
+.hero-seven-scene .position-absolute:first-child {
+  background-color: #ffffff !important;
+}
+
+/* Force gradient overlay to white in light mode */
+.hero-seven-scene .bg-gradient-to-b.to-white {
+  --tw-gradient-to: #ffffff !important;
+}
+
+/* All primary buttons green */
+[class*="btn-primary"] {
+  background-color: #2ECC71 !important;
+  border-color: #2ECC71 !important;
+  color: #0B0F1E !important;
+}
+
+[class*="btn-primary"]:hover {
+  background-color: #22A85A !important;
+  border-color: #22A85A !important;
+}
+
+/* Dark mode button stays green */
+.dark [class*="btn-primary"] {
+  background-color: #2ECC71 !important;
+  color: #0B0F1E !important;
+}
+
+/* All tertiary backgrounds → green */
+[class*="bg-tertiary"]:not([class*="bg-tertiary-3"]):not([class*="bg-tertiary-1"]):not([class*="bg-tertiary-2"]) {
+  background-color: #2ECC71 !important;
+  color: #0B0F1E !important;
+}
+
+/* All tertiary text → green */
+[class*="text-tertiary"] {
+  color: #2ECC71 !important;
+}
+
+/* All primary text → navy */
+[class*="text-primary"]:not([class*="btn"]) {
+  color: #1A2456 !important;
+}
+
+.dark [class*="text-primary"]:not([class*="btn"]) {
+  color: #2ECC71 !important;
 }
 
 /* Syne 800 — logo only */
