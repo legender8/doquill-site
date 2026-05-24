@@ -4,31 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <meta name="description" content="Full-featured, professional-looking software, saas and startup website template.">
+    <title>DoQuill — Coming Soon</title>
+    <meta name="description" content="DoQuill is the AI-powered ERP built for businesses that mean business. Platform is live at app.doquill.io">
     <meta name="keywords" content="saas, saas template, site template, software, startup, digital product, html5, landing, marketing, bootstrap, uikit3, agency, ai, digital agency, it solutions, nodejs">
-    <link rel="canonical" href="https://unistudio.co/html/Lexend">
-    <meta name="theme-color" content="#178d72">
+    <link rel="canonical" href="https://doquill.io">
+    <meta name="theme-color" content="#2ECC71">
 
     <!-- Open Graph Tags -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Lexend" />
-    <meta property="og:description" content="Full-featured, Professional-looking SaaS, Software and Startup Site Template." />
-    <meta property="og:url" content="https://unistudio.co/html/lexend/" />
-    <meta property="og:site_name" content="Lexend" />
-    <meta property="og:image" content="https://unistudio.co/html/lexend/assets/images/common/seo-image.jpg" />
-    <meta property="og:image:width" content="1180" />
-    <meta property="og:image:height" content="600" />
-    <meta property="og:image:type" content="image/png" />
+    <meta property="og:title" content="DoQuill — Coming Soon" />
+    <meta property="og:description" content="DoQuill is the AI-powered ERP built for businesses that mean business. Platform is live at app.doquill.io" />
+    <meta property="og:url" content="https://doquill.io" />
+    <meta property="og:site_name" content="DoQuill" />
 
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lexend">
-    <meta name="twitter:description" content="Full-featured, Professional-looking SaaS, Software and Startup Site Template.">
-    <meta name="twitter:image" content="https://unistudio.co/html/lexend/assets/images/common/seo-image.jpg">
-
-    <link rel="canonical" href="https://unistudio.co/html/lexend/" />
+    <meta name="twitter:title" content="DoQuill — Coming Soon">
+    <meta name="twitter:description" content="DoQuill is the AI-powered ERP built for businesses that mean business. Platform is live at app.doquill.io">
 
     <!-- preload head styles -->
     <link rel="preload" href="../assets/css/fonts.css" as="style">
@@ -75,6 +68,9 @@
     <!-- include main style -->
     <link rel="stylesheet" href="../assets/css/theme/main.purge.css">
 
+    <!-- DoQuill overrides -->
+    <link rel="stylesheet" href="../assets/css/doquill.css">
+
     <!-- include scripts -->
     <script src="../assets/js/uni-core/js/uni-core-bundle.min.js"></script>
 </head>
@@ -100,8 +96,13 @@
         <div class="section bg-white dark:bg-gray-900 text-dark dark:text-white">
             <div class="container max-w-xl">
                 <div class="panel vstack justify-center items-center gap-2 sm:gap-4 text-center h-screen">
-                    <h2 class="h1 lg:display-6 xl:display-3 text-primary dark:text-tertiary" data-uc-splitext="types: 'chars'" data-anime="targets: &gt; *; keyframes: [ {translateY: -10}, {rotateX: 180}, {translateY: 0}, {rotateX: 0}, ]; easing: easeOutElastic(1, .8); duration: 500; delay: anime.stagger(50); direction: alternate; loop: true;">Coming soon!</h2>
-                    <div class="row child-cols-3 items-center justify-center g-1 sm:g-2" data-uc-countdown="date: 2026-12-07T23:00:00+00:00">
+                    <div class="mb-4">
+                        <span style="font-family:'Syne',sans-serif;font-size:28px;font-weight:800;letter-spacing:-0.5px;">
+                            <span style="color:#ffffff;">Do</span><span style="color:#2ECC71;">Quill</span>
+                        </span>
+                    </div>
+                    <h2 class="h1 lg:display-6 xl:display-3 text-primary dark:text-tertiary" data-uc-splitext="types: 'chars'" data-anime="targets: &gt; *; keyframes: [ {translateY: -10}, {rotateX: 180}, {translateY: 0}, {rotateX: 0}, ]; easing: easeOutElastic(1, .8); duration: 500; delay: anime.stagger(50); direction: alternate; loop: true;">Something powerful<br>is almost ready.</h2>
+                    <div class="row child-cols-3 items-center justify-center g-1 sm:g-2" data-uc-countdown="date: 2025-09-01T00:00:00+00:00">
                         <div>
                             <div>
                                 <div class="cstack h4 sm:h2 w-64px h-64px sm:min-w-100px sm:min-h-100px py-2 border rounded uc-countdown-days"></div>
@@ -127,7 +128,9 @@
                             </div>
                         </div>
                     </div>
-                    <p class="fs-6 xl:fs-5 mt-8">Comeback again when we’re live! <br> Thank you for understanding and patience!</p>
+                    <p class="fs-6 xl:fs-5 mt-8">The full DoQuill website is coming soon. The platform is live right now.</p>
+                    <a href="https://app.doquill.io" target="_blank" class="btn btn-md btn-primary text-tertiary fw-bold rounded-pill px-4 mt-4 d-inline-flex">Access the platform →</a>
+                    <p class="fs-7 mt-2 opacity-60">Already have an account? <a href="https://app.doquill.io/login" target="_blank" class="uc-link">Log in here</a></p>
                 </div>
             </div>
         </div>
@@ -163,6 +166,17 @@
     <!-- include app script -->
     <script defer src="../assets/js/form.js"></script>
     <script defer src="../assets/js/app.js"></script>
+
+    <script>
+        (function(){
+            if(!localStorage.getItem('darkmode')){
+                localStorage.setItem('darkmode','1');
+            }
+            if(localStorage.getItem('darkmode')==='1'){
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
 
     <script>
         // Schema toggle via URL
