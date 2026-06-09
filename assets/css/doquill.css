@@ -1,6 +1,7 @@
 /* ═══════════════════════════════════════
    DOQUILL BRAND OVERRIDES
-   Template dark class = .uc-dark on <html>
+   All overrides go here. Never touch
+   template.css
 ═══════════════════════════════════════ */
 
 /* ── Core brand tokens ── */
@@ -17,11 +18,10 @@
   --color-primary-500:    #1A2456;
   --color-primary-600:    #151d47;
   --color-primary-700:    #0B0F1E;
-  --color-primary-800:    #0B0F1E;
 }
 
-/* ── Dark mode token overrides ── */
-.uc-dark {
+/* ── Dark mode tokens ── */
+.dark {
   --color-tertiary:       #2ECC71;
   --color-tertiary-rgb:   46, 204, 113;
   --bs-tertiary-rgb:      46, 204, 113;
@@ -32,129 +32,170 @@
   --color-primary-700:    #0B0F1E;
 }
 
-/* ══════════════════════════════════════
-   DARK MODE
-══════════════════════════════════════ */
-
-/* Page background */
-.uc-dark body {
+/* ── Page backgrounds ── */
+.dark body,
+.dark {
   background-color: #0B0F1E !important;
 }
 
-/* Announcement banner */
-.uc-dark [class*="topbar"],
-.uc-dark [class*="top-bar"],
-.uc-dark [class*="announcement"] {
-  background-color: #1A2456 !important;
-  border-bottom: 1px solid #1E2640 !important;
-}
-.uc-dark [class*="topbar"] *,
-.uc-dark [class*="top-bar"] *,
-.uc-dark [class*="announcement"] * {
-  color: #FFFFFF !important;
+html:not(.dark) body {
+  background-color: #F8FAFC !important;
 }
 
-/* Navbar */
-.uc-dark [class*="navbar"],
-.uc-dark [class*="nav-wrap"],
-.uc-dark header {
-  background-color: #0B0F1E !important;
-  border-bottom: 1px solid #1E2640 !important;
-}
-
-/* Section backgrounds — layered depth */
-.uc-dark section,
-.uc-dark .section {
+/* ── Section backgrounds ── */
+.dark section,
+.dark .section,
+.dark .bg-white,
+.dark .bg-light {
   background-color: #0B0F1E !important;
 }
 
-.uc-dark .card,
-.uc-dark [class*="feature-box"],
-.uc-dark [class*="pricing-box"],
-.uc-dark [class*="testimonial"] {
-  background-color: #111827 !important;
-  border-color: #1E2640 !important;
+html:not(.dark) section,
+html:not(.dark) .section {
+  background-color: #F8FAFC !important;
 }
 
-/* Footer */
-.uc-dark footer,
-.uc-dark [class*="footer"] {
-  background-color: #0B0F1E !important;
-  border-top: 1px solid #1E2640 !important;
-}
-
-/* ── ALL BUTTONS — dark mode ── */
-.uc-dark .btn-primary,
-.uc-dark a.btn-primary,
-.uc-dark button.btn-primary,
-.uc-dark [class*="btn-primary"] {
+/* ── PRIMARY BUTTON (light mode) ── */
+.btn-primary,
+a.btn-primary,
+button.btn-primary,
+.btn.btn-primary {
   background-color: #2ECC71 !important;
   border-color:     #2ECC71 !important;
   color:            #0B0F1E !important;
   font-weight:      600 !important;
 }
-.uc-dark .btn-primary:hover,
-.uc-dark a.btn-primary:hover {
+
+.btn-primary:hover,
+a.btn-primary:hover,
+button.btn-primary:hover {
   background-color: #22A85A !important;
   border-color:     #22A85A !important;
   color:            #0B0F1E !important;
 }
 
-/* ── TEXT COLORS — dark mode ── */
-.uc-dark .text-tertiary,
-.uc-dark [class*="text-tertiary"] {
+/* ── PRIMARY BUTTON (dark mode) ── */
+.dark .btn-primary,
+.dark a.btn-primary,
+.dark .dark\:bg-tertiary {
+  background-color: #2ECC71 !important;
+  border-color:     #2ECC71 !important;
+  color:            #0B0F1E !important;
+  font-weight:      600 !important;
+}
+
+.dark .btn-primary:hover,
+.dark .dark\:bg-tertiary:hover {
+  background-color: #22A85A !important;
+  border-color:     #22A85A !important;
+}
+
+/* ── OUTLINE / SECONDARY BUTTONS ── */
+.btn-outline-primary,
+.btn-outline-tertiary {
+  border-color: #2ECC71 !important;
+  color:        #2ECC71 !important;
+  background:   transparent !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-tertiary:hover {
+  background-color: #2ECC71 !important;
+  color:            #0B0F1E !important;
+}
+
+/* ── TEXT COLORS ── */
+.text-tertiary,
+.dark\:text-tertiary,
+[class*="text-tertiary"] {
   color: #2ECC71 !important;
 }
 
+.dark .dark\:text-primary {
+  color: #0B0F1E !important;
+}
+
+/* ── BACKGROUND UTILITIES ── */
+[class*="bg-tertiary"] {
+  background-color: #2ECC71 !important;
+}
+
+.dark [class*="bg-primary-7"] {
+  background-color: #0B0F1E !important;
+}
+
 /* ── BORDERS ── */
-.uc-dark [class*="border-tertiary"] {
+[class*="border-tertiary"] {
   border-color: #2ECC71 !important;
 }
 
-/* ── PRICING featured card ── */
-.uc-dark [class*="pricing"].active,
-.uc-dark [class*="price-item"].active,
-.uc-dark [class*="pricing-active"] {
+/* ── LINKS ── */
+a.text-tertiary:hover,
+a[class*="text-tertiary"]:hover {
+  color: #22A85A !important;
+}
+
+/* ── NAV demo button ── */
+.dark .dark\:bg-tertiary.rounded-pill,
+a.dark\:bg-tertiary.rounded-pill {
+  background-color: #2ECC71 !important;
+  color:            #0B0F1E !important;
+  border-color:     #2ECC71 !important;
+}
+
+/* ── HERO background light mode ── */
+html:not(.dark) .hero-seven-scene,
+html:not(.dark) .hero-seven-scene
+  .position-absolute:first-child {
+  background-color: #F8FAFC !important;
+}
+
+/* ── CARDS light mode ── */
+html:not(.dark) .card,
+html:not(.dark) .feature-box,
+html:not(.dark) .pricing-box,
+html:not(.dark) .testimonial-box,
+html:not(.dark) .faq-item {
+  background-color: #FFFFFF !important;
+  border-color:     #E2E8F0 !important;
+}
+
+/* ── HEADINGS light mode ── */
+html:not(.dark) h1,
+html:not(.dark) h2,
+html:not(.dark) h3,
+html:not(.dark) h4,
+html:not(.dark) h5 {
+  color: #0B0F1E !important;
+}
+
+html:not(.dark) p,
+html:not(.dark) li,
+html:not(.dark) span:not([class*="text-tertiary"]) {
+  color: #4A5568;
+}
+
+/* ── FOOTER ── */
+.dark footer,
+.dark .footer-section,
+.dark .footer-area {
+  background-color: #0B0F1E !important;
+}
+
+/* ── PRICING featured card border ── */
+.dark .pricing-active,
+.dark .price-item.active,
+[class*="pricing"].active {
   border-color: #2ECC71 !important;
 }
 
 /* ── FAQ active ── */
-.uc-dark .accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed) {
   color: #2ECC71 !important;
 }
 
-/* ══════════════════════════════════════
-   LIGHT MODE
-══════════════════════════════════════ */
-
-html:not(.uc-dark) body {
-  background-color: #F8FAFC !important;
-}
-
-/* ── ALL BUTTONS — light mode ── */
-html:not(.uc-dark) .btn-primary,
-html:not(.uc-dark) a.btn-primary,
-html:not(.uc-dark) button.btn-primary {
-  background-color: #2ECC71 !important;
-  border-color:     #2ECC71 !important;
-  color:            #0B0F1E !important;
-  font-weight:      600 !important;
-}
-html:not(.uc-dark) .btn-primary:hover,
-html:not(.uc-dark) a.btn-primary:hover {
-  background-color: #22A85A !important;
-  border-color:     #22A85A !important;
-  color:            #0B0F1E !important;
-}
-
-/* ── TEXT — light mode ── */
-html:not(.uc-dark) .text-tertiary,
-html:not(.uc-dark) [class*="text-tertiary"] {
-  color: #2ECC71 !important;
-}
-
-/* ── LOGO switching ── */
-.uc-dark .dq-logo-dark        { display: inline-block !important; }
-.uc-dark .dq-logo-light       { display: none !important; }
-html:not(.uc-dark) .dq-logo-dark  { display: none !important; }
-html:not(.uc-dark) .dq-logo-light { display: inline-block !important; }
+/* ── Logo dark/light switching ── */
+.dark  .dq-logo-dark  { display: inline-block !important; }
+.dark  .dq-logo-light { display: none !important; }
+html:not(.dark) .dq-logo-dark  { display: none !important; }
+html:not(.dark) .dq-logo-light { display: inline-block !important; }
