@@ -199,3 +199,50 @@ html:not(.dark) span:not([class*="text-tertiary"]) {
 .dark  .dq-logo-light { display: none !important; }
 html:not(.dark) .dq-logo-dark  { display: none !important; }
 html:not(.dark) .dq-logo-light { display: inline-block !important; }
+
+/* ── Announcement banner — dark mode ── */
+.uc-dark .uc-banner-top {
+  background: #1A2456 !important;
+  background-image: none !important;
+}
+.uc-dark .uc-banner-top * {
+  color: #FFFFFF !important;
+}
+.uc-dark .uc-banner-top .text-tertiary,
+.uc-dark .uc-banner-top .uc-link {
+  color: #2ECC71 !important;
+}
+
+/* ── CTA section button — dark mode ── */
+.uc-dark .btn-tertiary,
+.uc-dark a.btn-tertiary,
+.uc-dark button.btn-tertiary {
+  background-color: #2ECC71 !important;
+  border-color:     #2ECC71 !important;
+  color:            #0B0F1E !important;
+  font-weight:      600 !important;
+}
+.uc-dark .btn-tertiary:hover,
+.uc-dark a.btn-tertiary:hover {
+  background-color: #22A85A !important;
+  border-color:     #22A85A !important;
+  color:            #0B0F1E !important;
+}
+
+/* ── Footer — dark mode ── */
+.uc-dark .uc-footer,
+.uc-dark #uc-footer {
+  background-color: #111827 !important;
+  border-top: 1px solid #1E2640 !important;
+}
+
+/* ── Remove black gap between CTA
+   section and footer ── */
+.uc-dark #uc_cta {
+  margin-bottom: 0 !important;
+}
+.uc-dark .uc-footer,
+.uc-dark #uc-footer {
+  margin-top: 0 !important;
+  padding-top: 60px !important;
+}
