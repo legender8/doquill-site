@@ -174,7 +174,7 @@ html:not(.uc-dark) .hero-seven-scene a.btn:hover {
 }
 
 /* ── Animated word highlight — light mode ── */
-html:not(.uc-dark) .hero-seven-scene [class*="bg-tertiary"] {
-  background-color: rgba(46, 204, 113, 0.15) !important;
-  color: #1A2456 !important;
+html:not(.uc-dark) .hero-seven-scene .bg-primary {
+  background-color: #1A2456 !important;
+  color: #2ECC71 !important;
 }
