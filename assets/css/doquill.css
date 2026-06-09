@@ -158,3 +158,23 @@ html:not(.uc-dark) .hero-seven-scene {
 html:not(.uc-dark) .hero-seven-scene .bg-tertiary-300 {
   background-color: #EBF8F2 !important;
 }
+
+/* ── Hero CTA button — light mode ── */
+html:not(.uc-dark) .hero-seven-scene .btn,
+html:not(.uc-dark) .hero-seven-scene a.btn {
+  background-color: #2ECC71 !important;
+  border-color:     #2ECC71 !important;
+  color:            #0B0F1E !important;
+  font-weight:      600 !important;
+}
+html:not(.uc-dark) .hero-seven-scene .btn:hover,
+html:not(.uc-dark) .hero-seven-scene a.btn:hover {
+  background-color: #22A85A !important;
+  border-color:     #22A85A !important;
+}
+
+/* ── Animated word highlight — light mode ── */
+html:not(.uc-dark) .hero-seven-scene [class*="bg-tertiary"] {
+  background-color: rgba(46, 204, 113, 0.15) !important;
+  color: #1A2456 !important;
+}
