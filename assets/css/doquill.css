@@ -106,11 +106,6 @@
   color: #2ECC71 !important;
 }
 
-/* ── BACKGROUND UTILITIES — dark mode ── */
-.uc-dark [class*="bg-tertiary"] {
-  background-color: #2ECC71 !important;
-}
-
 /* ── BORDERS ── */
 .uc-dark [class*="border-tertiary"] {
   border-color: #2ECC71 !important;
@@ -156,10 +151,6 @@ html:not(.uc-dark) a.btn-primary:hover {
 html:not(.uc-dark) .text-tertiary,
 html:not(.uc-dark) [class*="text-tertiary"] {
   color: #2ECC71 !important;
-}
-
-html:not(.uc-dark) [class*="bg-tertiary"] {
-  background-color: #2ECC71 !important;
 }
 
 /* ── LOGO switching ── */
