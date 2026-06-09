@@ -38,10 +38,6 @@
   background-color: #0B0F1E !important;
 }
 
-html:not(.dark) body {
-  background-color: #F8FAFC !important;
-}
-
 /* ── Section backgrounds ── */
 .dark section,
 .dark .section,
