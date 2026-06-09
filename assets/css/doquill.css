@@ -194,3 +194,42 @@ html:not(.uc-dark) .hero-seven-scene .bg-primary {
   background-color: #1A2456 !important;
   color: #2ECC71 !important;
 }
+
+/* ── Pricing page tab content ── */
+
+/* Light mode text in pricing cards */
+html:not(.uc-dark) .pricing-tabs .panel,
+html:not(.uc-dark) .pricing-tabs h2,
+html:not(.uc-dark) .pricing-tabs h3,
+html:not(.uc-dark) .pricing-tabs h4,
+html:not(.uc-dark) .pricing-tabs h5 {
+  color: #0B0F1E !important;
+}
+
+html:not(.uc-dark) .pricing-tabs p,
+html:not(.uc-dark) .pricing-tabs li,
+html:not(.uc-dark) .pricing-tabs span.text-muted {
+  color: #4A5568 !important;
+}
+
+html:not(.uc-dark) .pricing-tabs .border {
+  border-color: #E2E8F0 !important;
+}
+
+/* Dark mode text in pricing cards */
+.uc-dark .pricing-tabs h2,
+.uc-dark .pricing-tabs h3,
+.uc-dark .pricing-tabs h4,
+.uc-dark .pricing-tabs h5 {
+  color: #FFFFFF !important;
+}
+
+.uc-dark .pricing-tabs p,
+.uc-dark .pricing-tabs li,
+.uc-dark .pricing-tabs span.text-muted {
+  color: #B0B7CC !important;
+}
+
+.uc-dark .pricing-tabs .border {
+  border-color: #1E2640 !important;
+}
