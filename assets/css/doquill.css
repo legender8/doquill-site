@@ -153,3 +153,8 @@ html:not(.uc-dark) .hero-seven-scene {
     rgba(46, 204, 113, 0.04) 100%
   ) !important;
 }
+
+/* ── Hero background — light mode ── */
+html:not(.uc-dark) .hero-seven-scene .bg-tertiary-300 {
+  background-color: #EBF8F2 !important;
+}
