@@ -126,3 +126,30 @@ a[class*="text-tertiary"]:hover {
   margin-top: 0 !important;
   padding-top: 60px !important;
 }
+
+/* ── Footer gradient — light mode ── */
+html:not(.uc-dark) .footer-outer {
+  background: linear-gradient(
+    to top,
+    rgba(46, 204, 113, 0.06) 0%,
+    #ffffff 100%
+  ) !important;
+}
+
+/* ── Footer gradient — dark mode ── */
+.uc-dark .footer-outer {
+  background: linear-gradient(
+    to top,
+    rgba(11, 15, 30, 0.95) 0%,
+    #111827 100%
+  ) !important;
+}
+
+/* ── Hero background — light mode ── */
+html:not(.uc-dark) .hero-seven-scene {
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    rgba(46, 204, 113, 0.04) 100%
+  ) !important;
+}
