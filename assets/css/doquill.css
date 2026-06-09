@@ -210,6 +210,8 @@ html:not(.uc-dark) .pricing-tabs p,
 html:not(.uc-dark) .pricing-tabs li,
 html:not(.uc-dark) .pricing-tabs span.text-muted {
   color: #4A5568 !important;
+  font-size: 0.925rem !important;
+  font-weight: 500 !important;
 }
 
 html:not(.uc-dark) .pricing-tabs .border {
@@ -228,6 +230,8 @@ html:not(.uc-dark) .pricing-tabs .border {
 .uc-dark .pricing-tabs li,
 .uc-dark .pricing-tabs span.text-muted {
   color: #B0B7CC !important;
+  font-size: 0.925rem !important;
+  font-weight: 500 !important;
 }
 
 .uc-dark .pricing-tabs .border {
