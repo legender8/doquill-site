@@ -20,38 +20,7 @@
   --color-primary-700:    #0B0F1E;
 }
 
-/* ── Dark mode tokens ── */
-.dark {
-  --color-tertiary:       #2ECC71;
-  --color-tertiary-rgb:   46, 204, 113;
-  --bs-tertiary-rgb:      46, 204, 113;
-  --color-tertiary-500:   #2ECC71;
-  --color-tertiary-600:   #22A85A;
-  --color-tertiary-300:   #EAFAF1;
-  --color-primary:        #1A2456;
-  --color-primary-700:    #0B0F1E;
-}
-
-/* ── Page backgrounds ── */
-.dark body,
-.dark {
-  background-color: #0B0F1E !important;
-}
-
-/* ── Section backgrounds ── */
-.dark section,
-.dark .section,
-.dark .bg-white,
-.dark .bg-light {
-  background-color: #0B0F1E !important;
-}
-
-html:not(.dark) section,
-html:not(.dark) .section {
-  background-color: #F8FAFC !important;
-}
-
-/* ── PRIMARY BUTTON (light mode) ── */
+/* ── PRIMARY BUTTON ── */
 .btn-primary,
 a.btn-primary,
 button.btn-primary,
@@ -68,22 +37,6 @@ button.btn-primary:hover {
   background-color: #22A85A !important;
   border-color:     #22A85A !important;
   color:            #0B0F1E !important;
-}
-
-/* ── PRIMARY BUTTON (dark mode) ── */
-.dark .btn-primary,
-.dark a.btn-primary,
-.dark .dark\:bg-tertiary {
-  background-color: #2ECC71 !important;
-  border-color:     #2ECC71 !important;
-  color:            #0B0F1E !important;
-  font-weight:      600 !important;
-}
-
-.dark .btn-primary:hover,
-.dark .dark\:bg-tertiary:hover {
-  background-color: #22A85A !important;
-  border-color:     #22A85A !important;
 }
 
 /* ── OUTLINE / SECONDARY BUTTONS ── */
@@ -107,17 +60,9 @@ button.btn-primary:hover {
   color: #2ECC71 !important;
 }
 
-.dark .dark\:text-primary {
-  color: #0B0F1E !important;
-}
-
 /* ── BACKGROUND UTILITIES ── */
 [class*="bg-tertiary"] {
   background-color: #2ECC71 !important;
-}
-
-.dark [class*="bg-primary-7"] {
-  background-color: #0B0F1E !important;
 }
 
 /* ── BORDERS ── */
@@ -131,70 +76,10 @@ a[class*="text-tertiary"]:hover {
   color: #22A85A !important;
 }
 
-/* ── NAV demo button ── */
-.dark .dark\:bg-tertiary.rounded-pill,
-a.dark\:bg-tertiary.rounded-pill {
-  background-color: #2ECC71 !important;
-  color:            #0B0F1E !important;
-  border-color:     #2ECC71 !important;
-}
-
-/* ── HERO background light mode ── */
-html:not(.dark) .hero-seven-scene,
-html:not(.dark) .hero-seven-scene
-  .position-absolute:first-child {
-  background-color: #F8FAFC !important;
-}
-
-/* ── CARDS light mode ── */
-html:not(.dark) .card,
-html:not(.dark) .feature-box,
-html:not(.dark) .pricing-box,
-html:not(.dark) .testimonial-box,
-html:not(.dark) .faq-item {
-  background-color: #FFFFFF !important;
-  border-color:     #E2E8F0 !important;
-}
-
-/* ── HEADINGS light mode ── */
-html:not(.dark) h1,
-html:not(.dark) h2,
-html:not(.dark) h3,
-html:not(.dark) h4,
-html:not(.dark) h5 {
-  color: #0B0F1E !important;
-}
-
-html:not(.dark) p,
-html:not(.dark) li,
-html:not(.dark) span:not([class*="text-tertiary"]) {
-  color: #4A5568;
-}
-
-/* ── FOOTER ── */
-.dark footer,
-.dark .footer-section,
-.dark .footer-area {
-  background-color: #0B0F1E !important;
-}
-
-/* ── PRICING featured card border ── */
-.dark .pricing-active,
-.dark .price-item.active,
-[class*="pricing"].active {
-  border-color: #2ECC71 !important;
-}
-
 /* ── FAQ active ── */
 .accordion-button:not(.collapsed) {
   color: #2ECC71 !important;
 }
-
-/* ── Logo dark/light switching ── */
-.dark  .dq-logo-dark  { display: inline-block !important; }
-.dark  .dq-logo-light { display: none !important; }
-html:not(.dark) .dq-logo-dark  { display: none !important; }
-html:not(.dark) .dq-logo-light { display: inline-block !important; }
 
 /* ── Announcement banner — dark mode ── */
 .uc-dark .uc-banner-top {
@@ -232,8 +117,7 @@ html:not(.dark) .dq-logo-light { display: inline-block !important; }
   border-top: 1px solid #1E2640 !important;
 }
 
-/* ── Remove black gap between CTA
-   section and footer ── */
+/* ── Remove black gap between CTA section and footer ── */
 .uc-dark #uc_cta {
   margin-bottom: 0 !important;
 }
