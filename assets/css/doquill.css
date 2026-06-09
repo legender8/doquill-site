@@ -1,6 +1,7 @@
 /* ═══════════════════════════════════════
    DOQUILL BRAND OVERRIDES
-   Template dark class = .uc-dark on <html>
+   All overrides go here. Never touch
+   template.css
 ═══════════════════════════════════════ */
 
 /* ── Core brand tokens ── */
@@ -20,7 +21,7 @@
 }
 
 /* ── Dark mode tokens ── */
-.uc-dark {
+.dark {
   --color-tertiary:       #2ECC71;
   --color-tertiary-rgb:   46, 204, 113;
   --bs-tertiary-rgb:      46, 204, 113;
@@ -31,69 +32,87 @@
   --color-primary-700:    #0B0F1E;
 }
 
-/* ── Page background dark ── */
-.uc-dark body {
+/* ── Page backgrounds ── */
+.dark body,
+.dark {
   background-color: #0B0F1E !important;
 }
 
-/* ── Page background light ── */
-html:not(.uc-dark) body {
+html:not(.dark) body {
   background-color: #F8FAFC !important;
 }
 
-/* ── Hero background light ── */
-html:not(.uc-dark) .hero-seven-scene {
+/* ── Section backgrounds ── */
+.dark section,
+.dark .section,
+.dark .bg-white,
+.dark .bg-light {
+  background-color: #0B0F1E !important;
+}
+
+html:not(.dark) section,
+html:not(.dark) .section {
   background-color: #F8FAFC !important;
 }
 
-/* ── PRIMARY BUTTON — light mode ── */
+/* ── PRIMARY BUTTON (light mode) ── */
 .btn-primary,
 a.btn-primary,
-button.btn-primary {
+button.btn-primary,
+.btn.btn-primary {
   background-color: #2ECC71 !important;
   border-color:     #2ECC71 !important;
   color:            #0B0F1E !important;
   font-weight:      600 !important;
 }
+
 .btn-primary:hover,
-a.btn-primary:hover {
+a.btn-primary:hover,
+button.btn-primary:hover {
   background-color: #22A85A !important;
   border-color:     #22A85A !important;
   color:            #0B0F1E !important;
 }
 
-/* ── PRIMARY BUTTON — dark mode ── */
-.uc-dark .btn-primary,
-.uc-dark a.btn-primary,
-.uc-dark .uc-dark\:bg-tertiary {
+/* ── PRIMARY BUTTON (dark mode) ── */
+.dark .btn-primary,
+.dark a.btn-primary,
+.dark .dark\:bg-tertiary {
   background-color: #2ECC71 !important;
   border-color:     #2ECC71 !important;
   color:            #0B0F1E !important;
   font-weight:      600 !important;
 }
-.uc-dark .btn-primary:hover,
-.uc-dark .uc-dark\:bg-tertiary:hover {
+
+.dark .btn-primary:hover,
+.dark .dark\:bg-tertiary:hover {
   background-color: #22A85A !important;
   border-color:     #22A85A !important;
 }
 
-/* ── OUTLINE BUTTONS ── */
+/* ── OUTLINE / SECONDARY BUTTONS ── */
 .btn-outline-primary,
 .btn-outline-tertiary {
   border-color: #2ECC71 !important;
   color:        #2ECC71 !important;
   background:   transparent !important;
 }
+
 .btn-outline-primary:hover,
 .btn-outline-tertiary:hover {
   background-color: #2ECC71 !important;
   color:            #0B0F1E !important;
 }
 
-/* ── TEXT ACCENT ── */
+/* ── TEXT COLORS ── */
 .text-tertiary,
+.dark\:text-tertiary,
 [class*="text-tertiary"] {
   color: #2ECC71 !important;
+}
+
+.dark .dark\:text-primary {
+  color: #0B0F1E !important;
 }
 
 /* ── BACKGROUND UTILITIES ── */
@@ -101,81 +120,72 @@ a.btn-primary:hover {
   background-color: #2ECC71 !important;
 }
 
+.dark [class*="bg-primary-7"] {
+  background-color: #0B0F1E !important;
+}
+
 /* ── BORDERS ── */
 [class*="border-tertiary"] {
   border-color: #2ECC71 !important;
 }
 
-/* ── ANNOUNCEMENT BANNER ── */
-.uc-dark .uc-topbar,
-.uc-dark [class*="topbar"] {
-  background-color: #111827 !important;
-  border-bottom: 1px solid #1E2640 !important;
+/* ── LINKS ── */
+a.text-tertiary:hover,
+a[class*="text-tertiary"]:hover {
+  color: #22A85A !important;
 }
 
-html:not(.uc-dark) .uc-topbar,
-html:not(.uc-dark) [class*="topbar"] {
-  background-color: #1A2456 !important;
+/* ── NAV demo button ── */
+.dark .dark\:bg-tertiary.rounded-pill,
+a.dark\:bg-tertiary.rounded-pill {
+  background-color: #2ECC71 !important;
+  color:            #0B0F1E !important;
+  border-color:     #2ECC71 !important;
 }
 
-html:not(.uc-dark) .uc-topbar *,
-html:not(.uc-dark) [class*="topbar"] * {
-  color: #FFFFFF !important;
+/* ── HERO background light mode ── */
+html:not(.dark) .hero-seven-scene,
+html:not(.dark) .hero-seven-scene
+  .position-absolute:first-child {
+  background-color: #F8FAFC !important;
 }
 
-/* ── NAVBAR dark ── */
-.uc-dark .uc-navbar,
-.uc-dark [class*="navbar"] {
-  background-color: #0B0F1E !important;
-  border-bottom: 1px solid #1E2640 !important;
-}
-
-/* ── NAVBAR light ── */
-html:not(.uc-dark) .uc-navbar,
-html:not(.uc-dark) [class*="navbar"] {
+/* ── CARDS light mode ── */
+html:not(.dark) .card,
+html:not(.dark) .feature-box,
+html:not(.dark) .pricing-box,
+html:not(.dark) .testimonial-box,
+html:not(.dark) .faq-item {
   background-color: #FFFFFF !important;
-  border-bottom: 1px solid #E2E8F0 !important;
+  border-color:     #E2E8F0 !important;
 }
 
-/* ── FOOTER ── */
-.uc-dark footer,
-.uc-dark [class*="footer"] {
-  background-color: #0B0F1E !important;
-}
-
-html:not(.uc-dark) footer,
-html:not(.uc-dark) [class*="footer"] {
-  background-color: #111827 !important;
-}
-
-html:not(.uc-dark) footer *,
-html:not(.uc-dark) [class*="footer"] * {
-  color: #B0B7CC !important;
-}
-
-/* ── LIGHT MODE text colors ── */
-html:not(.uc-dark) h1,
-html:not(.uc-dark) h2,
-html:not(.uc-dark) h3,
-html:not(.uc-dark) h4,
-html:not(.uc-dark) h5 {
+/* ── HEADINGS light mode ── */
+html:not(.dark) h1,
+html:not(.dark) h2,
+html:not(.dark) h3,
+html:not(.dark) h4,
+html:not(.dark) h5 {
   color: #0B0F1E !important;
 }
 
-html:not(.uc-dark) p,
-html:not(.uc-dark) li {
-  color: #4A5568 !important;
+html:not(.dark) p,
+html:not(.dark) li,
+html:not(.dark) span:not([class*="text-tertiary"]) {
+  color: #4A5568;
 }
 
-/* ── LOGO switching ── */
-.uc-dark  .dq-logo-dark  { display: inline-block !important; }
-.uc-dark  .dq-logo-light { display: none !important; }
-html:not(.uc-dark) .dq-logo-dark  { display: none !important; }
-html:not(.uc-dark) .dq-logo-light { display: inline-block !important; }
+/* ── FOOTER ── */
+.dark footer,
+.dark .footer-section,
+.dark .footer-area {
+  background-color: #0B0F1E !important;
+}
 
-/* ── PRICING featured card ── */
-.uc-dark .pricing-active,
-.uc-dark [class*="pricing"].active {
+/* ── PRICING featured card border ── */
+.dark .pricing-active,
+.dark .price-item.active,
+[class*="pricing"].active {
   border-color: #2ECC71 !important;
 }
 
@@ -183,3 +193,9 @@ html:not(.uc-dark) .dq-logo-light { display: inline-block !important; }
 .accordion-button:not(.collapsed) {
   color: #2ECC71 !important;
 }
+
+/* ── Logo dark/light switching ── */
+.dark  .dq-logo-dark  { display: inline-block !important; }
+.dark  .dq-logo-light { display: none !important; }
+html:not(.dark) .dq-logo-dark  { display: none !important; }
+html:not(.dark) .dq-logo-light { display: inline-block !important; }
