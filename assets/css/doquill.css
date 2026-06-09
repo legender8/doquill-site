@@ -1,398 +1,201 @@
+/* ═══════════════════════════════════════
+   DOQUILL BRAND OVERRIDES
+   All overrides go here. Never touch
+   template.css
+═══════════════════════════════════════ */
+
+/* ── Core brand tokens ── */
 :root {
-  --color-tertiary: #2ECC71 !important;
-  --color-tertiary-: #2ECC71 !important;
-  --bs-tertiary-rgb: 46,204,113 !important;
-  --bs-tertiary--rgb: 46,204,113 !important;
-  --color-tertiary-10: #f0fff6 !important;
-  --color-tertiary-25: #e8fdf0 !important;
-  --color-tertiary-50: #d5fae3 !important;
-  --color-tertiary-100: #aff5ca !important;
-  --color-tertiary-200: #7deed0 !important;
-  --color-tertiary-300: #ffffff !important;
-  --color-tertiary-400: #3dd47a !important;
-  --color-tertiary-500: #2ECC71 !important;
-  --color-tertiary-600: #22A85A !important;
-  --color-tertiary-700: #1A8A46 !important;
-  --color-tertiary-800: #115c2e !important;
-  --color-tertiary-900: #092e17 !important;
-  --color-tertiary-950: #04170b !important;
-  --color-primary: #1A2456 !important;
-  --bs-primary-rgb: 26,36,86 !important;
-  --color-primary-500: #1A2456 !important;
-  --color-primary-600: #151d47 !important;
-  --color-primary-700: #0f1538 !important;
-  --color-primary-800: #0a0e29 !important;
-  --bs-tertiary-300-rgb: 255,255,255 !important;
+  --color-tertiary:       #2ECC71;
+  --color-tertiary-rgb:   46, 204, 113;
+  --bs-tertiary-rgb:      46, 204, 113;
+  --color-tertiary-500:   #2ECC71;
+  --color-tertiary-600:   #22A85A;
+  --color-tertiary-300:   #EAFAF1;
+  --color-primary:        #1A2456;
+  --color-primary-rgb:    26, 36, 86;
+  --bs-primary-rgb:       26, 36, 86;
+  --color-primary-500:    #1A2456;
+  --color-primary-600:    #151d47;
+  --color-primary-700:    #0B0F1E;
 }
 
+/* ── Dark mode tokens ── */
 .dark {
-  --color-tertiary: #2ECC71 !important;
-  --color-tertiary-: #2ECC71 !important;
-  --bs-tertiary-rgb: 46,204,113 !important;
-  --bs-tertiary--rgb: 46,204,113 !important;
-  --color-tertiary-300: #EAFAF1 !important;
-  --color-tertiary-500: #2ECC71 !important;
-  --color-primary: #1A2456 !important;
-  --color-primary-700: #0B0F1E !important;
+  --color-tertiary:       #2ECC71;
+  --color-tertiary-rgb:   46, 204, 113;
+  --bs-tertiary-rgb:      46, 204, 113;
+  --color-tertiary-500:   #2ECC71;
+  --color-tertiary-600:   #22A85A;
+  --color-tertiary-300:   #EAFAF1;
+  --color-primary:        #1A2456;
+  --color-primary-700:    #0B0F1E;
 }
 
-/* Force white background on light mode hero */
-.hero-seven-scene .position-absolute:first-child {
-  background-color: #ffffff !important;
+/* ── Page backgrounds ── */
+.dark body,
+.dark {
+  background-color: #0B0F1E !important;
 }
 
-/* Force gradient overlay to white in light mode */
-.hero-seven-scene .bg-gradient-to-b.to-white {
-  --tw-gradient-to: #ffffff !important;
+html:not(.dark) body {
+  background-color: #F8FAFC !important;
 }
 
-/* Primary button — override Bootstrap token vars + direct fallback */
-.btn-primary {
-  --bs-btn-color: #0B0F1E;
-  --bs-btn-bg: #2ECC71;
-  --bs-btn-border-color: #2ECC71;
-  --bs-btn-hover-color: #0B0F1E;
-  --bs-btn-hover-bg: #22A85A;
-  --bs-btn-hover-border-color: #22A85A;
-  --bs-btn-focus-shadow-rgb: 46,204,113;
-  --bs-btn-active-color: #0B0F1E;
-  --bs-btn-active-bg: #1A8A46;
-  --bs-btn-active-border-color: #1A8A46;
-  --bs-btn-disabled-color: #0B0F1E;
-  --bs-btn-disabled-bg: #2ECC71;
-  --bs-btn-disabled-border-color: #2ECC71;
+/* ── Section backgrounds ── */
+.dark section,
+.dark .section,
+.dark .bg-white,
+.dark .bg-light {
+  background-color: #0B0F1E !important;
+}
+
+html:not(.dark) section,
+html:not(.dark) .section {
+  background-color: #F8FAFC !important;
+}
+
+/* ── PRIMARY BUTTON (light mode) ── */
+.btn-primary,
+a.btn-primary,
+button.btn-primary,
+.btn.btn-primary {
   background-color: #2ECC71 !important;
-  border-color: #2ECC71 !important;
-  color: #0B0F1E !important;
+  border-color:     #2ECC71 !important;
+  color:            #0B0F1E !important;
+  font-weight:      600 !important;
 }
 
 .btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
+a.btn-primary:hover,
+button.btn-primary:hover {
   background-color: #22A85A !important;
-  border-color: #22A85A !important;
-  color: #0B0F1E !important;
+  border-color:     #22A85A !important;
+  color:            #0B0F1E !important;
 }
 
-/* All tertiary backgrounds → green */
-[class*="bg-tertiary"]:not([class*="bg-tertiary-3"]):not([class*="bg-tertiary-1"]):not([class*="bg-tertiary-2"]) {
+/* ── PRIMARY BUTTON (dark mode) ── */
+.dark .btn-primary,
+.dark a.btn-primary,
+.dark .dark\:bg-tertiary {
   background-color: #2ECC71 !important;
-  color: #0B0F1E !important;
+  border-color:     #2ECC71 !important;
+  color:            #0B0F1E !important;
+  font-weight:      600 !important;
 }
 
-/* All tertiary text → green */
+.dark .btn-primary:hover,
+.dark .dark\:bg-tertiary:hover {
+  background-color: #22A85A !important;
+  border-color:     #22A85A !important;
+}
+
+/* ── OUTLINE / SECONDARY BUTTONS ── */
+.btn-outline-primary,
+.btn-outline-tertiary {
+  border-color: #2ECC71 !important;
+  color:        #2ECC71 !important;
+  background:   transparent !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-tertiary:hover {
+  background-color: #2ECC71 !important;
+  color:            #0B0F1E !important;
+}
+
+/* ── TEXT COLORS ── */
+.text-tertiary,
+.dark\:text-tertiary,
 [class*="text-tertiary"] {
   color: #2ECC71 !important;
 }
 
-/* All primary text → navy */
-[class*="text-primary"]:not([class*="btn"]) {
-  color: #1A2456 !important;
-}
-
-.dark [class*="text-primary"]:not([class*="btn"]) {
-  color: #2ECC71 !important;
-}
-
-/* Syne 800 — logo only */
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
-
-/* ============================================================
-   DoQuill — Brand Stylesheet
-   All DoQuill overrides live here. Do NOT modify template CSS.
-   ============================================================ */
-
-/* ============================================================
-   CSS Custom Properties — Dark Mode (default)
-   ============================================================ */
-:root {
-  /* Backgrounds */
-  --bg-primary:   #0B0F1E;
-  --bg-card:      #111827;
-  --border:       #1E2640;
-
-  /* Brand */
-  --brand-navy:   #1A2456;
-  --brand-green:  #2ECC71;
-  --green-hover:  #22A85A;
-  --green-glow:   rgba(46, 204, 113, 0.12);
-
-  /* Text */
-  --text-primary:   #FFFFFF;
-  --text-secondary: #B0B7CC;
-  --text-muted:     #6B7399;
-
-  /* Semantic */
-  --amber:   #F5A623;
-  --error:   #EF4444;
-  --success: #10B981;
-
-  /* Typography */
-  --font-headline: 'Syne', sans-serif;
-  --font-body:     'DM Sans', sans-serif;
-}
-
-/* ============================================================
-   CSS Custom Properties — Light Mode
-   ============================================================ */
-[data-theme="light"] {
-  --bg-primary:   #F8FAFC;
-  --bg-card:      #FFFFFF;
-  --border:       #E2E8F0;
-
-  --text-primary:   #0B0F1E;
-  --text-secondary: #4A5568;
-  --text-muted:     #94A3B8;
-
-  /* Brand colours remain consistent across modes */
-  --brand-navy:  #1A2456;
-  --brand-green: #2ECC71;
-  --green-hover: #22A85A;
-  --green-glow:  rgba(46, 204, 113, 0.12);
-
-  --amber:   #F5A623;
-  --error:   #EF4444;
-  --success: #10B981;
-}
-
-/* ============================================================
-   Base — Typography
-   ============================================================ */
-body {
-  font-family: var(--font-body);
-  font-weight: 400;
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-headline);
-  color: var(--text-primary);
-}
-
-/* ============================================================
-   Base — Global Resets
-   ============================================================ */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-a {
-  color: var(--brand-green);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: var(--green-hover);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* ============================================================
-   Navigation — DoQuill
-   ============================================================ */
-
-/* Navbar — sticky state: DoQuill dark background replaces template's default white */
-.dq-navbar.uc-navbar-sticky {
-  background-color: rgba(11, 15, 30, 0.95) !important;
-  border-bottom: 1px solid var(--border);
-}
-
-/* ---- Logo ---- */
-.dq-logo,
-a.dq-logo {
-  font-family: 'Syne', sans-serif !important;
-  font-size: 24px !important;
-  font-weight: 800 !important;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  display: inline-flex;
-  align-items: center;
-}
-
-.dq-logo-do {
-  color: var(--brand-navy) !important;
-}
-
-.dq-logo-quill {
-  color: var(--brand-green) !important;
-}
-
-/* ---- Nav links ---- */
-.dq-navbar .uc-navbar-nav > li > a {
-  color: var(--text-secondary);
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.dq-navbar .uc-navbar-nav > li > a:hover {
-  color: var(--text-primary);
-}
-
-/* ---- Dropdowns ---- */
-.dq-dropdown {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 8px;
-  min-width: 210px;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
-}
-
-.dq-dropdown-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.dq-dropdown-nav li a {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 9px 12px;
-  color: var(--text-secondary);
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  font-weight: 400;
-  border-radius: 8px;
-  transition: background-color 0.15s ease, color 0.15s ease;
-  text-decoration: none;
-}
-
-.dq-dropdown-nav li a:hover {
-  background-color: var(--green-glow);
-  color: var(--brand-green);
-}
-
-.dq-dropdown-cta a {
-  color: var(--brand-green) !important;
-  font-weight: 500 !important;
-  margin-top: 4px;
-  border-top: 1px solid var(--border);
-  border-radius: 0 0 8px 8px !important;
-}
-
-.dq-dropdown-cta a:hover {
-  background-color: var(--green-glow) !important;
-}
-
-/* ---- Right-side actions ---- */
-.dq-nav-login {
-  color: var(--text-secondary);
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: color 0.2s ease;
-  text-decoration: none;
-}
-
-.dq-nav-login:hover {
-  color: var(--text-primary);
-}
-
-.dq-btn-demo {
-  align-items: center;
-  padding: 10px 22px;
-  background-color: var(--brand-green);
+.dark .dark\:text-primary {
   color: #0B0F1E !important;
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  font-weight: 600;
-  border-radius: 50px;
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
-  white-space: nowrap;
-  text-decoration: none;
-  line-height: 1;
 }
 
-.dq-btn-demo:hover {
-  background-color: var(--green-hover);
-  color: #0B0F1E !important;
-  box-shadow: 0 4px 20px var(--green-glow);
-}
-
-/* Mobile demo link */
-.dq-mobile-demo-link {
-  color: var(--brand-green) !important;
-  font-weight: 600;
-}
-
-/* ── Hero background light mode ── */
-.hero-seven-scene >
-.position-absolute.bg-tertiary-300 {
-  background-color: #EAFAF1 !important;
-}
-
-/* ── Primary buttons — all states ── */
-.btn.btn-primary,
-a.btn.btn-primary,
-button.btn-primary {
+/* ── BACKGROUND UTILITIES ── */
+[class*="bg-tertiary"] {
   background-color: #2ECC71 !important;
+}
+
+.dark [class*="bg-primary-7"] {
+  background-color: #0B0F1E !important;
+}
+
+/* ── BORDERS ── */
+[class*="border-tertiary"] {
   border-color: #2ECC71 !important;
-  color: #0B0F1E !important;
 }
 
-.btn.btn-primary:hover,
-a.btn.btn-primary:hover,
-button.btn-primary:hover {
-  background-color: #22A85A !important;
-  border-color: #22A85A !important;
+/* ── LINKS ── */
+a.text-tertiary:hover,
+a[class*="text-tertiary"]:hover {
+  color: #22A85A !important;
 }
 
-/* ── Dark mode button override ── */
-.dark .btn.btn-primary,
-.dark a.btn.btn-primary {
+/* ── NAV demo button ── */
+.dark .dark\:bg-tertiary.rounded-pill,
+a.dark\:bg-tertiary.rounded-pill {
   background-color: #2ECC71 !important;
+  color:            #0B0F1E !important;
+  border-color:     #2ECC71 !important;
+}
+
+/* ── HERO background light mode ── */
+html:not(.dark) .hero-seven-scene,
+html:not(.dark) .hero-seven-scene
+  .position-absolute:first-child {
+  background-color: #F8FAFC !important;
+}
+
+/* ── CARDS light mode ── */
+html:not(.dark) .card,
+html:not(.dark) .feature-box,
+html:not(.dark) .pricing-box,
+html:not(.dark) .testimonial-box,
+html:not(.dark) .faq-item {
+  background-color: #FFFFFF !important;
+  border-color:     #E2E8F0 !important;
+}
+
+/* ── HEADINGS light mode ── */
+html:not(.dark) h1,
+html:not(.dark) h2,
+html:not(.dark) h3,
+html:not(.dark) h4,
+html:not(.dark) h5 {
   color: #0B0F1E !important;
 }
 
-/* ── Highlighted spans in headlines ── */
-span.bg-tertiary,
-.px-1.bg-tertiary {
-  background-color: #2ECC71 !important;
-  color: #0B0F1E !important;
+html:not(.dark) p,
+html:not(.dark) li,
+html:not(.dark) span:not([class*="text-tertiary"]) {
+  color: #4A5568;
 }
 
-.dark span.bg-tertiary,
-.dark .px-1.bg-tertiary {
-  background-color: #2ECC71 !important;
-  color: #0B0F1E !important;
+/* ── FOOTER ── */
+.dark footer,
+.dark .footer-section,
+.dark .footer-area {
+  background-color: #0B0F1E !important;
 }
 
-/* ── Green text accents ── */
-.text-primary {
-  color: #2ECC71 !important;
-}
-
-.dark .dark\:text-tertiary {
-  color: #2ECC71 !important;
-}
-
-/* ── Links ── */
-.uc-link {
-  color: #2ECC71 !important;
-}
-
-/* ── Nav Book a demo button ── */
-.dq-btn-demo {
-  background-color: #2ECC71 !important;
-  color: #0B0F1E !important;
+/* ── PRICING featured card border ── */
+.dark .pricing-active,
+.dark .price-item.active,
+[class*="pricing"].active {
   border-color: #2ECC71 !important;
-  border-radius: 50px !important;
-  padding: 8px 20px !important;
-  font-weight: 600 !important;
-  font-size: 14px !important;
 }
 
-.dq-btn-demo:hover {
-  background-color: #22A85A !important;
+/* ── FAQ active ── */
+.accordion-button:not(.collapsed) {
+  color: #2ECC71 !important;
 }
+
+/* ── Logo dark/light switching ── */
+.dark  .dq-logo-dark  { display: inline-block !important; }
+.dark  .dq-logo-light { display: none !important; }
+html:not(.dark) .dq-logo-dark  { display: none !important; }
+html:not(.dark) .dq-logo-light { display: inline-block !important; }
