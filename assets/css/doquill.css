@@ -266,3 +266,29 @@ html:not(.uc-dark) .pricing-tabs .border {
   object-position: center !important;
   background-color: transparent !important;
 }
+
+/* ── SVG icon visibility fix
+   dark and light mode ── */
+
+/* Icon container backgrounds */
+.uc-dark .about_values .cstack,
+.uc-dark .helpful-links .cstack,
+.uc-dark [id*="helpful"] .cstack {
+  background: rgba(46,204,113,0.15) !important;
+  border-radius: 12px !important;
+  padding: 12px !important;
+}
+
+html:not(.uc-dark) .about_values .cstack,
+html:not(.uc-dark) .helpful-links .cstack,
+html:not(.uc-dark) [id*="helpful"] .cstack {
+  background: rgba(26,36,86,0.08) !important;
+  border-radius: 12px !important;
+  padding: 12px !important;
+}
+
+/* Make SVG strokes visible on dark */
+.uc-dark .about_values svg,
+.uc-dark [id*="helpful"] svg {
+  filter: drop-shadow(0 0 6px rgba(46,204,113,0.4)) !important;
+}
