@@ -1033,8 +1033,7 @@
                             <p class="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">Book a demo, ask a question, or tell us about your operation. We respond within one business day.</p>
                         </div>
                         <div class="panel max-w-750px mx-auto">
-                            <form class="vstack gap-2 p-3 sm:p-6 xl:p-8 rounded-2 border bg-white dark:bg-gray-900 border-secondary dark:border-gray-300 dark:border-opacity-20" action="https://formspree.io/f/xykadepg" method="POST" enctype="application/x-www-form-urlencoded">
-                                <input type="hidden" name="_next" value="https://legender8.github.io/doquill-site/main/page-contact-2.html?sent=true">
+                            <form id="dq-contact-form" class="vstack gap-2 p-3 sm:p-6 xl:p-8 rounded-2 border bg-white dark:bg-gray-900 border-secondary dark:border-gray-300 dark:border-opacity-20">
                                 <p class="fs-6 text-dark dark:text-white text-opacity-70 mb-2">Send us a message</p>
                                 <div class="row child-cols-12 md:child-cols-6 g-2">
                                     <div>
@@ -1488,6 +1487,37 @@ Tawk_API.onLoad = function(){
     }
   }
 })();
+</script>
+<script>
+document.getElementById('dq-contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  var form = this;
+  var btn = form.querySelector('[type="submit"]');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  var data = new FormData(form);
+  fetch('https://formspree.io/f/xykadepg', {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(function(res){
+    if(res.ok){
+      form.style.display = 'none';
+      var msg = document.getElementById('thank-you-message');
+      if(msg) msg.style.display = 'block';
+    } else {
+      btn.disabled = false;
+      btn.textContent = 'Send message';
+      alert('Something went wrong. Please try again.');
+    }
+  })
+  .catch(function(){
+    btn.disabled = false;
+    btn.textContent = 'Send message';
+    alert('Something went wrong. Please try again.');
+  });
+});
 </script>
 </body>
 
