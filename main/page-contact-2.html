@@ -1008,6 +1008,14 @@
 
         <!-- Section start -->
         <div id="hero_header" class="hero-header section panel overflow-hidden">
+            <div id="thank-you-message" style="display:none" class="panel text-center py-6 px-4">
+  <div class="cstack w-64px h-64px rounded-circle bg-tertiary mx-auto mb-4">
+    <i class="icon-2 unicon-checkmark fw-bold text-primary"></i>
+  </div>
+  <h2 class="h3 fw-bold mb-2 dark:text-white">Message received.</h2>
+  <p class="fs-6 text-muted max-w-500px mx-auto">Thank you for reaching out. Our team will review your message and respond within one business day. Check your inbox for a confirmation.</p>
+  <a href="page-contact-2.html" class="btn btn-sm btn-primary rounded-pill fw-medium mt-4">Send another message</a>
+</div>
             <div class="position-absolute top-0 start-0 end-0 min-h-600px bg-secondary dark:bg-opacity-0 z-0"></div>
             <div class="position-absolute top-0 start-0 end-0 min-h-screen overflow-hidden d-none lg:d-block" data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 750});">
                 <div class="position-absolute top-0 start-0 rotate-45" style="top: 30% !important; left: 18% !important;">
@@ -1026,6 +1034,7 @@
                         </div>
                         <div class="panel max-w-750px mx-auto">
                             <form class="vstack gap-2 p-3 sm:p-6 xl:p-8 rounded-2 border bg-white dark:bg-gray-900 border-secondary dark:border-gray-300 dark:border-opacity-20" action="https://formspree.io/f/xykadepg" method="POST" enctype="application/x-www-form-urlencoded">
+                                <input type="hidden" name="_next" value="https://legender8.github.io/doquill-site/main/page-contact-2.html?sent=true">
                                 <p class="fs-6 text-dark dark:text-white text-opacity-70 mb-2">Send us a message</p>
                                 <div class="row child-cols-12 md:child-cols-6 g-2">
                                     <div>
@@ -1467,6 +1476,19 @@ Tawk_API.onLoad = function(){
 };
 </script>
 <!--End of Tawk.to Script-->
+<script>
+(function(){
+  if(window.location.search.indexOf('sent=true') !== -1){
+    var msg = document.getElementById('thank-you-message');
+    var hero = document.getElementById('hero_header');
+    if(msg) msg.style.display = 'block';
+    if(hero){
+      var form = hero.querySelector('form');
+      if(form) form.style.display = 'none';
+    }
+  }
+})();
+</script>
 </body>
 
 </html>
