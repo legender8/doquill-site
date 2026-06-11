@@ -1008,14 +1008,6 @@
 
         <!-- Section start -->
         <div id="hero_header" class="hero-header section panel overflow-hidden">
-            <div id="thank-you-message" style="display:none" class="panel text-center py-6 px-4">
-  <div class="cstack w-64px h-64px rounded-circle bg-tertiary mx-auto mb-4">
-    <i class="icon-2 unicon-checkmark fw-bold text-primary"></i>
-  </div>
-  <h2 class="h3 fw-bold mb-2 dark:text-white">Message received.</h2>
-  <p class="fs-6 text-muted max-w-500px mx-auto">Thank you for reaching out. Our team will review your message and respond within one business day. Check your inbox for a confirmation.</p>
-  <a href="page-contact-2.html" class="btn btn-sm btn-primary rounded-pill fw-medium mt-4">Send another message</a>
-</div>
             <div class="position-absolute top-0 start-0 end-0 min-h-600px bg-secondary dark:bg-opacity-0 z-0"></div>
             <div class="position-absolute top-0 start-0 end-0 min-h-screen overflow-hidden d-none lg:d-block" data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 750});">
                 <div class="position-absolute top-0 start-0 rotate-45" style="top: 30% !important; left: 18% !important;">
@@ -1053,6 +1045,17 @@
                 </div>
             </div>
         </div>
+        <div id="thank-you-message" style="display:none" class="panel text-center py-8 px-4">
+  <div class="cstack w-64px h-64px rounded-circle mx-auto mb-4" style="background:rgba(46,204,113,0.15)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" style="width:32px;height:32px">
+      <circle cx="16" cy="16" r="15" stroke="#2ECC71" stroke-width="2"/>
+      <polyline points="8,16 13,21 24,10" stroke="#2ECC71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <h2 class="h3 fw-bold mb-2 dark:text-white">Message received.</h2>
+  <p class="fs-6 text-muted max-w-500px mx-auto mb-4">Thank you for reaching out to DoQuill. Our team will review your message and respond within one business day. Please check your inbox for a confirmation.</p>
+  <a href="page-contact-2.html" class="btn btn-sm btn-primary rounded-pill fw-medium">Send another message</a>
+</div>
 
         <!-- Section end -->
 
@@ -1503,9 +1506,14 @@ document.getElementById('dq-contact-form').addEventListener('submit', function(e
   })
   .then(function(res){
     if(res.ok){
-      form.style.display = 'none';
+      var hero = document.getElementById('hero_header');
       var msg = document.getElementById('thank-you-message');
-      if(msg) msg.style.display = 'block';
+      if(hero) hero.style.display = 'none';
+      if(msg){
+        msg.style.display = 'block';
+        msg.style.padding = '80px 20px';
+        msg.style.textAlign = 'center';
+      }
     } else {
       btn.disabled = false;
       btn.textContent = 'Send message';
