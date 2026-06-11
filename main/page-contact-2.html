@@ -1025,18 +1025,18 @@
                             <p class="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">Book a demo, ask a question, or tell us about your operation. We respond within one business day.</p>
                         </div>
                         <div class="panel max-w-750px mx-auto">
-                            <form class="vstack gap-2 p-3 sm:p-6 xl:p-8 rounded-2 border bg-white dark:bg-gray-900 border-secondary dark:border-gray-300 dark:border-opacity-20" action="https://formspree.io/f/xykadepg" method="POST">
+                            <form class="vstack gap-2 p-3 sm:p-6 xl:p-8 rounded-2 border bg-white dark:bg-gray-900 border-secondary dark:border-gray-300 dark:border-opacity-20" action="https://formspree.io/f/xykadepg" method="POST" enctype="application/x-www-form-urlencoded">
                                 <p class="fs-6 text-dark dark:text-white text-opacity-70 mb-2">Send us a message</p>
                                 <div class="row child-cols-12 md:child-cols-6 g-2">
                                     <div>
-                                        <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" type="text" placeholder="Full name" required>
+                                        <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" type="text" name="name" placeholder="Full name" required>
                                     </div>
                                     <div>
-                                        <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" type="email" placeholder="Work email" required>
+                                        <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" type="email" name="email" placeholder="Work email" required>
                                     </div>
                                 </div>
-                                <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" type="text" placeholder="What is this about?">
-                                <textarea class="form-control min-h-150px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" placeholder="Tell us about your business and what you need" required></textarea>
+                                <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" type="text" name="subject" placeholder="What is this about?">
+                                <textarea class="form-control min-h-150px w-full bg-white dark:border-white dark:bg-opacity-0 dark:border-opacity-15 dark:text-white" name="message" placeholder="Tell us about your business and what you need" required></textarea>
                                 <button class="btn btn-primary btn-md text-white mt-2" type="submit">Send message</button>
                                 <p class="text-center">Or drop us a message via <a class="uc-link" href="mailto:contact@doquill.io">email</a>.</p>
                             </form>
