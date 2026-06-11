@@ -259,3 +259,10 @@ html:not(.uc-dark) .pricing-tabs .border {
   height: auto !important;
   display: block !important;
 }
+
+/* ── Demo page hero image fix ── */
+#hero_header .media-cover.image {
+  object-fit: contain !important;
+  object-position: center !important;
+  background-color: transparent !important;
+}
