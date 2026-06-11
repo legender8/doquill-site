@@ -267,28 +267,42 @@ html:not(.uc-dark) .pricing-tabs .border {
   background-color: transparent !important;
 }
 
-/* ── SVG icon visibility fix
-   dark and light mode ── */
-
-/* Icon container backgrounds */
-.uc-dark .about_values .cstack,
-.uc-dark .helpful-links .cstack,
-.uc-dark [id*="helpful"] .cstack {
-  background: rgba(46,204,113,0.15) !important;
-  border-radius: 12px !important;
-  padding: 12px !important;
+/* ── SVG icon containers ── */
+.uc-dark [id*="helpful"] .cstack,
+.uc-dark .about_values .cstack {
+  background: rgba(46,204,113,0.2) !important;
+  border-radius: 16px !important;
+  padding: 14px !important;
+  box-shadow: 0 0 20px rgba(46,204,113,0.15) !important;
 }
 
-html:not(.uc-dark) .about_values .cstack,
-html:not(.uc-dark) .helpful-links .cstack,
-html:not(.uc-dark) [id*="helpful"] .cstack {
-  background: rgba(26,36,86,0.08) !important;
-  border-radius: 12px !important;
-  padding: 12px !important;
+html:not(.uc-dark) [id*="helpful"] .cstack,
+html:not(.uc-dark) .about_values .cstack {
+  background: rgba(46,204,113,0.12) !important;
+  border-radius: 16px !important;
+  padding: 14px !important;
 }
 
-/* Make SVG strokes visible on dark */
-.uc-dark .about_values svg,
-.uc-dark [id*="helpful"] svg {
-  filter: drop-shadow(0 0 6px rgba(46,204,113,0.4)) !important;
+/* ── Helpful links card links
+   dark mode ── */
+.uc-dark [id*="helpful"] .uc-link,
+.uc-dark [id*="helpful"] a {
+  color: #2ECC71 !important;
+}
+
+.uc-dark [id*="helpful"] .uc-link:hover,
+.uc-dark [id*="helpful"] a:hover {
+  color: #22A85A !important;
+}
+
+/* ── Navbar dropdown contrast
+   shadow fix ── */
+.uc-dark .uc-dropbar,
+.uc-dark [class*="dropbar"] {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6) !important;
+}
+
+.uc-dark .uc-dropbar .btn,
+.uc-dark .uc-dropbar a.btn {
+  color: #0B0F1E !important;
 }
