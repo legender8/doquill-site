@@ -306,3 +306,17 @@ html:not(.uc-dark) .about_values .cstack {
 .uc-dark .uc-dropbar a.btn {
   color: #0B0F1E !important;
 }
+
+/* ── Book a demo button z-index fix ── */
+.uc-dark header .btn.btn-primary,
+.uc-dark header a.btn.btn-primary {
+  position: relative !important;
+  z-index: 1050 !important;
+}
+
+/* ── Footer social icons z-index ── */
+.uc-dark .uc-footer .social-icons a,
+.uc-dark .uc-footer li a {
+  position: relative !important;
+  z-index: 10 !important;
+}
