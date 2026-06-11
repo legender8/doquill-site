@@ -320,3 +320,20 @@ html:not(.uc-dark) .about_values .cstack {
   position: relative !important;
   z-index: 10 !important;
 }
+
+/* ── Fix contrast shadow on
+   green primary buttons ── */
+.uc-dark .btn-primary.hover\:contrast-shadow:hover,
+.uc-dark a.btn-primary:hover,
+.uc-dark header .btn-primary:hover {
+  box-shadow: 0 4px 15px rgba(46,204,113,0.4) !important;
+  filter: none !important;
+}
+
+/* ── Fix footer social icons
+   shadow on hover ── */
+.uc-dark .uc-footer .social-icons a:hover,
+.uc-dark .uc-footer li a.btn:hover {
+  box-shadow: 0 4px 12px rgba(46,204,113,0.3) !important;
+  filter: none !important;
+}
