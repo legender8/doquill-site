@@ -349,6 +349,11 @@ html:not(.uc-dark) .about_values .cstack {
 }
 
 /* Legal pages hero background */
-html:not(.uc-dark) #hero_header {
+html:not(.uc-dark) .page-header {
+  background: #F8FAFC !important;
+}
+
+html:not(.uc-dark) .page-header ~ *,
+html:not(.uc-dark) .section:has(.page-header) {
   background: #F8FAFC !important;
 }
