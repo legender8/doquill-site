@@ -337,3 +337,11 @@ html:not(.uc-dark) .about_values .cstack {
   box-shadow: 0 4px 12px rgba(46,204,113,0.3) !important;
   filter: none !important;
 }
+
+/* ── Article hero overlay
+   meta text color fix ── */
+.post-header .text-tertiary,
+.post-header [class*="text-tertiary"],
+.post-header a {
+  color: #2ECC71 !important;
+}
