@@ -357,3 +357,14 @@ html:not(.uc-dark) .page-header ~ *,
 html:not(.uc-dark) .section:has(.page-header) {
   background: #F8FAFC !important;
 }
+
+/* ── Breadcrumb bar fix ── */
+html:not(.uc-dark) .breadcrumbs {
+  background-color: #F8FAFC !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.uc-dark .breadcrumbs {
+  background-color: #111827 !important;
+  border-bottom: 1px solid #1E2640 !important;
+}
