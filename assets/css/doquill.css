@@ -340,8 +340,10 @@ html:not(.uc-dark) .about_values .cstack {
 
 /* ── Article hero overlay
    meta text color fix ── */
-.post-header .text-tertiary,
-.post-header [class*="text-tertiary"],
-.post-header a {
+.post-header a,
+.post-tags a,
+.post-footer a,
+[class*="post-tag"] a,
+.tags-list a {
   color: #2ECC71 !important;
 }
