@@ -1229,13 +1229,13 @@
                                     <h2 class="h4 md:h3 lg:h2 m-0">Get the latest from DoQuill</h2>
                                     <p class="fs-6 lg:fs-5">Operational strategy, ERP guides and AI automation insights delivered to your inbox.</p>
                                     <p class="fs-7 opacity-60 m-0">Don't worry we don't spam.</p>
-                                    <form class="row child-cols g-1 mt-1 xl:mt-2 justify-center text-center" action="https://formspree.io/f/xkoaqyww" method="POST">
+                                    <form class="row child-cols g-1 mt-1 xl:mt-2 justify-center text-center" id="dq-newsletter-form">
                                         <div>
                                             <input class="form-control h-48px xl:h-56px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white" type="email" name="email" placeholder="Your work email" required="">
                                             <input type="hidden" name="_subject" value="Blog newsletter signup">
                                         </div>
                                         <div class="col-12 sm:col-auto">
-                                            <button class="btn btn-md h-48px xl:h-56px w-100 lg:min-w-150px xl:min-w-200px btn-primary text-white">Subscribe</button>
+                                            <button class="btn btn-md h-48px xl:h-56px w-100 lg:min-w-150px xl:min-w-200px btn-primary text-white" type="submit">Subscribe</button>
                                         </div>
                                     </form>
                                 </div>
@@ -1376,6 +1376,40 @@
             setDarkMode(0);
         }
     </script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var form = document.getElementById('dq-newsletter-form');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = form.querySelector('[type="submit"]');
+    var originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Subscribing...';
+    var data = new FormData(form);
+    fetch('https://formspree.io/f/xkoaqyww', {
+      method: 'POST',
+      body: data,
+      headers: {'Accept': 'application/json'}
+    })
+    .then(function(res){ return res.json(); })
+    .then(function(data){
+      if(data.ok){
+        form.innerHTML = '<p style="color:#2ECC71;font-weight:600;text-align:center;padding:16px 0">Thank you for subscribing!</p>';
+      } else {
+        btn.disabled = false;
+        btn.textContent = originalText;
+        alert('Something went wrong. Please try again.');
+      }
+    })
+    .catch(function(){
+      btn.disabled = false;
+      btn.textContent = originalText;
+      alert('Something went wrong. Please try again.');
+    });
+  });
+});
+</script>
 </body>
 
 </html>

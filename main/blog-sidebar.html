@@ -1348,7 +1348,7 @@
                                         <h4 class="fs-7 m-0">Follow DoQuill</h4>
                                     </div>
                                     <div class="widgt-content">
-                                        <form class="vstack gap-1" action="https://formspree.io/f/xkoaqyww" method="POST">
+                                        <form class="vstack gap-1" id="dq-newsletter-form">
                                             <input class="form-control form-control-sm fs-6 fw-medium h-40px w-full rounded-pill bg-white dark:bg-gray-800 dark:bg-gray-800 dark:border-white dark:border-opacity-15 dark:border-opacity-15" type="email" name="email" placeholder="Your email" required="">
                                             <input type="hidden" name="_subject" value="Blog newsletter signup">
                                             <button class="btn btn-sm btn-primary dark:bg-tertiary dark:text-primary" type="submit">Subscribe</button>
@@ -1501,6 +1501,40 @@
             setDarkMode(0);
         }
     </script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var form = document.getElementById('dq-newsletter-form');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = form.querySelector('[type="submit"]');
+    var originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Subscribing...';
+    var data = new FormData(form);
+    fetch('https://formspree.io/f/xkoaqyww', {
+      method: 'POST',
+      body: data,
+      headers: {'Accept': 'application/json'}
+    })
+    .then(function(res){ return res.json(); })
+    .then(function(data){
+      if(data.ok){
+        form.innerHTML = '<p style="color:#2ECC71;font-weight:600;text-align:center;padding:16px 0">Thank you for subscribing!</p>';
+      } else {
+        btn.disabled = false;
+        btn.textContent = originalText;
+        alert('Something went wrong. Please try again.');
+      }
+    })
+    .catch(function(){
+      btn.disabled = false;
+      btn.textContent = originalText;
+      alert('Something went wrong. Please try again.');
+    });
+  });
+});
+</script>
 </body>
 
 </html>
