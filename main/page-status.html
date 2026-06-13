@@ -1146,10 +1146,12 @@
     <div class="vstack gap-3">
       <h2 class="h5 fw-bold dark:text-white m-0">Scheduled Maintenance</h2>
       <div class="panel p-4 rounded-2 border bg-white dark:bg-gray-900 text-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="width:32px;height:32px;margin:0 auto 12px">
-          <circle cx="12" cy="12" r="10" stroke="#2ECC71" stroke-width="2"/>
-          <polyline points="12,6 12,12 16,14" stroke="#2ECC71" stroke-width="2" stroke-linecap="round"/>
-        </svg>
+        <div style="background:rgba(46,204,113,0.12);border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="width:32px;height:32px;filter: drop-shadow(0 0 6px rgba(46,204,113,0.5))">
+            <circle cx="12" cy="12" r="10" stroke="#2ECC71" stroke-width="2"/>
+            <polyline points="12,6 12,12 16,14" stroke="#2ECC71" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
         <p class="fs-7 text-muted m-0">No scheduled maintenance at this time.</p>
       </div>
     </div>
@@ -1159,9 +1161,11 @@
       <h2 class="h5 fw-bold dark:text-white m-0">Incident History</h2>
       <p class="fs-7 text-muted m-0">Showing last 90 days.</p>
       <div class="panel p-4 rounded-2 border bg-white dark:bg-gray-900 text-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="width:32px;height:32px;margin:0 auto 12px">
-          <polyline points="4,12 9,17 20,6" stroke="#2ECC71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <div style="background:rgba(46,204,113,0.12);border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="width:32px;height:32px;filter: drop-shadow(0 0 6px rgba(46,204,113,0.5))">
+            <polyline points="4,12 9,17 20,6" stroke="#2ECC71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
         <p class="fs-7 text-muted m-0">No incidents reported in the last 90 days.</p>
       </div>
     </div>
