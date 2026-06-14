@@ -368,3 +368,212 @@ html:not(.uc-dark) .breadcrumbs {
   background-color: #111827 !important;
   border-bottom: 1px solid #1E2640 !important;
 }
+
+/* ═══════════════════════════════════════
+   API REFERENCE PAGE
+═══════════════════════════════════════ */
+
+/* ── Method badges ── */
+.api-method {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 62px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  color: #FFFFFF !important;
+  text-transform: uppercase;
+}
+.api-method.get    { background-color: #3B82F6 !important; }
+.api-method.post   { background-color: #2ECC71 !important; }
+.api-method.put    { background-color: #F5A623 !important; }
+.api-method.delete { background-color: #EF4444 !important; }
+.api-method.base   { background-color: #6B7399 !important; }
+
+/* ── Inline code ── */
+code.api-inline {
+  font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  padding: 2px 6px;
+  border-radius: 5px;
+  background-color: rgba(46, 204, 113, 0.12);
+  color: #22A85A !important;
+}
+.uc-dark code.api-inline {
+  background-color: rgba(46, 204, 113, 0.15);
+  color: #2ECC71 !important;
+}
+
+/* ── Dark code blocks ── */
+.api-codeblock {
+  background-color: #0d1117 !important;
+  border: 1px solid #1E2640;
+  border-radius: 12px;
+  padding: 18px 20px;
+  font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #E6EDF3 !important;
+  overflow-x: auto;
+}
+.api-codeblock pre {
+  margin: 0;
+  font-family: inherit;
+  white-space: pre;
+  color: #E6EDF3;
+}
+.api-codeblock .k    { color: #2ECC71 !important; }   /* keys */
+.api-codeblock .s    { color: #E6EDF3 !important; }   /* string values */
+.api-codeblock .c    { color: #6B7399 !important; }   /* comments / punctuation */
+.api-codeblock .b    { color: #F5A623 !important; }   /* booleans / numbers */
+
+/* Inline base-URL block */
+.api-codeblock-inline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+.api-codeblock-inline .api-url {
+  color: #E6EDF3 !important;
+  font-size: 0.95rem;
+}
+
+/* Code block colored headers */
+.api-codehead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px 12px 0 0;
+  font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #FFFFFF !important;
+}
+.api-codehead.ok    { background-color: #2ECC71 !important; }
+.api-codehead.warn  { background-color: #F5A623 !important; }
+.api-codehead.err   { background-color: #EF4444 !important; }
+.api-codehead + .api-codeblock {
+  border-top: 0;
+  border-radius: 0 0 12px 12px;
+}
+
+/* ── Endpoint tables ── */
+.api-table-wrap {
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.uc-dark .api-table-wrap { border-color: #1E2640; }
+
+.api-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.api-table th {
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6B7399 !important;
+  background-color: #F1F5F9;
+  border-bottom: 1px solid #E2E8F0;
+}
+.uc-dark .api-table th {
+  background-color: #0d1117;
+  color: #8A92AD !important;
+  border-bottom: 1px solid #1E2640;
+}
+.api-table td {
+  padding: 12px 16px;
+  vertical-align: middle;
+  color: #0B0F1E;
+  border-bottom: 1px solid #EEF2F7;
+}
+.uc-dark .api-table td {
+  color: #E6EDF3;
+  border-bottom: 1px solid #1A2138;
+}
+.api-table tbody tr:nth-child(even) { background-color: #F8FAFC; }
+.uc-dark .api-table tbody tr:nth-child(even) { background-color: rgba(255,255,255,0.02); }
+.api-table tbody tr:last-child td { border-bottom: 0; }
+.api-table .api-endpoint {
+  font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+  color: #1A2456;
+  white-space: nowrap;
+}
+.uc-dark .api-table .api-endpoint { color: #8FA2FF; }
+.api-table .api-auth-yes {
+  color: #22A85A !important;
+  font-weight: 600;
+}
+.api-table .api-auth-no {
+  color: #94A3B8 !important;
+  font-weight: 600;
+}
+.rtl .api-table th,
+.rtl .api-table td { text-align: right; }
+.api-table-scroll { overflow-x: auto; }
+
+/* ── Module tab bar (active = green underline + green text) ── */
+.api-tabs .uc-subnav > * > a {
+  color: #6B7399 !important;
+  border-bottom: 2px solid transparent;
+  border-radius: 0 !important;
+  padding: 8px 14px !important;
+  background: transparent !important;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.api-tabs .uc-subnav > * > a:hover {
+  color: #22A85A !important;
+}
+.api-tabs .uc-subnav > .uc-active > a {
+  color: #2ECC71 !important;
+  border-bottom-color: #2ECC71 !important;
+  background: transparent !important;
+}
+
+/* ── Endpoint cards (auth section) ── */
+.api-endpoint-card {
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+}
+.uc-dark .api-endpoint-card { border-color: #1E2640; }
+.api-endpoint-card .api-field-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94A3B8 !important;
+}
+
+/* ── Getting started steps ── */
+.api-step-num {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  background-color: #1A2456 !important;
+  color: #2ECC71 !important;
+  flex: 0 0 auto;
+}
+.uc-dark .api-step-num {
+  background-color: rgba(46, 204, 113, 0.12) !important;
+  color: #2ECC71 !important;
+}
