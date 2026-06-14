@@ -580,14 +580,27 @@ code.api-inline {
 
 /* ── API docs code blocks
    light mode fix ── */
-html:not(.uc-dark) .api-code-block,
-html:not(.uc-dark) [style*="background:#0d1117"],
-html:not(.uc-dark) [style*="background: #0d1117"] {
+html:not(.uc-dark) .api-codeblock {
   background: #0d1117 !important;
   color: #FFFFFF !important;
 }
 
-html:not(.uc-dark) [style*="background:#0d1117"] *,
-html:not(.uc-dark) [style*="background: #0d1117"] * {
+html:not(.uc-dark) .api-codeblock pre {
   color: #FFFFFF !important;
+}
+
+html:not(.uc-dark) .api-codeblock .k {
+  color: #2ECC71 !important;
+}
+
+html:not(.uc-dark) .api-codeblock .s {
+  color: #F5A623 !important;
+}
+
+html:not(.uc-dark) .api-codeblock .b {
+  color: #3B82F6 !important;
+}
+
+html:not(.uc-dark) .api-codeblock .c {
+  color: #6B7399 !important;
 }
