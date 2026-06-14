@@ -577,3 +577,17 @@ code.api-inline {
   background-color: rgba(46, 204, 113, 0.12) !important;
   color: #2ECC71 !important;
 }
+
+/* ── API docs code blocks
+   light mode fix ── */
+html:not(.uc-dark) .api-code-block,
+html:not(.uc-dark) [style*="background:#0d1117"],
+html:not(.uc-dark) [style*="background: #0d1117"] {
+  background: #0d1117 !important;
+  color: #FFFFFF !important;
+}
+
+html:not(.uc-dark) [style*="background:#0d1117"] *,
+html:not(.uc-dark) [style*="background: #0d1117"] * {
+  color: #FFFFFF !important;
+}
