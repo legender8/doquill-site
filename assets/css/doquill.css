@@ -605,3 +605,41 @@ html:not(.uc-dark) .api-codeblock .b {
 html:not(.uc-dark) .api-codeblock .c {
   color: #6B7399 !important;
 }
+
+/* ── Features page design ── */
+
+/* Hero background - light mode */
+html:not(.uc-dark) #page-features-hero,
+html:not(.uc-dark) .features-hero {
+  background: linear-gradient(135deg, #F8FAFC 0%, #EEF2FF 50%, #F0FDF4 100%) !important;
+}
+
+/* Hero background - dark mode */
+.uc-dark #page-features-hero,
+.uc-dark .features-hero {
+  background: linear-gradient(135deg, #0B0F1E 0%, #111827 50%, #0B0F1E 100%) !important;
+}
+
+/* Category filter pills - dark mode text fix */
+.uc-dark #categoryFilters button {
+  color: #FFFFFF !important;
+  border-color: #1E2640 !important;
+}
+
+.uc-dark #categoryFilters button:hover {
+  border-color: #2ECC71 !important;
+  color: #2ECC71 !important;
+}
+
+/* Module card variations */
+.module-card:nth-child(3n+1) .panel {
+  border-left: 3px solid rgba(46,204,113,0.3) !important;
+}
+
+.module-card:nth-child(3n+2) .panel {
+  border-left: 3px solid rgba(26,36,86,0.3) !important;
+}
+
+.module-card:nth-child(3n+3) .panel {
+  border-left: 3px solid rgba(245,166,35,0.3) !important;
+}
