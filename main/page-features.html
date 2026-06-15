@@ -2461,6 +2461,45 @@ function filterModules() {
         } else if ( getSchema === 'light' ) {
             setDarkMode(0);
         }
+
+        // Show only 4 cards per category
+        // with show more button
+        document.querySelectorAll('[data-section]').forEach(function(section) {
+          var cards = section.querySelectorAll('.module-card');
+          if (cards.length <= 4) return;
+
+          // Hide cards after 4
+          for (var i = 4; i < cards.length; i++) {
+            cards[i].style.display = 'none';
+            cards[i].setAttribute('data-hidden', 'true');
+          }
+
+          // Add show more button
+          var grid = section.querySelector('.row');
+          var btn = document.createElement('div');
+          btn.style.cssText = 'width:100%;text-align:center;padding-top:16px';
+          btn.innerHTML = '<button onclick="toggleMore(this)" class="btn btn-sm rounded-pill fw-medium" style="border:1px solid #2ECC71;color:#2ECC71;background:transparent;padding:8px 24px">Show all ' + cards.length + ' modules ↓</button>';
+          grid.parentNode.insertBefore(btn, grid.nextSibling);
+        });
+
+        function toggleMore(btn) {
+          var section = btn.closest('[data-section]');
+          var hidden = section.querySelectorAll('[data-hidden="true"]');
+          var isHidden = hidden[0] && hidden[0].style.display === 'none';
+
+          if (isHidden) {
+            hidden.forEach(function(card) { card.style.display = ''; });
+            btn.textContent = 'Show less ↑';
+            btn.style.color = '#6B7399';
+            btn.style.borderColor = '#6B7399';
+          } else {
+            hidden.forEach(function(card) { card.style.display = 'none'; });
+            var total = section.querySelectorAll('.module-card').length;
+            btn.textContent = 'Show all ' + total + ' modules ↓';
+            btn.style.color = '#2ECC71';
+            btn.style.borderColor = '#2ECC71';
+          }
+        }
     </script>
 </body>
 
