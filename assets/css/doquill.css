@@ -608,22 +608,36 @@ html:not(.uc-dark) .api-codeblock .c {
 
 /* ── Features page design ── */
 
-/* Hero background - light mode */
-html:not(.uc-dark) #page-features-hero,
+/* Hero - light mode */
 html:not(.uc-dark) .features-hero {
-  background: linear-gradient(135deg, #F8FAFC 0%, #EEF2FF 50%, #F0FDF4 100%) !important;
+  background: #0B0F1E !important;
 }
 
-/* Hero background - dark mode */
-.uc-dark #page-features-hero,
-.uc-dark .features-hero {
-  background: linear-gradient(135deg, #0B0F1E 0%, #111827 50%, #0B0F1E 100%) !important;
-}
-
-/* Category filter pills - dark mode text fix */
-.uc-dark #categoryFilters button {
+html:not(.uc-dark) .features-hero h1,
+html:not(.uc-dark) .features-hero p,
+html:not(.uc-dark) .features-hero .h3 {
   color: #FFFFFF !important;
+}
+
+html:not(.uc-dark) .features-hero .text-muted {
+  color: #B0B7CC !important;
+}
+
+/* Hero - dark mode */
+.uc-dark .features-hero {
+  background: #0B0F1E !important;
+}
+
+/* Category filter bar */
+html:not(.uc-dark) .section.panel.py-4.border-bottom {
+  background: #FFFFFF !important;
+}
+
+/* Category filter pills - dark mode */
+.uc-dark #categoryFilters button {
+  color: #B0B7CC !important;
   border-color: #1E2640 !important;
+  background: transparent !important;
 }
 
 .uc-dark #categoryFilters button:hover {
@@ -631,33 +645,64 @@ html:not(.uc-dark) .features-hero {
   color: #2ECC71 !important;
 }
 
-/* Module card variations */
-html:not(.uc-dark) .module-card:nth-child(3n+1) .panel {
+/* Module card - light mode variations */
+html:not(.uc-dark) .module-card:nth-child(4n+1) .panel {
   background: #F0FDF4 !important;
-  border-left: 3px solid rgba(46,204,113,0.4) !important;
+  border-top: 3px solid #2ECC71 !important;
+  border-left: none !important;
 }
 
-html:not(.uc-dark) .module-card:nth-child(3n+2) .panel {
+html:not(.uc-dark) .module-card:nth-child(4n+2) .panel {
   background: #EEF2FF !important;
-  border-left: 3px solid rgba(26,36,86,0.3) !important;
+  border-top: 3px solid #1A2456 !important;
+  border-left: none !important;
 }
 
-html:not(.uc-dark) .module-card:nth-child(3n+3) .panel {
+html:not(.uc-dark) .module-card:nth-child(4n+3) .panel {
   background: #FFFBEB !important;
-  border-left: 3px solid rgba(245,166,35,0.3) !important;
+  border-top: 3px solid #F5A623 !important;
+  border-left: none !important;
 }
 
-.uc-dark .module-card:nth-child(3n+1) .panel {
-  background: rgba(46,204,113,0.06) !important;
-  border-left: 3px solid rgba(46,204,113,0.4) !important;
+html:not(.uc-dark) .module-card:nth-child(4n+4) .panel {
+  background: #FFF1F2 !important;
+  border-top: 3px solid #EF4444 !important;
+  border-left: none !important;
 }
 
-.uc-dark .module-card:nth-child(3n+2) .panel {
-  background: rgba(26,36,86,0.4) !important;
-  border-left: 3px solid rgba(99,102,241,0.4) !important;
+/* Module card - dark mode */
+.uc-dark .module-card:nth-child(4n+1) .panel {
+  background: rgba(46,204,113,0.07) !important;
+  border-top: 3px solid #2ECC71 !important;
+  border-left: none !important;
 }
 
-.uc-dark .module-card:nth-child(3n+3) .panel {
-  background: rgba(245,166,35,0.06) !important;
-  border-left: 3px solid rgba(245,166,35,0.3) !important;
+.uc-dark .module-card:nth-child(4n+2) .panel {
+  background: rgba(26,36,86,0.5) !important;
+  border-top: 3px solid #3B5BDB !important;
+  border-left: none !important;
+}
+
+.uc-dark .module-card:nth-child(4n+3) .panel {
+  background: rgba(245,166,35,0.07) !important;
+  border-top: 3px solid #F5A623 !important;
+  border-left: none !important;
+}
+
+.uc-dark .module-card:nth-child(4n+4) .panel {
+  background: rgba(239,68,68,0.07) !important;
+  border-top: 3px solid #EF4444 !important;
+  border-left: none !important;
+}
+
+/* Section label styling */
+[data-section] > .hstack {
+  border-bottom: 2px solid #2ECC71 !important;
+  padding-bottom: 8px !important;
+  margin-bottom: 20px !important;
+}
+
+/* Show more button */
+html:not(.uc-dark) .features-hero .stat-num {
+  color: #2ECC71 !important;
 }
