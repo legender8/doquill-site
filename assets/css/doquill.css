@@ -632,14 +632,32 @@ html:not(.uc-dark) .features-hero {
 }
 
 /* Module card variations */
-.module-card:nth-child(3n+1) .panel {
-  border-left: 3px solid rgba(46,204,113,0.3) !important;
+html:not(.uc-dark) .module-card:nth-child(3n+1) .panel {
+  background: #F0FDF4 !important;
+  border-left: 3px solid rgba(46,204,113,0.4) !important;
 }
 
-.module-card:nth-child(3n+2) .panel {
+html:not(.uc-dark) .module-card:nth-child(3n+2) .panel {
+  background: #EEF2FF !important;
   border-left: 3px solid rgba(26,36,86,0.3) !important;
 }
 
-.module-card:nth-child(3n+3) .panel {
+html:not(.uc-dark) .module-card:nth-child(3n+3) .panel {
+  background: #FFFBEB !important;
+  border-left: 3px solid rgba(245,166,35,0.3) !important;
+}
+
+.uc-dark .module-card:nth-child(3n+1) .panel {
+  background: rgba(46,204,113,0.06) !important;
+  border-left: 3px solid rgba(46,204,113,0.4) !important;
+}
+
+.uc-dark .module-card:nth-child(3n+2) .panel {
+  background: rgba(26,36,86,0.4) !important;
+  border-left: 3px solid rgba(99,102,241,0.4) !important;
+}
+
+.uc-dark .module-card:nth-child(3n+3) .panel {
+  background: rgba(245,166,35,0.06) !important;
   border-left: 3px solid rgba(245,166,35,0.3) !important;
 }
