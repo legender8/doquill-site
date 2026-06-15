@@ -672,27 +672,37 @@ html:not(.uc-dark) .module-card:nth-child(4n+4) .panel {
 
 /* Module card - dark mode */
 .uc-dark .module-card:nth-child(4n+1) .panel {
-  background: rgba(46,204,113,0.07) !important;
+  background: linear-gradient(135deg, rgba(46,204,113,0.12) 0%, rgba(17,24,39,0.9) 100%) !important;
   border-top: 3px solid #2ECC71 !important;
   border-left: none !important;
 }
 
 .uc-dark .module-card:nth-child(4n+2) .panel {
-  background: rgba(26,36,86,0.5) !important;
+  background: linear-gradient(135deg, rgba(59,91,219,0.15) 0%, rgba(17,24,39,0.9) 100%) !important;
   border-top: 3px solid #3B5BDB !important;
   border-left: none !important;
 }
 
 .uc-dark .module-card:nth-child(4n+3) .panel {
-  background: rgba(245,166,35,0.07) !important;
+  background: linear-gradient(135deg, rgba(245,166,35,0.12) 0%, rgba(17,24,39,0.9) 100%) !important;
   border-top: 3px solid #F5A623 !important;
   border-left: none !important;
 }
 
 .uc-dark .module-card:nth-child(4n+4) .panel {
-  background: rgba(239,68,68,0.07) !important;
+  background: linear-gradient(135deg, rgba(239,68,68,0.12) 0%, rgba(17,24,39,0.9) 100%) !important;
   border-top: 3px solid #EF4444 !important;
   border-left: none !important;
+}
+
+/* Dark mode hero gradient */
+.uc-dark .features-hero {
+  background: linear-gradient(160deg, #0B0F1E 0%, #1A2456 50%, #0B0F1E 100%) !important;
+}
+
+/* Dark mode section labels */
+.uc-dark [data-section] > .hstack h2 {
+  color: #FFFFFF !important;
 }
 
 /* Section label styling */
