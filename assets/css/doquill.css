@@ -716,3 +716,22 @@ html:not(.uc-dark) .module-card:nth-child(4n+4) .panel {
 html:not(.uc-dark) .features-hero .stat-num {
   color: #2ECC71 !important;
 }
+
+/* ── Integration logo containers ── */
+.module-card[data-cat="payment"] .cstack span,
+.module-card[data-cat="communication"] .cstack span,
+.module-card[data-cat="cloud"] .cstack span,
+.module-card[data-cat="auth"] .cstack span,
+.module-card[data-cat="crm"] .cstack span,
+.module-card[data-cat="social"] .cstack span {
+  display: flex !important;
+  background: #1A2456 !important;
+  color: #2ECC71 !important;
+  border-radius: 8px !important;
+  width: 40px !important;
+  height: 40px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+}
