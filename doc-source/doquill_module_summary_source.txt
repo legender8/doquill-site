@@ -1,0 +1,3740 @@
+
+Doquill — Full Module Summary Table
+Every dash or workdo used in this summary should exactly be replaced with Doquill
+Core Business & Customization
+Custom field types (text, email, number,
+Adds extra data fields to any date, dropdown, checkbox, radio, textarea,
+1 Custom Field Add-On to capture business- attachment); module & placement
+specific information assignment; required/optional toggle; field
+reordering
+Main menu & submenu creation;
+Lets admins create and
+Side Menu icon/position settings; global (all
+2 manage custom sidebar
+Builder companies) or company-specific menus;
+navigation links
+instant sidebar reflection
+Click-to-add field interface; 3 layout
+Drag-and-drop form creator options; public URL generation; real-time
+3 Form Builder with 12 field types and cross- response analytics; auto-conversion to
+module integration Leads, Projects, CRM, Sales, CMMS,
+Contracts, Notes
+Custom request form builder 3 layout templates; conditional logic;
+with category-based category & subcategory management;
+4 Requests
+organization and response response card dashboard with color
+management coding; pagination & search
+Alert types (info, warning, alert); display
+Sends targeted, time-based
+frequency control; audience targeting
+5 Custom Alert in-app alerts to specific users
+(now or custom); day-based scheduling;
+based on modules or invoices
+module-linked alerts
+Drag-and-drop workflow builder; 5+
+No-code automation builder
+module triggers; multi-condition logic;
+Workflow that triggers actions (email,
+6 simultaneous multi-action execution;
+Automation SMS, Slack, WhatsApp) based
+integrates with Email, Slack, Telegram,
+on system events
+Twilio, WhatsApp
+Pushes real-time event data Event-based triggers across 20+ modules;
+7 Webhook from any module to external GET/POST method support; instant data
+URLs via HTTP callbacks push; centralized webhook dashboard
+Generates full API Ready-to-use API docs; Postman-
+documentation compatible compatible collections; covers Users, CRM,
+8 API
+with Postman for all major Projects, Sales, HRM; auto-updates on
+modules system changes; error examples
+Records every user action Tracks descriptions, URLs, user info,
+9 Activity Log across connected modules for timestamps; searchable logs; multi-
+audit and troubleshooting module coverage; audit trail
+Email, Slack, Telegram, Twilio, WhatsApp
+Scheduled multi-channel
+API delivery; default or manual scheduling;
+10 Reminder reminders linked to modules
+daily repeat; admin & company-level
+like CRM, Sales, invoices
+controls
+11 Custom Alert (see #5 above)
+Sends customized email Module-linked recipient targeting; manual
+12 Newsletter campaigns linked to specific or predefined lists; history & delivery
+system modules status tracking
+Analytics & Reporting
+Social Centralized dashboard for Multi-platform credentials setup;
+13 Media YouTube, Instagram, and subscriber/follower counts; engagement
+Analytics Facebook performance metrics metrics; unified dashboard
+Real-time user tracking; geographic
+Google Integrates Google Analytics for
+14 breakdown; audience behavior analysis;
+Analytics real-time user behavior tracking
+performance dashboard
+AI-Powered Tools
+AI
+Multi-provider AI content Supports OpenAI, Claude, Gemini, Anthropic; 15+
+15
+Assistant
+generator integrated languages; creativity level controls; 1–5 result
+across 16+ business variations; context-aware generation in
+modules forms/notes
+AI-powered document
+15+ language support; 15+ content categories;
+AI and content generator
+16 creativity & tone controls; word usage analytics;
+Document for blogs, websites,
+PDF export; history tracking
+emails, social media
+Supports OpenAI DALL-E 3, Flux Pro, Gemini,
+Multi-provider AI image
+Stability AI; styles: photorealistic, artistic, cartoon,
+generator with style,
+17 AI Image oil painting; up to 10 images per request;
+quality, and resolution
+resolutions up to 2048×2048; batch history
+controls
+management
+Scheduling & Calendar
+Syncs platform
+Google Calendar integration; sync toggle per event;
+events (invoices,
+supports Accounting, Appointment, HRM, CRM,
+18 Calendar appointments,
+Recruitment, Sales, CMMS, Contract, Hospital
+meetings, HR) with
+Management
+Google Calendar
+Online appointment Free & paid appointment types; custom question
+scheduling with builder; schedule management
+19 Appointment custom questions (pending/approved/complete/rejected); callback
+and callback tracking; client-facing booking form with slot
+management availability
+Service & package management; appointment
+Full service booking
+calendar & kanban; staff assignment; business hours
+20 Bookings system for service-
+& holiday config; HRM integration; payment gateway
+based businesses
+support; dashboard analytics
+Schedules and
+manages Zoom Zoom API credential setup; multi-participant
+Zoom
+21 video meetings invitations; auto-generated join/host URLs; calendar
+Meeting
+from within the integration; password protection
+platform
+Schedules Google
+Google OAuth2 setup; multi-user invitations; auto-
+Meet video calls
+22 Google Meet generated URLs; calendar sync; meeting list
+with OAuth2
+management
+integration
+Syncs platform
+Azure credential setup; token-based auth; syncs with
+Outlook events with
+23 Accounting, HRM, CRM, Appointments,
+Calendar Microsoft Outlook
+Recruitment, CMMS, and more
+Calendar
+Video conferencing
+Zoho Secure API credential setup; meeting scheduling;
+24 integration with
+Meeting calendar visualization
+Zoho Meeting
+Open-source video
+Flexible deployment options; centralized meeting
+25 Jitsi Meet conferencing
+management; meeting scheduling
+integration
+Web-based meeting
+Livestorm Host, join, and manage virtual meetings without
+26 and webinar
+Meeting platform switching
+platform integration
+Browser-based
+Whereby Simple room-based meetings; no-download
+27 video meeting
+Meeting experience
+integration
+Communication & Messaging
+Inbox, Drafts, Sent, Trash, Spam, Archive
+Full email client inside the
+28 Email Box folders; compose with attachments;
+platform via IMAP/SMTP
+star/mark/delete; real-time sync
+All Outlook folders; threaded conversations;
+Microsoft Outlook email
+29 Outlook Mail HTML composition; multi-file attachments;
+integration via Azure OAuth
+flag/mark/move/delete actions
+Sends WhatsApp Event-based alerts for Appointments, CRM,
+WhatsApp
+30 notifications triggered by HRM, Sales, Fleet, Cleaning, etc.; toggle
+API
+system events on/off per event; Meta Business credentials
+Two-way WhatsApp Real-time chat sync; contact management
+WhatsApp
+31 messaging directly from the from users or custom; centralized
+Chat
+portal conversation view
+Embeds WhatsApp quick- Instant WhatsApp connection; real-time
+WhatsApp
+32 contact button for direct conversations; integrates with Courier, LMS,
+Messenger
+client messaging Childcare, and more
+WhatsApp WhatsApp messaging Twilio-based WhatsApp notifications;
+33
+(Twilio) powered by Twilio's API event-driven messaging
+Telegram bot notifications Toggle-based notification control; real-time
+34 Telegram
+for system events Telegram alerts across 20+ modules
+Slack workspace Webhook URL setup; channel-specific
+35 Slack notifications for system notifications; real-time updates for HRM,
+events CRM, Sales, Fleet, etc.
+Multi-gateway SMS
+notifications (AWS, Twilio, Toggle event notifications; multi-gateway
+36 SMS
+Clockwork, Kavenegar, SMS support; covers 15+ modules
+Gateway)
+Send instant SMS to Contact & group management; single or
+37 Bulk SMS individuals or groups from bulk sending; gateway credential setup;
+within the system delivery tracking
+Twilio-powered SMS and Real-time SMS alerts; 15+ module
+38 Twilio
+voice notification integration coverage; customizable event toggles
+Complete call logging (caller, direction,
+Centralized call and SMS
+type, duration); SMS logging; call vs. SMS
+39 Call Hub activity tracking across
+analytics; reporting by weekly/monthly
+modules
+range
+Manages Facebook Centralized FB Messenger inbox; real-time
+Facebook
+40 Messenger conversations message handling; customer support from
+Chat
+from within the portal one platform
+Manages Instagram DM Webhook-based integration; real-time
+Instagram
+41 conversations from within Instagram message sync; respond from
+Chat
+the portal Dash portal
+WizzChat Real-time live chat widget Instant user communication; dynamic chat
+42
+Messenger integration widget; customer support channel
+Tawk.to Real-time customer chat; instant messaging
+43 Tawk.to live chat integration
+Messenger support; client engagement
+Discord notification Webhook-based notifications; real-time
+44 Discord
+integration for team updates Discord alerts for system events
+Sendinblue email marketing Email composition and management via
+45 Sendinblue
+integration Sendinblue
+Auto-contact sync from CRM/HRM/Sales to
+Mailchimp email marketing
+46 Mailchimp Mailchimp; campaign automation; API key
+and contact sync integration
+setup; integration dashboard
+Zulip topic-based team Organized project discussions; threaded
+47 Zulip Chat
+messaging integration team communication
+Rocket Chat team Centralized messaging; file sharing; team
+48 Rocket Chat
+communication integration collaboration from Dash
+WhatsApp messaging via Automated WhatsApp updates and
+49 Whatsender
+Whatsender service notifications
+SMS Providers
+# Module Brief Summary
+50 Plivo SMS Send SMS notifications via Plivo API
+51 Fast2 SMS Bulk SMS notifications via Fast2SMS (India-focused)
+52 Sinch SMS Business SMS notifications via Sinch platform
+53 Telesign SMS SMS alerts and updates via Telesign
+54 Zita SMS SMS notifications via Zita SMS service
+# Module Brief Summary
+55 Vonage SMS SMS notifications via Vonage (formerly Nexmo)
+Africa's
+56 SMS notifications for African businesses via Africa's Talking API
+Talking
+57 MSG91 SMS notifications via MSG91 (India-focused)
+Automated SMS and voice messages via ClickSend; contact management
+58 Click Send
+and scheduling
+HR & Workforce Management
+Career portal; job postings with custom forms;
+End-to-end hiring
+candidate tracking; multi-round interview
+platform from job
+59 Recruitment scheduling; offer generation with PDF;
+posting to employee
+onboarding checklists; dashboard with hiring
+onboarding
+funnel analytics
+Training type classification by department;
+Employee training
+trainer directory (internal/external); lifecycle
+60 Training program management
+tracking (pending → completed); accounting
+linked to HRM
+integration for costs
+KPI-based employee Performance indicators; employee goal
+61 Performance performance evaluation tracking; review cycle management; structured
+system rating & feedback system
+Color-coded calendar (shifts, off days, leaves);
+Visual workforce
+employee availability tracking; customizable
+62 Rotas scheduling with multi-
+break times; shift/department setup;
+branch support
+monthly/weekly/daily views
+Flexible time tracking via 3 time-logging methods (HRM, Project,
+63 Timesheet attendance sync, project manual); role-based access (staff vs. admin);
+tasks, or manual entry daily hour/minute split; notes per entry
+Advanced time tracking Session-based work logging; project & task
+64 Time Tracker with automatic management; screenshot intervals; cross-
+screenshot capture platform compatibility; admin oversight
+Employee workload
+Individual capacity assignment; working day
+Team planning with capacity
+65 configuration; holiday management; overtime
+Workload and holiday
+highlighting in red
+management
+ZKTeco biometric device ZKTeco API sync; employee code matching;
+Biometric
+66 integration for punch data capture; HRM attendance list
+Attendance
+automated attendance integration
+Job posting and
+Centralized job posting; application tracking;
+candidate
+67 Job Search interview scheduling; data-driven recruitment
+communication platform
+insights
+(extends Recruitment)
+Finance & Accounting
+Complete double- Ledger summary; trial balance; balance sheet;
+68 Double Entry entry accounting with P&L statement; year-end close automation;
+financial statements draft-to-finalize workflow; PDF export
+Account & contact management; opportunity
+Full CRM + sales
+tracking; quote generation; sales order
+69 Sales platform with pipeline
+processing; invoice management; case handling;
+management
+advanced analytics with donut & radial charts
+SKU tracking; reorder alerts; max stock levels;
+Multi-warehouse stock
+FIFO/LIFO/Weighted Average COGS; stock
+70 Inventory management with
+valuation & movement reports; purchase/sales
+COGS calculations
+integration
+Automated sales Percentage/fixed/tiered commission plans; auto-
+commission calculation on invoice posting; payment lifecycle
+71 Commission
+calculation and management; receipt tracking; agent
+payment tracking performance filtering
+Territory-based sales Automated commission calculation; 4 plan types
+72 Sales Agent
+agent management (percentage, fixed, tiered, hybrid); multi-level
+with multi-tier territory management; payment clearing
+commissions automation; approval workflows
+Automates generation Daily/weekly/monthly/custom intervals;
+Recurring
+73 of recurring sales and unlimited or fixed cycles; cron job automation;
+Invoice/Bill
+purchase invoices dual admin/company panel configuration
+Auto-numbered quotations; revision tracking;
+Professional quotation
+warehouse inventory integration; multi-tax
+management with
+74 Quotation support; status workflow
+version control and
+(draft/sent/accepted/rejected); direct invoice
+invoice conversion
+conversion
+Retainer invoice Multi-item retainers; draft/send/pay lifecycle;
+75 Retainer creation and payment partial & full payments; conversion to sales
+tracking invoice
+Personal and business Goal creation with milestones; automatic
+76 Financial Goal financial goal tracking progress updates via journal entries; color-coded
+with visual progress status indicators; contribution history
+Multi-budget
+Operational/capital/cash flow budgets; fund
+Budget management with
+77 allocation by account; journal entry sync;
+Planner automated spending
+variance analysis; approval workflows
+tracking
+Structured petty cash Fund addition & balance calculation;
+Petty Cash fund and request/approval workflow; category-based
+78
+Management reimbursement expense management; reimbursement with
+management receipts
+79 Double Entry (see #68)
+XML-format electronic
+E-Invoice for E-address & company ID configuration; auto
+80 invoicing for European
+European customer field integration; one-click XML export
+compliance
+Saudi Arabia ZATCA e-
+81 ZATCA Zakat payment and e-invoice submission support
+invoicing compliance
+Project & Task Management
+Converts completed Template management with tasks, bugs &
+Project
+82 projects into reusable milestones; progress tracking; template-to-project
+Template
+templates conversion with data integrity
+Board view with drag-and-drop; calendar view by
+Task management with
+dates; custom task stages with colors; priority &
+83 To Do board, calendar, and list
+assignment; integration with Assets, Contract,
+views
+Fleet, Sales, CMMS
+Team
+84 (see #65)
+Workload
+Strategic planning hub Challenge & charter creation; kanban, tree & list
+85 Planning for business challenges views; SWOT, PEST, PESTEL, Porter's, McKinsey,
+and charters Business Plan, Marketing Plan integration
+Document & Content Management
+Centralized business Subject/type/user assignment; project linking;
+86 Documents document creation privacy controls; status tracking; duplication; PDF
+and management export; collaboration via comments & notes
+Template creation with subject/type; one-click
+Reusable document
+Document conversion to documents; selective
+87 templates with
+Template comment/note transfer; PDF export; team
+collaboration tools
+collaboration
+Full contract lifecycle Contract creation/categorization; client &
+88 Contract management with company signatures; audit trail; duplication;
+digital signatures renewal tracking; file attachments
+Contract Save contracts as Template library; one-click conversion to active
+89
+Template reusable templates contract; preview, download, duplicate, edit
+Color-labeled notes; personal vs. shared modes;
+Personal and shared
+90 Notes user assignment for shared notes; card grid
+note management
+layout
+Internal knowledge
+Internal Knowledge book management; article creation
+base with books,
+91 Knowledge (document or mind map type); interactive mind
+articles, and mind
+(KB) map builder; duplicate/copy link functionality
+maps
+Collaborative Unlimited folder nesting; file creation & editing;
+spreadsheet user sharing with view/edit permissions; auto-
+92 Spreadsheet
+management with sync for shared content; CRM, Assets, LMS
+folder organization integration
+Centralized video
+Grid & list views; video upload or URL linking;
+library with module
+93 Video Hub module-specific assignment; comment threads
+association and
+with image attachments
+comments
+Digital signature
+Sales & purchase invoice signing; role-based
+collection for invoices
+94 Signature signing permissions; one-time-per-user
+and purchase
+restriction; PDF download with signature
+documents
+Rich text editor; category/topic/tag
+Full blog, article, and
+management; SEO meta tools; author profiles;
+95 Blog & Article Q&A community
+approval workflow; Q&A with nested replies;
+platform
+newsletter subscriber tracking
+Custom template designer; dynamic field
+Design and distribute
+Digital elements (name, date, grade); reusable template
+96 customized digital
+Certificate library; PDF download; recipient self-access
+certificates
+portal
+Cloud Storage Integrations
+Access and manage Google OAuth integration; file grid/list browsing;
+Google
+97 Drive files from within the module-level folder linking; view/edit without
+Drive
+platform local download
+Access and manage Azure OAuth setup; module-level file access;
+98 OneDrive Microsoft OneDrive files grid/list file views; edit without switching
+from the platform apps
+Access and manage Dropbox Client credential setup; module-level
+99 Dropbox files from within the submodule support; file/folder browsing;
+platform view/edit files directly
+Access and manage Box.com
+Box API integration; module-level file access;
+100 Box cloud files from within the
+upload, organize, assign files from workflow
+platform
+Connect and manage Google Secure OAuth connection; create/list/manage
+Google
+101 Sheets directly from the sheets; real-time sync; folder-based
+Sheet
+platform organization
+Connect and manage Google OAuth 2.0 auth; create/edit/duplicate
+Google
+102 Slides presentations from presentations; favorites; granular sharing with
+Slides
+the platform permission levels
+Connect and manage Google Client ID/Secret setup;
+Google
+103 Docs documents from the create/view/edit/delete docs; sidebar
+Docs
+platform navigation
+Create and manage Google Template system; 5 field types; auto-sync to
+Google
+104 Forms with response Google account; response analytics
+Forms
+tracking dashboard
+Create and organize
+Azure integration; notebook creation;
+105 OneNote OneNote notebooks from
+structured note management
+within the platform
+CRM & Lead Management
+Pulls Google Business Google API key setup; search radius
+Find Google
+106 leads into CRM pipelines configuration; pipeline & stage
+Leads
+automatically assignment; lead deduplication
+Syncs HubSpot products Access token setup; product catalog sync;
+107 HubSpot and deals with the deal management in list & kanban view;
+platform CRM integration
+Manages Pipedrive
+pipelines, leads, deals, and API credential setup;
+108 Pipedrive
+products from one pipeline/lead/deal/product management
+platform
+Salesforce CRM integration
+Dedicated themes for Contact,
+for contacts,
+109 SalesForce Opportunity, Lead, Account, and Case
+opportunities, leads, and
+management
+accounts
+Automated lead capture CRM integration; lead data
+110 Indiamart and conversion from synchronization; automated conversion
+Indiamart directory processes
+Connect and manage
+Trello API credentials; board, card, and
+111 Trello Trello boards and cards
+task management
+from the platform
+Jira project management
+Atlassian workspace enhancement;
+112 Jira integration with local
+advanced local management
+management capabilities
+Connect Asana Multi-workspace management; task
+Asana Project
+113 workspaces and manage assignment; real-time Asana sync; user
+Management
+projects/tasks from Dash collaboration
+Hubspot Sync support tickets from Two-way ticket synchronization;
+114
+Support Ticket the system with HubSpot centralized support management
+Zendesk ticketing and Ticket syncing; knowledge base
+115 Zendesk knowledge base management; agent dashboard; FAQ
+integration customization
+Automation & Integration
+Connects system events to Module-specific trigger events; webhook URL
+116 Zapier 5,000+ apps via Zapier setup; GET/POST methods; covers CRM, HRM,
+webhooks Projects, Sales, Fleet, LMS
+Automates workflows
+Pabbly Webhook-based automation; 20+ module
+117 connecting 1,000+ apps
+Connect triggers; no-code setup from Settings
+via Pabbly webhooks
+Real-time event-driven POST/PUT/GET/HEAD/PATCH method support;
+118 n8n automation via n8n 79+ module events; instant data push to n8n
+webhook integration workflows
+Connects system events to
+79+ Add-On webhook support; real-time data
+119 Make Make.com (formerly
+synchronization; superadmin-managed interface
+Integromat) scenarios
+Financial data integration
+Financial institution connection; API-based
+120 Plaid via Plaid API for
+financial data access
+bank/account connectivity
+Security & Authentication
+reCAPTCHA V2/V3 protection Version toggle; site key/secret key
+121 Google Captcha for login, registration, and setup; multi-page protection;
+pricing pages automatic deployment
+QR code/secret key setup; 6-digit
+Two-factor authentication
+Google offline TOTP; 30-second refresh;
+122 (2FA) via Google Authenticator
+Authentication mandatory for admins; login activity
+app
+tracking
+Database & file backups;
+Database and file system
+Backup & downloadable backup files;
+123 backup and restoration for
+Restore superadmin-only access; structured
+superadmins
+storage paths
+Sign-In With Client ID/Secret setup; OAuth SSO;
+124 Login with Google SSO
+Google reduces password fatigue
+Sign-In With Azure credential setup; Microsoft
+125 Login with Microsoft SSO
+Microsoft account authentication
+Sign-In With Facebook credentials; simplified
+126 Login with Facebook SSO
+Facebook social login
+Sign-In With LinkedIn credentials; professional
+127 Login with LinkedIn SSO
+LinkedIn social login
+Sign-In With Twitter credentials; social login
+128 Login with Twitter/X SSO
+Twitter integration
+Sign-In With GitHub credentials; developer-
+129 Login with GitHub SSO
+GitHub friendly authentication
+Sign-In With Slack credentials; team-based
+130 Login with Slack SSO
+Slack authentication
+Sign-In With Bitbucket credentials; developer login
+131 Login with Bitbucket SSO
+Bitbucket integration
+Sign-In With Login with Outlook/Microsoft Outlook credentials; streamlined
+132
+Outlook account Microsoft login
+Industry-Specific Solutions
+Doctor/
+patient
+manage
+ment;
+appoint
+Full hospital operations
+133 Hospital Management
+ment
+management
+scheduli
+ng;
+medicin
+e &
+medical
+records;
+bed &
+ward
+manage
+ment;
+lab
+tests;
+surgery
+coordin
+ation;
+emerge
+ncy
+services
+;
+ambula
+nce
+tracking
+Student
+lifecycle
+; fee
+processi
+ng;
+digital
+attenda
+nce;
+curricul
+Complete school administration
+134 School / Institute Management
+um &
+platform
+assessm
+ent;
+library
+manage
+ment;
+transpo
+rt;
+hostel;
+staff
+manage
+ment;
+parent
+commu
+nication
+; notice
+board
+Course
+creation
+with
+chapter
+s;
+video/t
+ext/file
+content
+; quiz
+support
+;
+student
+portal;
+Online learning management
+certifica
+135 LMS system for selling and managing
+te
+courses
+generati
+on on
+100%
+complet
+ion;
+multi-
+paymen
+t
+gateway
+;
+SEO/P
+WA
+ready; 4
+theme
+variants
+Exam
+scheduli
+ng;
+timetab
+le
+manage
+ment;
+hall
+allocati
+Exam management linked to on &
+136 Exam
+School/Institute Add-On receipt;
+marks
+manage
+ment
+with
+analytic
+s;
+perform
+ance
+tracking
+Progra
+m setup
+with
+docume
+nt
+Scholarship program
+require
+137 Scholarship management for educational
+ments;
+institutions
+student
+applicat
+ion
+tracking
+;
+budget
+monitor
+ing;
+approva
+l
+workflo
+w;
+analytic
+s &
+complia
+nce
+reportin
+g
+Student
+lifecycle
+; class &
+lesson
+scheduli
+ng;
+instrum
+ent
+invento
+ry;
+Music school management attenda
+138 Music Institute
+platform nce;
+exam &
+results;
+library
+&
+practice
+logs;
+paymen
+t
+processi
+ng
+Propert
+y
+portfoli
+o;
+tenant
+lifecycle
+; lease
+manage
+ment;
+automa
+ted
+invoicin
+g;
+mainte
+End-to-end real estate and nance
+139 Property Management
+property management coordin
+ation;
+utility
+tracking
+;
+inspecti
+on
+manage
+ment;
+tenant
+portal;
+GPS
+location
+mappin
+g
+Room
+types &
+Complete hotel operations and
+invento
+140 Hotel Room Management
+online booking system
+ry;
+online
+booking
+portal;
+custom
+er
+account
+portal;
+promoti
+onal
+coupon
+s;
+revenue
+analytic
+s;
+reviews
+; blog
+manage
+ment
+QR
+code
+orderin
+g;
+digital
+menu
+builder;
+table
+manage
+Digital restaurant menu with QR
+ment;
+141 Restaurant Menu
+ordering and table management
+online
+reservat
+ions;
+multi-
+location
+support
+;
+paymen
+t
+integrat
+ion;
+custom
+er
+reviews
+Online
+booking
+24/7;
+service
+catalog;
+gift
+cards;
+loyalty
+progra
+ms;
+Spa appointment and services
+142 Beauty Spa Management staff
+management
+training
+/certific
+ation;
+analytic
+s
+dashbo
+ard;
+website
+customi
+zation
+Service
+&
+package
+manage
+Service-based business
+ment;
+143 Bookings
+appointment system
+staff
+assignm
+ent;
+calenda
+r &
+kanban
+views;
+HRM
+integrat
+ion;
+paymen
+t
+processi
+ng;
+analytic
+s
+Trainer
+&
+membe
+r
+profiles;
+BMI/B
+MR
+tracking
+;
+workou
+t &
+membe
+Gym member, trainer, and class
+144 GYM Management
+rship
+management
+plans;
+class
+scheduli
+ng &
+attenda
+nce;
+persona
+l
+training
+;
+nutritio
+n plans;
+health
+assessm
+ents
+Inquiry
+&
+parent
+manage
+ment;
+child
+profiles
+&
+attenda
+nce;
+Preschool and nursery activity/
+145 Childcare Management
+operations management meal
+tracking
+; staff &
+commu
+nication
+tools;
+website
+builder
+with
+parent
+portal
+Residen
+t
+profiles;
+caretak
+Senior residential care
+er shift
+146 Elderly Care Management
+management
+tracking
+; care
+request
+s; meal
+plannin
+g; daily
+activity
+scheduli
+ng;
+health
+checku
+p
+records;
+paymen
+t
+monitor
+ing
+147 Hospital Management (see #133)
+Patient
+registra
+tion
+with
+auto
+IDs; lab
+order
+manage
+ment;
+sample
+Laboratory information system tracking
+148 Medical Lab Management
+for test and patient management ; test
+result
+entry
+with
+doctor
+approva
+l;
+compre
+hensive
+reportin
+g
+Medicin
+e
+catalog;
+invento
+ry
+monitor
+ing;
+drug
+interacti
+on risk
+manage
+ment;
+Pharmacy operations and substitu
+149 Pharmacy Management
+medicine catalog management te
+suggesti
+ons;
+adverse
+drug
+reaction
+(ADR)
+reportin
+g;
+multi-
+wareho
+use
+stock
+Test
+catalog
+with
+categori
+Diagnostic test workflow
+es &
+150 Radiology Management management (requires Hospital
+pricing;
+Add-On)
+multi-
+test
+request
+s;
+patient/
+doctor
+linking;
+paymen
+t
+tracking
+; report
+upload
+with
+images;
+PDF
+export
+Donor
+registra
+tion;
+blood
+test
+records;
+donatio
+n
+tracking
+;
+Donor and blood inventory
+priority-
+151 Blood Bank management (requires Hospital
+based
+Add-On)
+blood
+request
+s;
+paymen
+t
+processi
+ng;
+invento
+ry
+dashbo
+ard by
+blood
+group
+Patient
+&
+doctor
+profiles;
+eye test
+prescrip
+tions;
+appoint
+ment
+scheduli
+ng;
+Eye care clinic and optical store eyewea
+152 Optical & Eyecare Center
+management r
+invento
+ry;
+order &
+paymen
+t
+tracking
+;
+account
+ing
+integrat
+ion
+Nutritio
+nist
+scheduli
+ng;
+Nutrition consultation and diet
+153 Diet & Nutrition Consultant
+appoint
+plan management
+ment
+booking
+;
+persona
+lized
+diet
+plan
+creation
+;
+subscrip
+tion
+manage
+ment;
+membe
+r
+progres
+s
+tracking
+; health
+monitor
+ing
+Vehicle
+& class
+manage
+ment;
+driving
+lesson
+scheduli
+ng;
+Driving school operations
+student
+154 Driving School
+management
+progres
+s
+reports;
+license
+tracking
+; driving
+test
+manage
+ment;
+invoice
+system
+Fleet &
+equipm
+ent
+tracking
+;
+organiz
+ational
+structur
+e; crop
+lifecycle
+manage
+ment;
+Comprehensive farm operations cultivati
+155 Agriculture Management
+management on
+plannin
+g;
+environ
+mental
+monitor
+ing;
+complia
+nce;
+kanban
+task
+manage
+ment
+Animal
+profile
+&
+Livestock and dairy farm
+156 Dairy and Cattle Management
+health
+management
+monitor
+ing;
+vaccinat
+ion
+scheduli
+ng; milk
+product
+ion
+tracking
+; feed
+manage
+ment;
+financia
+l
+operati
+ons
+(invoici
+ng/pay
+ments);
+equipm
+ent
+mainte
+nance
+Ground
+/facility
+booking
+s;
+membe
+rship
+plans;
+Sports club, booking, and
+coach
+157 Sports Club & Academy Management
+membership management
+director
+y;
+training
+scheduli
+ng;
+equipm
+ent
+invento
+ry;
+event
+manage
+ment;
+website
+customi
+zation
+Multi-
+chapter
+courses;
+video/t
+ext/file
+lessons;
+instruct
+or
+manage
+ment;
+Online yoga course creation and secure
+158 Yoga Classes
+member management paymen
+ts;
+certifica
+te
+generati
+on;
+membe
+r portal;
+blog &
+content
+tools
+159 GYM Management (see #144)
+Dance
+style &
+Dance school class and student
+160 Dance Academy
+class
+management
+setup;
+session
+scheduli
+ng;
+learner
+enrollm
+ent;
+attenda
+nce
+tracking
+; fee &
+paymen
+t
+manage
+ment;
+event
+plannin
+g;
+calenda
+r views
+161 Childcare Management (see #145)
+Site
+tracking
+; team
+assignm
+ent;
+materia
+l
+Construction site operations
+invento
+162 Construction Management
+management
+ry;
+supplier
+pickings
+;
+inspecti
+on &
+complia
+nce;
+scrap
+handlin
+g;
+internal
+transfer
+s
+Event &
+custom
+er
+manage
+ment;
+menu
+customi
+zation;
+invoice
+generati
+on;
+Event catering operations venue
+163 Catering Management
+management logistics
+;
+complia
+nce
+tracking
+; staff
+certifica
+tions;
+marketi
+ng
+campai
+gns
+Team
+coordin
+Cleaning service operations
+164 Cleaning Management
+ation;
+platform
+booking
+request
+manage
+ment;
+inspecti
+on
+tracking
+;
+automa
+ted
+invoice
+generati
+on;
+expense
+manage
+ment;
+staff
+reportin
+g
+Service
+request
+manage
+ment;
+invoice
+tracking
+;
+equipm
+ent
+Laundry service operations with
+165 Laundry Management
+manage
+online booking
+ment;
+fronten
+d
+booking
+;
+expense
+manage
+ment;
+custom
+er
+manage
+ment
+Order
+processi
+ng; real-
+time
+parcel
+tracking
+; agent
+manage
+ment;
+End-to-end courier and logistics
+166 Courier Management service
+management
+agreem
+ents;
+paymen
+t
+processi
+ng;
+website
+customi
+zation
+Custom
+er
+manage
+ment;
+booking
+with
+Freight operations from booking
+167 Freight Management System
+docume
+to invoicing
+nt
+uploads
+; multi-
+tab
+shippin
+g
+(carriag
+e,
+contain
+er,
+routes);
+invoice
+manage
+ment;
+automa
+ted cost
+calculati
+ons
+Driver
+&
+vehicle
+manage
+ment;
+trip
+booking
+; fuel
+logs;
+mainte
+nance
+Complete vehicle fleet &
+168 Fleet
+management insuran
+ce
+tracking
+;
+expense
+manage
+ment;
+logbook
+; multi-
+role
+dashbo
+ard
+Smart
+booking
+system;
+fuel log
+manage
+ment;
+incident
+reportin
+g;
+mainte
+Online vehicle booking with
+nance
+169 Vehicle Booking Management routes and payments (requires
+tracking
+Fleet)
+; route
+configur
+ation;
+custom
+er
+booking
+portal;
+secure
+paymen
+ts
+Vehicle
+records;
+inspecti
+on
+checklis
+ts;
+Vehicle inspection scheduling
+inspect
+170 Vehicle Inspection Management
+and compliance tracking
+or
+assignm
+ent;
+automa
+ted
+remind
+ers;
+result
+history;
+complia
+nce
+regulati
+on logs
+Service
+plans &
+categori
+es;
+booking
+tracking
+; staff
+assignm
+ent;
+Vehicle wash service
+171 Vehicle Wash paymen
+management
+t
+approva
+l
+workflo
+w;
+expense
+logging;
+revenue
+reports
+Vehicle
+invento
+ry;
+party &
+Complete vehicle trading and
+trade
+172 Vehicle Trade
+dealership management
+manage
+ment;
+paymen
+t
+processi
+ng;
+service
+history;
+inspecti
+on &
+conditio
+n
+records;
+insuran
+ce
+history;
+system
+configur
+ation
+Car/vari
+ant
+invento
+ry; lead
+manage
+ment;
+test
+drive
+scheduli
+ng;
+Automotive dealership
+173 Car Dealership
+service
+operations management
+tracking
+;
+warrant
+y &
+insuran
+ce
+manage
+ment;
+paymen
+t
+recordi
+ng
+Vehicle
+registra
+tion;
+service
+scheduli
+ng; job
+card
+manage
+ment;
+parts
+174 Garage Workshop Management Auto repair shop management
+invento
+ry;
+warrant
+y
+manage
+ment;
+automa
+ted
+workflo
+w
+Service
+request
+manage
+ment
+(3-stage
+workflo
+Mobile device repair service
+175 Mobile Service Management
+w);
+management
+paymen
+t &
+invoice
+manage
+ment;
+custom
+er
+review
+system;
+service
+contract
+s;
+website
+with
+online
+booking
+Machin
+e
+catalog;
+repair
+request
+system;
+staff
+assignm
+ent;
+service
+Industrial machine repair and agreem
+176 Machine Repair Management
+maintenance management ents;
+repair
+history;
+warrant
+y &
+insuran
+ce;
+interacti
+ve
+calenda
+r
+Repair
+General repair business
+177 Repair Management System
+order
+management
+lifecycle
+; parts
+&
+compon
+ents
+tracking
+; billing
+&
+paymen
+t;
+movem
+ent
+history;
+warrant
+y
+tracking
+Work
+order
+manage
+ment;
+prevent
+ive
+mainte
+nance
+scheduli
+ng;
+Computerized Maintenance
+178 CMMS compon
+Management System
+ent
+tracking
+;
+supplier
+manage
+ment;
+location
+-based
+monitor
+ing
+Asset
+registra
+tion;
+license
+manage
+ment;
+consum
+ables &
+accesso
+ries;
+Fixed asset lifecycle and
+179 Fix Equipment compon
+maintenance management
+ent kits;
+mainte
+nance
+tracking
+; asset
+audits;
+depreci
+ation
+manage
+ment
+Categor
+y-based
+equipm
+ent;
+booking
+approva
+Equipment rental catalog,
+l
+180 Equipment Rental booking, and inventory
+workflo
+management
+w;
+multi-
+wareho
+use
+invento
+ry;
+paymen
+t &
+return
+processi
+ng;
+repair &
+lost
+item
+tracking
+Real-
+time
+availabil
+ity; staff
+assignm
+ent;
+paymen
+Asset borrowing and rental t
+181 Asset Borrow & Rent management (requires Assets processi
+Add-On) ng;
+return
+tracking
+;
+analytic
+s
+dashbo
+ard
+Compre
+hensive
+asset
+registra
+Organizational asset tracking and
+tion;
+182 Assets
+lifecycle management
+smart
+assignm
+ent &
+return
+manage
+ment;
+mainte
+nance
+scheduli
+ng;
+depreci
+ation
+tracking
+(straigh
+t line,
+declinin
+g, SYD)
+Centrali
+zed
+equipm
+ent
+records;
+mainte
+nance
+log;
+Office equipment tracking from
+183 Office Equipment Management transfer
+purchase to disposal
+history;
+disposal
+records;
+usage
+logs;
+multi-
+location
+support
+Invento
+ry
+Item/equipment rental business
+manage
+184 Rental Management
+management
+ment;
+flexible
+rental
+booking
+;
+security
+deposit
+manage
+ment;
+mainte
+nance
+scheduli
+ng;
+multi-
+wareho
+use
+support
+Real-
+time
+slot
+availabil
+ity;
+multi-
+paymen
+t
+gateway
+Parking facility management ;
+185 Parking Management
+with online booking custom
+slot
+types &
+pricing;
+online
+booking
+portal;
+revenue
+analytic
+s
+Real-
+time
+booking
+dashbo
+ard;
+amenity
+manage
+ment;
+membe
+Coworking space booking and
+186 Coworking Space Management rship
+membership management
+plans;
+online
+booking
+with
+Stripe/P
+ayPal;
+website
+content
+builder
+Smart
+booking
+;
+flexible
+membe
+rship
+plans;
+automa
+Locker rental and safe deposit
+187 Locker & Safe Deposit
+ted
+management
+paymen
+t
+tracking
+; key
+access
+control;
+renewal
+manage
+ment;
+mainte
+nance
+records
+Residen
+t &
+propert
+y
+manage
+ment;
+mainte
+nance
+billing;
+complai
+nt
+Residential community
+188 Society Management ticketin
+management platform
+g;
+notice
+board;
+visitor
+&
+service
+staff
+manage
+ment;
+utility
+billing
+Raw
+materia
+l
+Beverage manufacturing lifecycle
+manage
+189 Beverages Production System
+management
+ment;
+bill of
+materia
+ls;
+manufa
+cturing
+order
+creation
+;
+packagi
+ng
+process;
+quality
+control;
+mainte
+nance;
+waste
+records
+Product
+catalog
+by
+categor
+y; order
+&
+custom
+er
+Bakery product, order, and manage
+190 Bakery Store
+inventory management ment;
+expense
+tracking
+with
+approva
+l;
+wastage
+docume
+ntation
+191 Restaurant Menu (see #141)
+192 Hotel Room Management (see #140)
+Collecti
+on
+request
+manage
+ment;
+trip &
+inspecti
+on
+tracking
+;
+recyclin
+g
+Comprehensive waste collection process;
+193 Waste Management
+and recycling management disposal
+facility
+manage
+ment;
+scheduli
+ng
+automa
+tion;
+blog &
+custom
+er
+engage
+ment
+Newspa
+per
+catalog;
+distribu
+Newspaper distribution,
+tion
+194 Newspaper Distribution Management subscription, and editorial
+center
+management
+manage
+ment;
+agent &
+sales
+tracking
+;
+subscrip
+tion
+manage
+ment;
+advertis
+ement
+manage
+ment;
+journali
+st &
+article
+manage
+ment
+Tour
+creation
+with
+multi-
+date
+scheduli
+ng;
+smart
+booking
+system;
+Travel agency operations
+195 Tour & Travel Management
+transpo
+management
+rt/meal
+/equip
+ment
+manage
+ment;
+travel
+docume
+nts;
+professi
+onal
+website
+builder
+Event
+scheduli
+ng with
+multi-
+slot
+support
+;
+intellige
+nt
+booking
+system;
+paymen
+t
+Online event creation, ticketing,
+196 Events Management gateway
+and booking system
+integrat
+ion
+(Stripe,
+PayPal);
+ticket
+PDF
+generati
+on;
+blog;
+subscrib
+er
+manage
+ment
+Movie
+& show
+Cinema management with online
+scheduli
+197 Movie Show Booking System
+seat selection
+ng;
+dynami
+c seat
+layout;
+food &
+beverag
+e
+orderin
+g;
+offline
+paymen
+t
+tracking
+; review
+system;
+custom
+er
+contact
+manage
+ment
+Movie/
+TV
+show/e
+pisode
+catalog;
+custom
+er
+account
+s;
+Content streaming platform
+198 Movie & TV Studio
+playlist
+management
+organiz
+ation;
+order
+manage
+ment;
+blog;
+newslet
+ter;
+review
+system;
+website
+customi
+zation
+Zone &
+game
+catalog;
+player
+profiles;
+rental
+manage
+ment;
+food
+199 Game Zone Gaming facility management
+service
+integrat
+ion;
+membe
+rship
+plans;
+paymen
+t
+tracking
+Ride &
+attracti
+on
+manage
+ment;
+online
+Water park operations and
+200 Water Park Management
+ticket
+online booking
+booking
+;
+mainte
+nance
+tracking
+;
+mercha
+ndise/cl
+othing
+sales;
+paymen
+t
+processi
+ng;
+website
+brandin
+g
+Brand &
+owner
+manage
+ment;
+branch
+networ
+k
+control;
+franchis
+e
+Multi-location franchise agreem
+201 Franchise Management
+operations management ent
+tracking
+;
+automa
+ted
+profit
+calculati
+ons;
+audit
+manage
+ment
+Insurance policy lifecycle and
+Policy
+202 Insurance Management
+claims management
+design
+&
+issuanc
+e;
+invoice
+&
+paymen
+t
+tracking
+; claims
+manage
+ment;
+risk &
+reinsura
+nce
+controls
+;
+underw
+riting;
+complia
+nce;
+fraud
+detectio
+n;
+marketi
+ng
+campai
+gns
+Donor/
+donatio
+n
+manage
+Nonprofit organization
+203 NGO Management
+ment;
+operations management
+campai
+gn
+tracking
+; fund
+utilizati
+on;
+volunte
+er
+manage
+ment;
+benefici
+ary
+records;
+blog;
+newslet
+ter;
+website
+with
+live
+data
+Job
+posting
+&
+applicat
+ions;
+skill-
+based
+categori
+es;
+Two-sided marketplace
+escrow
+204 Freelancing Platform connecting clients and
+paymen
+freelancers
+ts;
+client/fr
+eelance
+r
+wallets;
+withdra
+wal
+approva
+l;
+dispute
+resoluti
+on;
+profile
+verificat
+ion;
+blog;
+website
+builder
+Court
+hierarch
+y setup;
+case
+tracking
+;
+hearing
+scheduli
+ng;
+financia
+Law firm and advocate case l
+205 Legal Case Management
+management tracking
+(expens
+es &
+fees);
+advocat
+e
+profiles;
+docume
+nt
+manage
+ment
+Service
+Client and application
+configur
+206 Consultancy management for consultancy
+ation;
+firms
+applicat
+ion
+lifecycle
+tracking
+;
+docume
+nt
+upload;
+paymen
+t
+processi
+ng;
+enquiry
+manage
+ment
+Investm
+ent
+plans by
+categor
+y;
+investor
+portal;
+deposit
+manage
+Investment plan and investor ment;
+207 Investment System
+management platform withdra
+wal
+processi
+ng;
+blog;
+newslet
+ter;
+website
+customi
+zation
+Campai
+gn
+manage
+ment;
+influenc
+er
+profiles;
+brand
+account
+s;
+Two-sided influencer marketing
+208 Influencer Marketing withdra
+marketplace
+wal &
+paymen
+t
+manage
+ment;
+review
+system;
+custom
+website
+builder
+Item
+catalog;
+custom
+er
+inquiry
+manage
+ment;
+Jewellery business management
+209 Jewellery Store Management
+online
+with online presence
+reservat
+ion
+system;
+repair &
+custom
+orders;
+blog;
+reviews
+;
+newslet
+ter
+Outfit
+catalog
+(rent/sa
+le);
+booking
+system;
+cleanin
+g &
+Fashion rental and designer damage
+210 Boutique & Designer Studio
+boutique management tracking
+; service
+add-
+ons;
+blog;
+newslet
+ter;
+website
+builder
+Artist
+profiles;
+gallery
+with
+style
+filters;
+Tattoo studio operations and
+211 Tattoo Studio Management
+appoint
+online booking
+ment
+booking
+with
+auto-
+pricing;
+invento
+ry
+tracking
+; client
+follow-
+up;
+contact
+manage
+ment
+Stylist
+profiles;
+service
+catalog;
+seasona
+l
+promoti
+ons;
+appoint
+Salon management with online
+212 Hair & Care Studio ment
+booking and website
+booking
+with
+Stripe/P
+ayPal;
+blog;
+gallery;
+contact
+inquirie
+s
+# Module Name Brief Summary Core Features
+End-to-end spa business Appointment scheduling, staff
+management covering & therapist management,
+Beauty Spa appointments, staff, service & package
+213
+Management inventory, and client management, product
+experience from one inventory, client profiles,
+dashboard. payment tracking, reports
+Boutique & Integrated platform to Outfit collection management,
+214 Designer manage rental outfit rental & sale booking, payment
+Studio bookings, sales, payments, handling, damage & penalty
+cleaning, and client tracking, outfit care records,
+interactions from a single blog & content publishing,
+dashboard. client inquiry tracking,
+newsletter management
+Jewellery item management,
+Centralized platform to customer inquiry handling,
+Jewellery manage jewellery online booking system, repair
+215 Store inventory, customer & custom orders, built-in blog,
+Management inquiries, bookings, repairs, customer reviews, newsletter
+and custom orders. subscribers, storefront theme
+setup
+Streamlines diagnostic test Diagnostic test management,
+workflows by organizing test category organization,
+tests, managing requests, radiology request handling,
+Radiology
+216 and tracking payments multi-test per request, payment
+Management
+within a single system. status tracking, PDF export,
+(Requires Hospital patient & doctor linking, smart
+Management Add-On) search & filtering
+Artist profile management,
+Comprehensive solution to online appointment booking,
+run a tattoo business tattoo gallery & filtering,
+Tattoo Studio covering artist management, integrated payment processing
+217
+Management online bookings, portfolio (Stripe/PayPal), supply
+display, inventory, and inventory tracking, client
+client follow-ups. follow-up system, contact
+message management
+Structured permit type control,
+Streamlines the entire
+centralized contractor
+lifecycle of permits from
+management, digital signature
+creation and approval to
+218 Work Permit authorization, end-to-end
+tracking and closure,
+permit lifecycle, real-time
+ensuring safety and
+reporting & visibility, overdue
+compliance.
+permit tracking
+Property & zone management,
+Centralized fire safety fire equipment & alarm
+management covering tracking, sprinkler control,
+inspections, drills, emergency exit monitoring, fire
+219 Fire Safety
+equipment records, drill planning, risk assessment
+incidents, and compliance & hazard tracking, incident
+across multiple properties. recording, emergency contact
+management
+All-in-one solar business Real-time dashboard, smart
+220 Solar Hub management platform inventory tracking, flexible
+covering orders, inventory, product catalog, multi-status
+payments, maintenance, and order tracking, maintenance
+inspections in real time. management, inspection
+workflow, payment
+monitoring, assurance tracking
+Gallery performance
+dashboard, artist portfolio
+Streamlines gallery
+management, artwork listings
+management by centralizing
+& filters, exhibition planning,
+221 Art Showcase artist profiles, exhibitions,
+online booking, artwork
+and artwork listings with
+inquiry management, order &
+booking and inquiry tools.
+payment tracking, visitor
+engagement tools
+Online ticket booking, ride &
+Centralizes water park attraction management,
+operations including ticket maintenance tracking, seasonal
+Water Park booking, ride management, promotions, merchandise &
+222
+Management maintenance tracking, clothing sales, payment
+merchandise sales, and processing, visitor contact
+revenue insights. management, real-time revenue
+insights
+Event booking control,
+Comprehensive platform
+musician profile management,
+for managing music event
+DJ & smart contract workflow,
+operations from booking to
+223 Orchestra integrated payment tracking,
+performance including
+Management equipment inventory control,
+contracts, payments, and
+revenue & analytics overview,
+equipment.
+multi-status record tracking
+Smart book tracking, I-Card
+Centralized and intelligent management, book request
+system to manage books, workflow, issue & return
+Library
+224 members, borrowing, and management, fine & penalty
+Management
+fines with complete tracking, author & publisher
+visibility and control. records, category-based
+organization, multi-filter search
+Product catalog management,
+Streamlines bakery business
+order tracking system, expense
+management covering
+monitoring, wastage
+inventory, order
+225 Bakery Store documentation, category
+management, expense
+organization, bank account
+tracking, and wastage
+integration, status & progress
+monitoring.
+tracking
+Streamlines dance school Dance style management, class
+Dance
+226 operations including class & schedule control, learner
+Academy
+scheduling, learner enrollment tracking, attendance
+enrollment, fee monitoring, fee payment
+management, attendance, management, event planning,
+and event planning. multi-view calendar, grid & list
+views
+Streamlines donor tracking,
+Donor management, blood test
+blood testing, and inventory
+tracking, donation record
+control with priority-based
+control, multi-component
+workflows for safe and
+227 Blood Bank support, blood inventory
+efficient blood supply
+overview, blood request
+management. (Requires
+processing, payment handling,
+Hospital Management Add-
+priority-based requests
+On)
+Flexible meal scheduling,
+All-in-one management for subscriber plan management,
+meal planning, subscribers, delivery person tracking, area-
+Tiffin Service
+228 deliveries, payments, and wise delivery setup, payment
+Manager
+complaints from a single approval workflow, complaint
+dashboard. handling system, today's
+service overview
+Scholarship framework setup
+Streamlines scholarship
+(types & documents), program
+lifecycle from program
+management, student
+setup to student application
+229 Scholarship application management,
+review and reporting.
+application review & decisions,
+(Requires School/Institute
+scholarship reports & analytics,
+Management Add-On)
+budget utilization tracking
+Online appointment booking,
+All-in-one digital solution
+stylist management, service &
+to streamline salon
+pricing control, seasonal offers
+Hair & Care operations from online
+230 & discounts, payment tracking
+Studio bookings to staff, service
+(Stripe/PayPal), blog & content
+management, and website
+publishing, gallery showcase,
+building.
+working hours management
+Smart category filtering, author
+profile management, flexible
+Complete solution to create,
+book pricing, secure payment
+organize, and sell digital
+integration, reader account
+231 eBook books with author profiles,
+portal, wishlist & cart system,
+secure payments, and reader
+order & download tracking,
+account management.
+blog & content publishing,
+newsletter management
+Complete print facility Materials management,
+PrintPress
+232 management covering machine management,
+Management
+materials, machines, maintenance record tracking,
+maintenance, orders, press order workflow, prepress
+prepress, print jobs, quality verification, print job
+deliveries, and expenses. coordination, delivery
+management, expense & cost
+tracking
+Centralized client management,
+Streamlines client
+service configuration,
+management by organizing
+application tracking, document
+customer details,
+233 Consultancy upload support, payment
+applications, payments, and
+management, enquiry handling,
+enquiries for consultancy
+agent assignment, status-based
+workflows.
+filtering
+Movie & show scheduling,
+Complete cinema dynamic seat layout, multi-
+management solution screen management, integrated
+Movie Show
+combining movie food & beverage ordering,
+234 Booking
+scheduling, seat selection, flexible tax setup, offline
+System
+food ordering, and checkout payment tracking, review &
+in one system. rating system, booking history
+tracking
+Module
+# Brief Summary Core Features
+Name
+Simplifies asset
+management by
+Asset borrowing management, rental
+streamlining
+transaction tracking, payment
+borrowing, tracking,
+Asset Borrow processing, return date monitoring,
+235 and payment
+& Rent real-time availability display, overdue
+processes with real-
+alert system, staff usage tracking,
+time availability.
+comprehensive reporting
+(Requires Assets
+Add-On)
+Complete solution
+for nonprofits to Donor & donation management,
+manage donors, campaign progress tracking, fund
+NGO campaigns, utilization transparency, volunteer
+236
+Management volunteers, application handling, beneficiary
+beneficiaries, and records, impact stories & blogging,
+fund utilization with newsletter & contact automation
+a public website.
+Marketplace Job posting & applications, secure
+Freelancing
+237 platform where escrow payments, client & freelancer
+Platform
+clients post jobs and wallets, withdrawal approval control,
+freelancers apply, dispute resolution, profile verification,
+with secure escrow ratings & reviews, category-based
+payments, profile platform fees, website builder
+verification, and a
+ready-made website.
+Structured
+framework to assess
+Political, Economic,
+Social,
+PESTEL factor assessment, grid view,
+PESTEL Technological,
+kanban view, tree view, document
+238 Analysis Environmental, and
+attachments, progress tracking, stage-
+Model Legal external
+based organization
+factors affecting
+business strategy.
+(Requires Planning
+Add-On)
+Streamlines
+YouTube channel Video management
+operations including (upload/edit/delete), playlist control,
+YouTube video uploads, real-time channel analytics
+239 Content playlist (subscribers/views), multi-language
+Management management, captions, comment management,
+analytics, and intelligent activity tracking, thumbnail
+activity tracking management
+from one platform.
+Structured approach
+to examine Political,
+Economic, Social, PEST factor assessment, grid view,
+PEST
+and Technological kanban view (economic), tree view
+240 Analysis
+external forces (social), document attachments, stage-
+Model
+impacting business based organization
+strategy. (Requires
+Planning Add-On)
+Strategic framework
+to analyze
+competitive
+environment Five forces analysis, grid view, kanban
+Porter's Five including view, challenge-based tree view, file
+241
+Forces Model supplier/buyer attachments, reviews, print
+power, threats of functionality
+substitution, new
+entrants, and
+competitive rivalry.
+(Requires Planning
+Add-On)
+Dynamic
+framework to assess
+Strengths,
+Weaknesses, SWOT factor capture, grid view,
+SWOT
+Opportunities, and kanban view (weakness tracking), tree
+242 Analysis
+Threats with view (opportunity mapping), document
+Model
+flexible attachments, ratings, print functionality
+visualization
+formats. (Requires
+Planning Add-On)
+Organizational
+alignment
+framework
+7-S element documentation, grid view,
+assessing Strategy,
+McKinsey 7- kanban board, challenge-based tree
+243 Structure, Systems,
+S Model view, collaboration tools, ratings &
+Staff, Skills, Style,
+feedback, print functionality
+and Shared Values.
+(Requires Planning
+Add-On)
+Structured tool to
+visualize business
+strategy by defining Key component documentation
+value propositions, (partners, propositions, segments,
+Business
+244 customer segments, revenue, costs), grid view, kanban
+Model
+revenue streams, board, challenge tree view,
+and cost structure. collaboration & reviews
+(Requires Planning
+Add-On)
+Comprehensive
+strategic planning
+tool for building
+detailed business Business plan builder (executive
+plans with financial summary, company description, market
+245 Business Plan projections, market analysis, financials), grid & kanban
+analysis, and views, tree view, print-ready formats,
+executive collaborative reviews
+summaries.
+(Requires Planning
+Add-On)
+Platform to create Marketing strategy builder, business
+Marketing
+246 and manage summary & target market capture,
+Plan
+comprehensive marketing channels & budget input,
+marketing strategies grid view, kanban (stage-based), tree
+with input for target view, print functionality
+markets, channels,
+budgets, and team
+roles. (Requires
+Planning Add-On)
+Streamlined
+platform for
+planning and Customizable roadmap builder,
+sharing product or category & status organizer, centralized
+RoadMap
+247 project roadmaps idea management, attachments & notes
+Central
+with idea tracking, support, branding control, SEO & PWA
+category support, analytics integration
+organization, and
+analytics.
+Platform to design,
+Custom template design, pre-built
+customize, and
+certificate layouts, dynamic element
+distribute
+Digital fields, media & badge upload,
+248 professional digital
+Certificate background customization, certificate
+certificates with
+issuance management, PDF download,
+dynamic templates
+recipient self-access portal
+and PDF download.
+Centralizes
+franchise network
+Brand & franchise management, owner
+operations including
+& relationship management, branch
+Franchise brand management,
+249 efficiency system, franchise agreement
+Management branch oversight,
+tracking, automated profit & royalty
+agreements,
+calculations, audit management
+financial tracking,
+and compliance.
+Integrates WHMCS
+hosting business Complete WHMCS API integration,
+platform for client client & user management, support
+management, ticket management, order & product
+250 WHMCS
+support operations, management, promotional code
+order processing, tracking, administrative control system,
+and system server monitoring
+monitoring.
+End-to-end audit Role-based dashboards
+management with (admin/auditor/client), configurable
+Audit
+251 real-time visibility, checklists & audit types, factory &
+Inspection
+automated client management, automated
+compliance scoring, compliance scoring, scheduled audit
+and role-based tracking, response-based result
+dashboards. generation
+Centralizes resident
+care by integrating
+Resident profile management, caretaker
+profile management,
+shift tracking, care request automation,
+caretaker tracking,
+Elderly Care service type configuration, activity
+252 service
+Management schedule planning, health checkup
+coordination, meal
+records, meal plan management,
+planning, activities,
+payment status monitoring
+and health
+monitoring.
+Comprehensive
+nutrition
+management Nutritionist management, schedule
+platform connecting configuration, appointment booking,
+Diet &
+clients, nutritionists, diet plan charts, subscription
+253 Nutrition
+and businesses for management, member tracking,
+Consultant
+diet planning, progress monitoring, payment
+appointments, and processing, diet goal setup
+progress
+monitoring.
+Comprehensive
+sports club Member profile management, ground &
+management facility booking, membership plan
+Sports Club
+covering members, management, coach & trainer directory,
+254 & Academy
+facilities, bookings, training session scheduling, equipment
+Management
+training sessions, inventory tracking, event management,
+equipment, and website customization
+events.
+Comprehensive
+platform to manage Role-based dashboards, distribution
+newspaper center management, newspaper & agent
+Newspaper operations from title management, advertisement
+255 Distribution management and management, allocation & stock
+Management stock allocation to tracking, subscription plan
+sales, subscriptions, management, journalist & article
+and editorial management
+content.
+Centralizes clinic
+Doctor & patient records, eye test
+and optical store
+Optical & prescriptions, appointment scheduling,
+operations from
+256 Eyecare eyewear inventory control, order &
+patient/doctor
+Center payment tracking, auto-accounting
+management to
+entries, real-time reports
+prescriptions,
+appointments, and
+eyewear orders.
+Automates warranty
+Automated warranty tracking, product
+management by
+warranty configuration, customer
+streamlining
+warranty registration, warranty claim
+tracking,
+257 Warranty management, status-based monitoring,
+registration, and
+sales invoice integration, return
+claim processing
+processing, multi-status claim
+linked to sales
+workflow
+invoices.
+Comprehensive
+residential
+community
+Owner management, apartment
+management
+assignment, tower & floor structure,
+Society covering resident
+258 smart parking allocation, amenities
+Management data, apartments,
+booking, utility & common billing,
+maintenance,
+complaint ticketing, staff & visitor logs
+complaints, visitor
+monitoring, and
+billing.
+Robust email
+management Multi-folder email access
+solution integrating (Inbox/Sent/Drafts/Junk/Archive),
+directly with HTML email composition,
+259 Outlook Mail
+Microsoft Outlook conversation threading, quick replies,
+via Azure attachments, flag/mark/move/delete
+authentication with actions, Azure authentication setup
+full folder access.
+Fully customizable
+quiz platform with Interactive quiz builder, multiple
+interactive builder, question types, timed quiz sessions,
+Quiz question library, category-based organization,
+260
+Management timed sessions, and participant self-registration, real-time
+real-time performance tracking, review &
+performance feedback collection
+tracking.
+Centralizes vehicle
+Vehicle inventory management, party
+trading operations
+& buyer tracking, trade & payment
+from inventory and
+Vehicle processing, service history tracking,
+261 trade management
+Trade inspection & condition records,
+to payments, service
+insurance history management, reports
+history, and
+& findings management
+compliance records.
+Comprehensive
+solution for Guard profile management, post & shift
+Security managing security setup, attendance tracking, incident
+262 Guard personnel, posts, reporting, client request handling,
+Management shifts, client payment processing, equipment
+requests, incidents, management & assignment
+and equipment.
+Centralizes all
+aspects of running a Studio dashboard, appointment booking
+photography studio management, payment tracking, camera
+Photo &
+from appointments kit management, service & pricing
+263 Studio
+and payments to control, team member management,
+Management
+team, equipment, portfolio & gallery display, newsletter
+and portfolio subscriber tracking
+management.
+Delivers real-time
+task updates, project
+Discord webhook integration, real-time
+alerts, and progress
+notifications, customizable alert types,
+notifications
+task assignment alerts, project
+264 Discord directly to Discord
+milestone updates, module-specific
+channels, keeping
+notifications (HRM, accounting,
+teams aligned
+projects, etc.)
+without switching
+platforms.
+Payment gateway
+integration
+Multi-currency support (XOF
+supporting West
+countries), subscription plan payments,
+African CFA franc
+company-side service payments
+265 Paiement Pro currencies and
+(bookings, spa, LMS, hotels),
+multi-currency
+Superadmin & Company role
+transactions for
+separation
+subscriptions and
+service payments.
+Centralizes gaming
+facility management Zone configuration, game management,
+including zones, player management, game rental
+266 Game Zone game libraries, tracking, membership plans, food item
+player profiles, control, food order management,
+rentals, food orders, payment tracking
+and memberships.
+Integrated vehicle Vehicle & plan management, customer
+wash business record keeping, smart booking tracking,
+267 Vehicle Wash
+management staff job assignment, integrated
+covering washing payment workflow, expense category
+plans, bookings, logging, report generation, real-time
+staff assignments, status monitoring
+payments, and
+revenue reports.
+Module
+Brief Summary Core Features
+Name
+Secure Caribbean
+payment gateway API key setup, subscription plan
+integration for payments, company-side service
+268 PowerTranz subscription and payments, Caribbean currency support
+service payments, PCI- (USD/BMD/XCD/JMD/TTD),
+compliant with real- Superadmin & Company roles
+time processing.
+PAYMENT GATEWAYS (all follow same pattern: invoice & subscription payment
+processing)
+# Module Name Brief Summary Core Features
+Indian payment
+API key setup, subscription plan
+gateway supporting
+payments, invoice payments, multi-
+multiple payment
+269 Razorpay method support (cards, UPI,
+methods for invoice
+wallets, netbanking), Superadmin &
+and subscription
+Company roles
+payments.
+African payment
+API key setup, subscription plan
+gateway enabling
+payments, invoice payments, multi-
+card, mobile money,
+270 Paystack channel support (cards, mobile
+QR code, bank
+money, USSD, bank), multi-currency
+account, and USSD
+support
+payments.
+Leading West/Central API key setup, subscription plan
+271 Flutterwave
+African payment payments, invoice payments, multi-
+gateway supporting currency
+USD, GBP, EUR, NGN, (USD/GBP/EUR/NGN+African),
+and other African multi-channel payments
+currencies.
+Middle East payment
+gateway designed for API key setup, subscription plan
+seamless invoice and payments, company-side service
+272 MyFatoorah
+subscription payments, GCC currency support,
+processing across GCC Superadmin & Company roles
+countries.
+Flexible developer-
+API key setup, subscription plan
+friendly European
+payments, invoice payments,
+payment gateway for
+273 Mollie European payment method
+online invoice and
+support, Superadmin & Company
+subscription
+roles
+payments.
+Popular Nepali digital
+wallet and payment API key setup, subscription &
+274 Khalti gateway for secure invoice payments, Nepal market
+online transactions support, digital wallet integration
+and subscriptions.
+Russian payment
+gateway for secure API key setup, subscription plan
+invoice handling and payments, invoice payments,
+275 YooKassa
+subscription Superadmin & Company roles, one-
+payments with single time and recurring transactions
+API setup.
+Indian fintech
+payment gateway for API key setup, subscription plan
+one-time and payments, invoice payments, Indian
+276 Cashfree
+recurring payment payment ecosystem support,
+management with API Superadmin & Company roles
+key integration.
+Bahrain-focused
+payment gateway for
+API key setup, invoice payments,
+online invoice and
+277 Benefit subscription plan payments,
+subscription
+Bahraini currency (BHD) support
+payments, serving
+Bahraini businesses.
+West African payment
+gateway providing API key setup, subscription plan
+secure invoice and payments, invoice payments, West
+278 CinetPay
+subscription payment African currency support, multi-
+processing across country support
+Francophone Africa.
+Global enterprise
+payment gateway by API key setup, subscription plan
+Visa for secure invoice payments, invoice payments, global
+279 CyberSource
+and subscription currency support, enterprise-grade
+transaction security
+processing.
+Turkish payment API key setup, subscription plan
+gateway to modernize payments, invoice payments,
+280 iyzipay credit card payments Turkish payment ecosystem
+for individuals and support, Superadmin & Company
+companies. roles
+Global payment
+gateway supporting
+API key setup, subscription plan
+130+ countries and
+payments, invoice payments, 130+
+281 Skrill 40+ currencies for
+country support, 40+ currency
+fast, secure invoice
+support
+and subscription
+payments.
+Cryptocurrency
+API key setup, crypto invoice
+282 CoinGate
+payment gateway
+payments, subscription payments,
+accepting Bitcoin,
+Ethereum, and 70+ 70+ cryptocurrency support, global
+cryptocurrencies for customer reach
+invoices and
+subscriptions.
+Global payment
+platform supporting
+API key setup, subscription plan
+international invoice
+2Checkout payments, invoice payments, multi-
+283 and subscription
+(Verifone) currency global support,
+transactions with
+Superadmin & Company roles
+multi-currency
+support.
+Self-hosted open-
+source Bitcoin
+API key setup, subscription plan
+payment gateway for
+payments, invoice payments,
+284 BTCPay privacy-focused
+Bitcoin/crypto support, self-hosted
+crypto invoice and
+infrastructure
+subscription
+payments.
+PayPal-owned
+payment gateway
+API key setup, subscription plan
+supporting cards,
+payments, invoice payments,
+285 Braintree PayPal, and wallets for
+card/PayPal/wallet support,
+invoice and
+Superadmin & Company roles
+subscription
+payments.
+Global payment
+gateway with strong API key setup, subscription plan
+presence in emerging payments, invoice payments,
+286 PayU
+markets for invoice emerging market currency support,
+and subscription Superadmin & Company roles
+payment processing.
+Pan-African API key setup, subscription plan
+287 DPO Pay
+international payment payments, invoice payments,
+gateway for accepting African multi-currency support,
+payments across international reach
+Africa for invoices and
+subscriptions.
+South African instant
+EFT payment gateway API key setup, subscription plan
+for fast, secure online payments, invoice payments, South
+288 Ozow
+invoice and African ZAR support, instant EFT
+subscription processing
+payments.
+Canadian payment
+gateway for secure
+API key setup, subscription plan
+invoice and
+payments, invoice payments,
+289 Moneris subscription
+Canadian currency (CAD) support,
+transaction processing
+Superadmin & Company roles
+for North American
+businesses.
+East African payment
+gateway supporting
+invoice and API key setup, subscription plan
+290 Pesapal subscription payments, invoice payments, East
+payments across African multi-currency support
+Kenya, Uganda, and
+Tanzania.
+Middle Eastern
+payment gateway for
+API key setup, subscription plan
+swift and secure
+payments, invoice payments,
+291 Fatora invoice and
+Middle East currency support,
+subscription
+Superadmin & Company roles
+transaction
+processing.
+Saudi Arabian API key setup, subscription plan
+292 Moyasar
+payment gateway payments, invoice payments,
+supporting multiple Saudi/global currency support,
+currencies for secure reliable payment infrastructure
+global invoice and
+subscription
+payments.
+Bangladeshi payment
+gateway for smooth
+API key setup, subscription plan
+invoice and
+293 AamarPay payments, invoice payments,
+subscription payment
+Bangladeshi BDT currency support
+processing in South
+Asia.
+Indian mobile
+payment gateway for API key setup, subscription plan
+quick and hassle-free payments, invoice payments, Indian
+294 PhonePe
+invoice and payment ecosystem support,
+subscription mobile-first UX
+transactions.
+Leading Southeast
+Asian fintech payment
+API key setup, subscription plan
+gateway for invoice
+payments, invoice payments, SEA
+295 Xendit and subscription
+multi-currency support, multiple
+payments across
+payment channels
+Indonesia, Philippines,
+and beyond.
+Integrates Google
+Analytics to track real- Real-time user tracking, geographic
+time user user distribution (290+ countries),
+Google
+296 engagement, regional audience behavior analytics,
+Analytics
+behavior, and performance dashboard, unified
+platform performance analytics view
+insights.
+Malaysian payment
+gateway for local API key setup, subscription plan
+297 toyyibPay invoice and payments, invoice payments,
+subscription payment Malaysian Ringgit (MYR) support
+processing.
+US-based payment
+API key setup, subscription plan
+platform for in-person
+payments, invoice payments, card &
+298 Square and online invoice and
+digital wallet support, US and select
+subscription
+international markets
+payments.
+South African
+payment gateway
+API key setup, subscription plan
+supporting cards, EFT,
+payments, invoice payments, South
+299 PayFast and mobile wallets for
+African ZAR support, multi-channel
+invoice and
+payments
+subscription
+payments.
+Japanese mobile
+payment service for
+API key setup, subscription plan
+secure invoice and
+300 LinePay payments, invoice payments, JPY
+subscription payment
+and regional currency support
+processing in East
+Asia.
+Bitcoin and crypto
+payment gateway for API key setup, subscription plan
+invoice and payments, invoice payments,
+301 BitPay
+subscription Bitcoin/crypto multi-currency
+payments using digital support
+currencies.
+API key setup, subscription plan
+South African
+Peach payments, invoice payments, multi-
+payment gateway
+302
+Payment payment method support, fraud
+with advanced
+prevention
+encryption for secure
+online invoice and
+subscription
+transactions.
+Global payment
+gateway supporting
+API key setup, subscription plan
+100+ currencies and
+payments, invoice payments, 100+
+303 BlueSnap 110+ payment types
+currency support, 110+ payment
+for invoice and
+methods
+subscription
+processing.
+Enterprise-level global
+API key setup, subscription plan
+payment gateway for
+payments, invoice payments, global
+304 Adyen large-scale invoice
+multi-currency support, enterprise-
+and subscription
+grade infrastructure
+payment processing.
+Japanese QR code-
+based payment
+API key setup, subscription plan
+gateway for invoice
+305 Paypay payments, invoice payments, JPY
+and subscription
+support, QR code payment method
+payments in the
+Japanese market.
+Bangladesh's largest
+payment gateway
+API key setup, subscription plan
+with detailed
+payments, invoice payments,
+306 SSLCommerz transaction tracking
+Bangladeshi BDT support, detailed
+for invoice and
+transaction reporting
+subscription
+payments.
+Malaysian payment
+gateway for easy and API key setup, subscription plan
+307 senangPay secure local invoice payments, invoice payments, MYR
+and subscription currency support, Malaysian market
+payment processing.
+Trusted US payment
+gateway for secure API key setup, subscription plan
+online and in-store payments, invoice payments, US
+308 AuthorizeNet
+invoice and market support, multiple payment
+subscription payment methods
+processing.
+Latin American
+payment platform for
+invoice and API key setup, subscription plan
+subscription payments, invoice payments,
+309 Mercado Pago
+payments via LATAM multi-currency support,
+debit/credit cards, multiple payment channels
+cash, and bank
+transfers.
+Indonesian payment
+gateway for diverse API key setup, subscription plan
+payment method payments, invoice payments,
+310 Midtrans
+support for invoice Indonesian Rupiah (IDR) support,
+and subscription multi-channel payments
+processing.
+Turkish payment
+gateway for invoice API key setup, subscription plan
+311 PayTR and subscription payments, invoice payments,
+payment processing in Turkish Lira (TRY) support
+the Turkish market.
+Middle Eastern
+PayFort payment gateway for API key setup, subscription plan
+(Amazon secure invoice and payments, invoice payments, MENA
+312
+Payment subscription payment currency support, Amazon-backed
+Services) processing in the infrastructure
+MENA region.
+Global payment API key setup, subscription plan
+313 Checkout.com
+platform with 150+ payments, invoice payments, 150+
+currencies for high- currency support, high-volume
+volume invoice and transaction handling
+subscription payment
+processing.
+UAE/GCC-based
+API key setup, subscription plan
+fintech payment
+payments, invoice payments, GCC
+gateway for invoice
+314 Tap Payments currency support,
+and subscription
+local/international payment
+payment processing in
+methods
+the Middle East.
+Singapore payment
+API key setup, subscription plan
+gateway for QR-based
+payments, invoice payments, SGD
+315 Paynow and digital invoice and
+currency support, QR-based
+subscription
+payments
+payments.
+Nigerian payment
+API key setup, subscription plan
+gateway for fast and
+payments, invoice payments,
+316 Monnify secure invoice and
+Nigerian Naira (NGN) support, bank-
+subscription payment
+backed infrastructure
+processing.
+Bangladeshi payment
+gateway for fast and
+API key setup, subscription plan
+secure invoice and
+317 UddoktaPay payments, invoice payments, BDT
+subscription
+currency support
+transaction
+management.
+West African payment
+gateway for secure
+API key setup, subscription plan
+invoice and
+318 FedaPay payments, invoice payments, West
+subscription
+African CFA franc (XOF) support
+payments across
+Francophone Africa.
+US-based payment
+gateway for
+streamlined and API key setup, subscription plan
+NMI (Network
+319 secure invoice and payments, invoice payments, US
+Merchants)
+subscription market support, fraud protection
+transaction
+processing.
+South African
+payment gateway for API key setup, subscription plan
+card and mobile payments, invoice payments, ZAR
+320 Yoco
+wallet invoice and currency support, South African
+subscription market
+payments.
+Indian payment
+gateway for smooth
+API key setup, subscription plan
+invoice and
+321 Easebuzz payments, invoice payments, INR
+subscription payment
+currency support
+processing in the
+Indian market.
+Nepali digital wallet
+and payment gateway API key setup, subscription plan
+322 eSewa for online invoice and payments, invoice payments, NPR
+subscription currency support, Nepali market
+payments.
+Indian payment
+API key setup, subscription plan
+gateway for smooth
+payments, invoice payments, INR
+323 Instamojo invoice, subscription,
+currency support, Indian SME
+and service payment
+market
+integration.
+API key setup, subscription plan
+Google's digital
+payments, invoice payments,
+324 Google Wallet
+payment solution for
+Google Pay integration, global
+invoice and
+market support
+subscription payment
+processing.
+Multi-cryptocurrency
+payment gateway API key setup, subscription plan
+supporting 100+ coins payments, invoice payments, 100+
+325 CoinPayments
+for invoice and cryptocurrency support, global
+subscription reach
+payments.
+Sri Lankan payment
+gateway for secure API key setup, subscription plan
+326 PayHere invoice and payments, invoice payments, LKR
+subscription payment currency support, Sri Lankan market
+processing.
+International payment
+gateway for
+API key setup, subscription plan
+Checkout streamlined invoice
+327 payments, invoice payments, multi-
+Payment and subscription
+currency support
+transaction
+processing.
+SIGN-IN / SSO MODULES
+Module
+# Brief Summary Core Features
+Name
+Google OAuth integration,
+Allows users to log in using
+Sign In admin credential
+Google accounts, eliminating
+328 with configuration, login button
+separate username/password
+Google control, secure
+management.
+authentication
+Sign In Simplifies login using Facebook
+Facebook OAuth integration,
+329 with credentials, eliminating need for
+admin configuration, login
+Facebook separate account creation.
+button toggle, secure
+authentication
+LinkedIn OAuth integration,
+Sign In Enables seamless login using
+admin configuration, login
+330 with existing LinkedIn credentials for
+button control, professional
+LinkedIn quick access.
+profile-based auth
+Twitter OAuth integration,
+Sign In Allows quick account access
+admin configuration, login
+331 with using Twitter/X credentials,
+button toggle, secure
+Twitter streamlining the login process.
+authentication
+Azure/Microsoft OAuth
+Sign In Enables login using Microsoft
+integration, admin credential
+332 with accounts, simplifying access and
+configuration, login button
+Microsoft improving security.
+control
+Outlook OAuth integration,
+Sign In Allows users to log in using their
+admin configuration, login
+333 with Microsoft Outlook credentials
+button toggle, secure Azure-
+Outlook via secure authentication.
+backed auth
+GitHub OAuth integration,
+Sign In Enables developers to sign in
+admin configuration, login
+334 with using their GitHub credentials
+button control, developer-
+GitHub for streamlined platform access.
+friendly auth
+Slack OAuth integration,
+Lets users log in using Slack
+Sign In admin configuration, login
+335 credentials, eliminating need to
+with Slack button toggle, workspace-
+create new accounts.
+based auth
+Sign In Allows users to authenticate Bitbucket OAuth integration,
+336 with using Bitbucket credentials for admin configuration, login
+Bitbucket quick access. button control
+MOBILE APP MODULES
+# Module Name Brief Summary Core Features
+Mobile attendance check-
+Mobile app for real-time
+in/check-out, real-time
+Attendance – employee attendance
+337 tracking, employee records,
+Dash Mobile App tracking and
+attendance history, leave
+management on the go.
+management
+Mobile app enabling
+Mobile CRM, lead
+sales agents to manage
+Sales – Dash management, order creation,
+338 leads, orders, and client
+Mobile App client interaction tracking,
+interactions from
+sales performance visibility
+anywhere.
+Project tracking, task
+Mobile app for tracking
+Project management, team
+project progress, tasks,
+339 Management – collaboration, milestone
+and team collaboration
+Dash Mobile App monitoring, real-time project
+on the go.
+updates
+Mobile app for capturing, Lead capture, pipeline
+Lead
+managing, and management, lead status
+340 Management –
+converting leads from any tracking, follow-up reminders,
+Dash Mobile App
+location. conversion tracking
+Mobile app enabling Ticket management, status
+support teams to updates, customer
+Support Ticket –
+341 manage, respond to, and communication, ticket
+Dash Mobile App
+resolve customer tickets prioritization, resolution
+anywhere. tracking
+That brings the complete Dash SaaS Add-Ons module table to 341 total entries
+covering all ~323+ modules listed in the category (some additional modules were
+discovered during navigation).
+Here's a quick summary of the categories covered:
+Category Breakdown:
+• Core Business Tools (Custom Fields, Sales, Contracts, etc.) — #1–~80
+• HR & Operations (Recruitment, Timesheet, Attendance, etc.) — ~#81–
+#110
+• Communication & Integrations (WhatsApp, Slack, Telegram, etc.) —
+~#111–#145
+• Industry-Specific Modules (Hospital, Hotel, School, Gym, etc.) — #146–
+#267
+• Payment Gateways — #268–#327
+• SSO / Sign-In Modules — #328–#336
+• Mobile Apps — #337–#341
