@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <script>
+(function(){
+  if(!localStorage.getItem('darkmode')){
+    localStorage.setItem('darkmode','1');
+  }
+  if(localStorage.getItem('darkmode')==='1'){
+    document.documentElement
+    .classList.add('dark');
+  }
+})();
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Integration | DoQuill — Enterprise AI ERP</title>
+    <meta name="description" content="Connect DoQuill to your Slack workspace to push real-time notifications to the right channels automatically. Set up webhook URLs per channel and configure which DoQuill events — from new deals and HR approvals to delivery updates — trigger Slack messages to keep your team informed without switching tools.">
+    <meta name="keywords" content="saas, saas template, site template, software, startup, digital product, html5, landing, marketing, bootstrap, uikit3, agency, ai, digital agency, it solutions, nodejs">
+    <link rel="canonical" href="https://unistudio.co/html/Lexend">
+    <meta name="theme-color" content="#178d72">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lexend" />
+    <meta property="og:description" content="Full-featured, Professional-looking SaaS, Software and Startup Site Template." />
+    <meta property="og:url" content="https://unistudio.co/html/lexend/" />
+    <meta property="og:site_name" content="Lexend" />
+    <meta property="og:image" content="https://unistudio.co/html/lexend/assets/images/common/seo-image.jpg" />
+    <meta property="og:image:width" content="1180" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:type" content="image/png" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lexend">
+    <meta name="twitter:description" content="Full-featured, Professional-looking SaaS, Software and Startup Site Template.">
+    <meta name="twitter:image" content="https://unistudio.co/html/lexend/assets/images/common/seo-image.jpg">
+
+    <link rel="canonical" href="https://unistudio.co/html/lexend/" />
+
+    <!-- preload head styles -->
+    <link rel="preload" href="../assets/css/fonts.css" as="style">
+    <link rel="preload" href="../assets/css/unicons.min.css" as="style">
+    <link rel="preload" href="../assets/css/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="../assets/css/magic-cursor.min.css" as="style">
+
+    <!-- preload footer scripts -->
+    <link rel="preload" href="../assets/js/libs/jquery.min.js" as="script">
+    <link rel="preload" href="../assets/js/libs/scrollmagic.min.js" as="script">
+    <link rel="preload" href="../assets/js/libs/swiper-bundle.min.js" as="script">
+    <link rel="preload" href="../assets/js/libs/anime.min.js" as="script">
+    <link rel="preload" href="../assets/js/libs/typed.min.js" as="script">
+    <link rel="preload" href="../assets/js/libs/tilt.min.js" as="script">
+    <link rel="preload" href="../assets/js/libs/split-type.min.js" as="script">
+    <link rel="preload" href="../assets/js/libs/prettify.min.js" as="script">
+    <link rel="preload" href="../assets/js/libs/gsap.min.js" as="script">
+    <link rel="preload" href="../assets/js/libs/smooth-scroll.min.js" as="script">
+    <link rel="preload" href="../assets/js/core/magic-cursor.js" as="script">
+    <link rel="preload" href="../assets/js/helpers/data-attr-helper.js" as="script">
+    <link rel="preload" href="../assets/js/helpers/swiper-helper.js" as="script">
+    <link rel="preload" href="../assets/js/helpers/splitype-helper.js" as="script">
+    <link rel="preload" href="../assets/js/helpers/anime-helper.js" as="script">
+    <link rel="preload" href="../assets/js/helpers/typed-helper.js" as="script">
+    <link rel="preload" href="../assets/js/helpers/tilt-helper.js" as="script">
+    <link rel="preload" href="../assets/js/core/marquee.js" as="script">
+    <link rel="preload" href="../assets/js/uikit-components-bs.js" as="script">
+    <link rel="preload" href="../assets/js/form.js" as="script">
+    <link rel="preload" href="../assets/js/app.js" as="script">
+
+    <!-- app head for bootstrap core -->
+    <script src="../assets/js/app-head-bs.js"></script>
+
+    <!-- include uni-core components -->
+    <link rel="stylesheet" href="../assets/js/uni-core/css/uni-core.min.css">
+
+    <!-- include styles -->
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/unicons.min.css">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/prettify.min.css">
+    <link rel="stylesheet" href="../assets/css/magic-cursor.min.css">
+
+    <!-- include main style -->
+    <link rel="stylesheet" href="../assets/css/theme/main.purge.css">
+    <link rel="stylesheet" href="../assets/css/theme/theme-three.purge.css">
+
+    <!-- include scripts -->
+    <script src="../assets/js/uni-core/js/uni-core-bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/doquill.css">
+</head>
+
+<body class="uni-body panel uni-body panel bg-white text-gray-900 dark:bg-black dark:text-gray-200 overflow-x-hidden disable-cursor">
+
+
+
+    <!-- Mobile nav panel -->
+    <div id="uc-menu-panel" data-uc-offcanvas="overlay: true;">
+        <div class="uc-offcanvas-bar bg-white text-dark dark:bg-gray-900 dark:text-white">
+
+            <header class="uc-offcanvas-header hstack justify-between items-center pb-2 bg-white dark:bg-gray-900">
+                <div class="uc-logo">
+                    <a href="index.html" class="h5 text-none text-gray-900 dark:text-white">
+                        <img src="../assets/images/common/doquill-icon.png" alt="DoQuill" style="height:32px;width:auto;">
+                    </a>
+                </div>
+                <button class="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 icon-3 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all" type="button">
+                    <i class="unicon-close"></i>
+                </button>
+            </header>
+
+            <div class="panel">
+                <form id="search-panel" class="form-icon-group vstack gap-1 mb-2" data-uc-sticky="">
+                    <input type="email" class="form-control form-control-sm fs-7 rounded-default" placeholder="Search..">
+                    <span class="form-icon text-gray">
+                        <i class="unicon-search icon-1"></i>
+                    </span>
+                </form>
+                <ul class="nav-y gap-narrow fw-medium fs-6" data-uc-nav>
+                    <li class="uc-parent"><a href="page-industries.html">Industries</a>
+                        <ul class="uc-nav-sub" data-uc-nav="">
+                            <li><a href="page-industry-hospital.html">Hospital Management</a></li>
+                            <li><a href="page-industry-pharmacy.html">Pharmacy Management</a></li>
+                            <li><a href="page-industry-school.html">School & Institute</a></li>
+                            <li><a href="page-industry-construction.html">Construction Management</a></li>
+                            <li><a href="page-industry-agriculture.html">Agriculture Management</a></li>
+                            <li><a href="page-industry-freight.html">Freight Management</a></li>
+                            <li><a href="page-industry-fleet.html">Fleet Management</a></li>
+                            <li><a href="page-industry-cmms.html">CMMS</a></li>
+                            <li><a href="page-industry-hotel.html">Hotel & Hospitality</a></li>
+                            <li><a href="page-industry-legal.html">Legal Case Management</a></li>
+                            <li><a href="page-industries.html">View all 50+ industries →</a></li>
+                        </ul>
+                    </li>
+                    <li class="uc-parent"><a href="page-features.html">Solutions</a>
+                        <ul class="uc-nav-sub" data-uc-nav="">
+                            <li><a href="page-features.html#accounting">Accounting & Finance</a></li>
+                            <li><a href="page-features.html#sales">Sales & Purchase</a></li>
+                            <li><a href="page-features.html#hrm">HRM & People</a></li>
+                            <li><a href="page-features.html#inventory">Inventory Management</a></li>
+                            <li><a href="page-features.html#ai-agent">AI Agent</a></li>
+                            <li><a href="page-features.html#workflow">Workflow Automation</a></li>
+                            <li><a href="page-features.html#crm">CRM</a></li>
+                            <li><a href="page-features.html#api">API & Webhooks</a></li>
+                            <li><a href="page-integrations.html">Payment Gateways (58+)</a></li>
+                            <li><a href="page-integrations.html">Browse 296+ addons →</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Insights</a></li>
+                    <li><a href="page-pricing-2.html">Pricing</a></li>
+                    <li class="hr opacity-10 my-1"></li>
+                    <li><a href="page-about.html">About DoQuill</a></li>
+                    <li><a href="page-contact-2.html">Contact</a></li>
+                    <li><a href="page-contact.html">Book a demo</a></li>
+                    <li class="hr opacity-10 my-1"></li>
+                    <li><a href="https://app.doquill.io/register">Start free trial</a></li>
+                    <li><a href="https://app.doquill.io/">Log in</a></li>
+                </ul>
+                <ul class="social-icons nav-x mt-4">
+                    <li>
+                        <a href="https://x.com/doquill" target="_blank"><i class="unicon-logo-x-filled icon-2"></i></a>
+                        <a href="https://www.linkedin.com/company/doquill/" target="_blank"><i class="unicon-logo-linkedin icon-2"></i></a>
+                    </li>
+                </ul>
+                <div class="py-2 hstack gap-2 mt-4 bg-white dark:bg-gray-900" data-uc-sticky="position: bottom">
+                    <div class="vstack gap-1">
+                        <span class="fs-7 opacity-60">Theme:</span>
+                        <div class="darkmode-trigger" data-darkmode-switch="">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider fs-5"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Header start -->
+    <div class="uc-banner-top py-1 p-2 m-0 hide-on-sticky text-center bg-gradient-to-r from-primary dark:from-tertiary-200 to-primary-700 dark:to-tertiary text-white dark:text-dark" data-uc-alert="">
+        <a href="#" class="uc-alert-close top-0 end-0" style="margin: 14px;" data-uc-close></a>
+        <p>50+ industry vertical systems. One platform. <br class="d-block lg:d-none"> <a href="page-industries.html" class="uc-link text-tertiary dark:text-primary border-bottom">Find yours →</a></p>
+    </div>
+    <header class="uc-header header-seven uc-navbar-sticky-wrap z-999 " data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;">
+        <nav class="uc-navbar-container uc-navbar-float ft-tertiary z-1" data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;">
+            <div class="uc-navbar-main" style="--uc-nav-height: 64px">
+                <div class="container">
+                    <div class="uc-navbar min-h-64px text-gray-900 dark:text-white" data-uc-navbar=" animation: uc-animation-slide-top-small; duration: 150;">
+                        <div class="uc-navbar-left">
+                            <div class="uc-logo">
+                                <a class="panel text-none" href="index-7.html" style="width: 140px;">
+                                    <img class="dark:d-none" src="../assets/images/common/doquill-light.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
+                                    <img class="d-none dark:d-block" src="../assets/images/common/doquill-dark.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
+                                </a>
+                            </div>
+                            <ul class="uc-navbar-nav gap-3 d-none lg:d-flex ltr:ms-2 rtl:me-2">
+                                <li>
+                                    <a href="#">Industries <span data-uc-navbar-parent-icon></span></a>
+                                    <div class="uc-dropbar uc-dropbar-top p-0 ft-primary text-unset fs-6 fw-normal hide-scrollbar border-top rounded-0 overflow-hidden shadow-xl bg-white dark:bg-gray-900" data-uc-drop="offset: 0; boundary: true; stretch: x; animation: uc-animation-slide-top-small; animate-out: uc-animation-slide-top-small; duration: 150;">
+                                        <div class="uc-dropbar-content">
+                                            <div class="container">
+                                                <div class="uc-dropbar-inner after-bg">
+                                                    <div class="row gx-5 col-match justify-between">
+                                                        <div class="col-8">
+                                                            <div class="panel vstack gap-4 py-4">
+                                                                <div class="vstack gap-narrow flex-none">
+                                                                    <h5 class="h5 xl:h4 fw-medium m-0">50+ industry vertical systems</h5>
+                                                                    <p class="fs-7 text-gray-300">A complete operational system built for your exact industry. Activate and run from day one.</p>
+                                                                </div>
+                                                                <div class="row child-cols-4 gx-4 col-match justify-between">
+
+                                                                    <!-- Column 1 -->
+                                                                    <div>
+                                                                        <h6 class="h6 mb-3"><i class="fs-7 unicon-medical-kit fw-bold ltr:me-narrow rtl:ms-narrow"></i> Healthcare</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-hospital.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-hospital-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Hospital Management</b>
+                                                                                        <span class="fs-8 text-muted">Doctors, beds, lab, pharmacy & billing.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-pharmacy.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-pharmacy-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Pharmacy</b>
+                                                                                        <span class="fs-8 text-muted">Medicines, prescriptions & stock.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-medical-lab.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-medical-lab.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Medical Lab</b>
+                                                                                        <span class="fs-8 text-muted">Tests, results & patient records.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+
+                                                                        <h6 class="h6 mb-3 mt-4"><i class="fs-7 unicon-building fw-bold ltr:me-narrow rtl:ms-narrow"></i> Construction</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-construction.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-construction-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Construction Management</b>
+                                                                                        <span class="fs-8 text-muted">Projects, materials & contractors.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-property.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-property-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Property Management</b>
+                                                                                        <span class="fs-8 text-muted">Units, tenants, leases & maintenance.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+
+                                                                    <!-- Column 2 -->
+                                                                    <div>
+                                                                        <h6 class="h6 mb-3"><i class="fs-7 unicon-learn fw-bold ltr:me-narrow rtl:ms-narrow"></i> Education</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-school.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-school-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">School & Institute</b>
+                                                                                        <span class="fs-8 text-muted">Admissions, exams, library & fees.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-driving-school.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-driving-school.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Driving School</b>
+                                                                                        <span class="fs-8 text-muted">Enrollment, scheduling & tracking.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-sports-academy.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-sports-club-academy.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Sports & Academy</b>
+                                                                                        <span class="fs-8 text-muted">Members, classes & schedules.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+
+                                                                        <h6 class="h6 mb-3 mt-4"><i class="fs-7 unicon-leaf fw-bold ltr:me-narrow rtl:ms-narrow"></i> Agriculture</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-agriculture.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-agriculture.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Agriculture Management</b>
+                                                                                        <span class="fs-8 text-muted">Crops, livestock & supply chain.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-dairy.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-dairy-cattle.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Dairy & Cattle</b>
+                                                                                        <span class="fs-8 text-muted">Herd, milk production & health.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+
+                                                                    <!-- Column 3 -->
+                                                                    <div>
+                                                                        <h6 class="h6 mb-3"><i class="fs-7 unicon-truck fw-bold ltr:me-narrow rtl:ms-narrow"></i> Logistics</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-freight.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-freight-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Freight Management</b>
+                                                                                        <span class="fs-8 text-muted">Shipments, routes & tracking.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-courier.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-courier-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Courier Management</b>
+                                                                                        <span class="fs-8 text-muted">Parcels, delivery & tracking.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-fleet.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-fleet.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Fleet Management</b>
+                                                                                        <span class="fs-8 text-muted">Vehicles, drivers & maintenance.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+
+                                                                        <h6 class="h6 mb-3 mt-4"><i class="fs-7 unicon-settings fw-bold ltr:me-narrow rtl:ms-narrow"></i> Maintenance</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-cmms.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-cmms.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">CMMS</b>
+                                                                                        <span class="fs-8 text-muted">Maintenance, assets & work orders.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="industry-repair.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-repair-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Repair Management</b>
+                                                                                        <span class="fs-8 text-muted">Jobs, parts & technician tracking.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Right sidebar -->
+                                                        <div class="col-4">
+                                                            <div class="panel vstack gap-4 p-5 bg-gray-25 dark:bg-gray-800 border-start">
+                                                                <div class="vstack gap-2">
+                                                                    <span class="fs-6 fw-bold m-0 text-dark dark:text-white">More industry verticals</span>
+                                                                    <p class="fs-7 text-muted">50+ operational systems across every sector.</p>
+                                                                </div>
+                                                                <div class="panel category-section">
+                                                                    <h5 class="h6 mb-2">Also available</h5>
+                                                                    <ul class="uc-nav uc-navbar-dropdown-nav fs-7 fw-normal row child-cols-12">
+                                                                        <li><a href="industry-hotel.html">Hotel & Hospitality</a></li>
+                                                                        <li><a href="industry-legal.html">Legal Case Management</a></li>
+                                                                        <li><a href="industry-insurance.html">Insurance Management</a></li>
+                                                                        <li><a href="industry-gym.html">GYM Management</a></li>
+                                                                        <li><a href="industry-events.html">Events Management</a></li>
+                                                                        <li><a href="industry-ngo.html">NGO Management</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <a href="page-industries.html" class="btn btn-sm btn-primary rounded-pill fw-medium">Browse all 50+ industries →</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Footer bar -->
+                                        <div class="uc-dropbar-footer py-2 xl:py-3 border-top bg-white dark:bg-gray-900 dark:text-white">
+                                            <div class="container">
+                                                <ul class="nav-x gap-4 fs-8 fw-medium">
+                                                    <li>
+                                                        <a href="page-industries.html"><i class="fs-8 unicon-grid fw-bold"></i><span class="border-bottom hover:border-primary duration-150">View all 50+ industry vertical systems →</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page-contact.html"><i class="fs-8 unicon-headphones fw-bold"></i><span class="border-bottom hover:border-primary duration-150">Talk to an industry specialist</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page-pricing-2.html"><i class="fs-8 unicon-tag fw-bold"></i><span class="border-bottom hover:border-primary duration-150">View pricing</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Solutions <span data-uc-navbar-parent-icon></span></a>
+                                    <div class="uc-dropbar uc-dropbar-top p-0 ft-primary text-unset fs-6 fw-normal hide-scrollbar border-top rounded-0 overflow-hidden shadow-xl bg-white dark:bg-gray-900" data-uc-drop="offset: 0; boundary: true; stretch: x; animation: uc-animation-slide-top-small; animate-out: uc-animation-slide-top-small; duration: 150;">
+                                        <div class="uc-dropbar-content">
+                                            <div class="container">
+                                                <div class="uc-dropbar-inner after-bg">
+                                                    <div class="row gx-5 col-match justify-between">
+                                                        <div class="col-8">
+                                                            <div class="panel vstack gap-4 py-4">
+                                                                <div class="vstack gap-narrow flex-none">
+                                                                    <h5 class="h5 xl:h4 fw-medium m-0">One platform. Every module.</h5>
+                                                                    <p class="fs-7 text-gray-300">13 core modules included in every plan. 295+ total add-ons available on demand.</p>
+                                                                </div>
+                                                                <div class="row child-cols-4 gx-4 col-match justify-between">
+
+                                                                    <!-- Column 1: Core ERP -->
+                                                                    <div>
+                                                                        <h6 class="h6 mb-3"><i class="fs-7 unicon-chart-pie fw-bold ltr:me-narrow rtl:ms-narrow"></i> Core ERP</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="module-accounting.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-accounting.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Accounting & Finance</b>
+                                                                                        <span class="fs-8 text-muted">Real-time P&L, invoicing & double entry.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="module-sales.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-sales.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Sales</b>
+                                                                                        <span class="fs-8 text-muted">Accounts, opportunities, orders & invoicing.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="module-hrm.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-hrm.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">HRM & People</b>
+                                                                                        <span class="fs-8 text-muted">Payroll, attendance & recruitment.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="module-inventory.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-inventory.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Inventory Management</b>
+                                                                                        <span class="fs-8 text-muted">Stock, warehousing & procurement.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+
+                                                                    <!-- Column 2: Productivity -->
+                                                                    <div>
+                                                                        <h6 class="h6 mb-3"><i class="fs-7 unicon-lightning fw-bold ltr:me-narrow rtl:ms-narrow"></i> Productivity</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="module-ai-agent.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-ai-agent.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">AI Agent</b>
+                                                                                        <span class="fs-8 text-muted">Intelligent automation across every module.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="module-workflow-automation.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Workflow Automation</b>
+                                                                                        <span class="fs-8 text-muted">Build, trigger & automate any process.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="module-project.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-project.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Project Management</b>
+                                                                                        <span class="fs-8 text-muted">Tasks, timelines & team collaboration.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="module-crm.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-crm.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">CRM</b>
+                                                                                        <span class="fs-8 text-muted">Leads, pipeline & customer relationships.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+
+                                                                    <!-- Column 3: Connectivity -->
+                                                                    <div>
+                                                                        <h6 class="h6 mb-3"><i class="fs-7 unicon-api fw-bold ltr:me-narrow rtl:ms-narrow"></i> Connectivity</h6>
+                                                                        <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="module-api-webhooks.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-api.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">API & Webhooks</b>
+                                                                                        <span class="fs-8 text-muted">Connect DoQuill to any system.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="module-whatsapp-automation.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-modules/doquill-whatsapp-api.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">WhatsApp Automation</b>
+                                                                                        <span class="fs-8 text-muted">Instant alerts for orders, invoices & POs.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="module-payment-gateways.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-integrations/doquill-stripe.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Payment Gateways</b>
+                                                                                        <span class="fs-8 text-muted">118 integrations including Stripe & PayPal.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a class="hstack items-start gap-2" href="page-integrations.html">
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="../assets/images/modules/doquill-icons-integrations/doquill-zapier.svg" style="width:20px;height:20px"></div>
+                                                                                    <span class="vstack gap-narrow mt-nnarrow">
+                                                                                        <b class="fw-medium dark:text-white">Third-party Integrations</b>
+                                                                                        <span class="fs-8 text-muted">Shopify, QuickBooks, Zapier & more.</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Right sidebar -->
+                                                        <div class="col-4">
+                                                            <div class="panel vstack gap-4 p-5 bg-gray-25 dark:bg-gray-800 border-start">
+                                                                <div class="vstack gap-2">
+                                                                    <span class="fs-6 fw-bold m-0 text-dark dark:text-white">Featured addons</span>
+                                                                    <p class="fs-7 text-muted">295+ total add-ons available on any plan.</p>
+                                                                </div>
+                                                                <div class="panel category-section">
+                                                                    <h5 class="h6 mb-2">Popular integrations</h5>
+                                                                    <ul class="uc-nav uc-navbar-dropdown-nav fs-7 fw-normal row child-cols-12">
+                                                                        <li><a href="page-integrations.html">Shopify Sync</a></li>
+                                                                        <li><a href="page-integrations.html">QuickBooks</a></li>
+                                                                        <li><a href="page-integrations.html">Google Docs</a></li>
+                                                                        <li><a href="page-integrations.html">Make (Integromat)</a></li>
+                                                                        <li><a href="page-integrations.html">Zapier</a></li>
+                                                                        <li><a href="page-integrations.html">Salesforce</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <a href="page-features.html" class="btn btn-sm btn-primary rounded-pill fw-medium">Browse 81 core modules →</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="uc-dropbar-footer py-2 xl:py-3 border-top bg-white dark:bg-gray-900 dark:text-white">
+                                            <div class="container">
+                                                <ul class="nav-x gap-4 fs-8 fw-medium">
+                                                    <li>
+                                                        <a href="page-features.html"><i class="fs-8 unicon-grid fw-bold"></i><span class="border-bottom hover:border-primary duration-150">View all 81 modules →</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page-features.html"><i class="fs-8 unicon-plugin fw-bold"></i><span class="border-bottom hover:border-primary duration-150">Browse 81 modules</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="page-integrations.html"><i class="fs-8 unicon-link fw-bold"></i><span class="border-bottom hover:border-primary duration-150">View all integrations</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="blog-sidebar.html">Insights</a>
+                                </li>
+                                <li><a href="page-pricing-2.html">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="uc-navbar-right">
+                            <ul class="nav-x d-none lg:d-flex">
+                                <li class="d-none xl:d-inline-flex"><a href="page-contact-2.html">Contact us</a></li>
+                                <li><a href="https://app.doquill.io/">Log in</a></li>
+                            </ul>
+                            <a class="btn btn-sm btn-primary text-tertiary dark:bg-tertiary dark:text-primary dark:hover:bg-tertiary fw-bold rounded-pill lg:px-2 text-none d-none lg:d-inline-flex" href="page-contact.html">Book a demo</a>
+                            <a class="d-block lg:d-none" href="#uc-menu-panel" data-uc-navbar-toggle-icon data-uc-toggle></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Header end -->
+
+    <!--  Bottom Actions Sticky -->
+    <div class="backtotop-wrap position-fixed end-0 rtl:start-0 rtl:end-auto top-auto z-99 m-2 vstack" style="bottom:80px">
+        <div class="darkmode-trigger cstack w-40px h-40px rounded-circle text-none bg-gray-100 dark:bg-gray-700 dark:text-white" data-darkmode-toggle="">
+            <label class="switch">
+                <span class="sr-only">Dark mode toggle</span>
+                <input type="checkbox">
+                <span class="slider fs-5"></span>
+            </label>
+        </div>
+    </div>
+
+    <!-- Wrapper start -->
+<div id="wrapper" class="wrap" style="padding-top:100px">
+
+  <!-- HERO -->
+  <section class="section panel py-6 xl:py-9 features-hero" id="page-features-hero">
+    <div class="container max-w-lg">
+      <div class="row gx-6 items-center">
+        <div class="col-12 lg:col-7 vstack gap-4">
+          <div class="hstack gap-3 items-center">
+            <div class="cstack w-64px h-64px rounded-2 flex-shrink-0" style="background:rgba(46,204,113,0.15)">
+              <img src="../assets/images/modules/doquill-icons-integrations/doquill-zoom.svg" alt="Zoom Icon" id="detail-icon" style="width:36px;height:36px">
+            </div>
+            <div>
+              <div class="hstack gap-2 flex-wrap">
+                <span class="fs-8 fw-bold px-3 py-1 rounded-pill" style="background:rgba(46,204,113,0.12);color:#2ECC71" id="detail-category">Cloud &amp; Productivity</span>
+                <span class="fs-8 fw-bold px-3 py-1 rounded-pill" style="background:rgba(245,166,35,0.12);color:#F5A623" id="detail-price">Included in all plans</span>
+              </div>
+            </div>
+          </div>
+          <h1 class="h2 xl:h1 fw-bold m-0 dark:text-white" id="detail-title" style="line-height:1.05">Zoom</h1>
+          <p class="fs-5 text-muted" id="detail-subtitle">Connect DoQuill to Zoom to schedule and manage video meetings without leaving the platform. Generate join and host URLs automatically, invite multiple participants, protect meetings with passwords, and sync everything with your DoQuill calendar for a unified scheduling experience.</p>
+          <div class="hstack gap-3 flex-wrap">
+            <a href="https://app.doquill.io/register" class="btn btn-md btn-primary rounded-pill fw-bold px-4">Activate now</a>
+            <a href="page-contact.html" class="btn btn-md btn-outline-primary rounded-pill fw-bold px-4" style="border-color:#2ECC71;color:#2ECC71">Book a demo</a>
+          </div>
+        </div>
+        <div class="col-12 lg:col-5 d-none lg:d-block">
+          <div class="panel rounded-2 p-5 text-center" style="background:rgba(46,204,113,0.06);border:1px solid rgba(46,204,113,0.2)">
+            <img src="../assets/images/modules/doquill-icons-integrations/doquill-zoom.svg" alt="Zoom" style="width:120px;height:120px;opacity:0.9">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IT DOES -->
+  <section class="section panel py-6 bg-white dark:bg-gray-900">
+    <div class="container max-w-900px">
+      <div class="vstack gap-4">
+        <div class="hstack gap-2 items-center">
+          <div class="w-8px h-8px rounded-circle flex-shrink-0" style="background:#2ECC71"></div>
+          <h2 class="h5 fw-bold m-0 dark:text-white">What it does</h2>
+        </div>
+        <p class="fs-6 text-muted" id="detail-description" style="line-height:1.8">Connect with your Zoom API credentials to schedule meetings, auto-generate join and host URLs, invite multiple participants, protect meetings with passwords and sync everything with your DoQuill calendar.</p>
+
+        <!-- Screenshot placeholder -->
+        <div class="panel rounded-2 overflow-hidden border" style="background:#0B0F1E;min-height:300px;display:flex;align-items:center;justify-content:center">
+          <div class="text-center vstack gap-3 p-6">
+            <div class="cstack w-64px h-64px rounded-circle mx-auto" style="background:rgba(46,204,113,0.12)">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="width:32px;height:32px">
+                <polygon points="5,3 19,12 5,21" stroke="#2ECC71" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <p class="fs-7 m-0" style="color:#B0B7CC">Platform screenshot coming soon</p>
+            <a href="https://app.doquill.io/register" class="btn btn-sm btn-primary rounded-pill fw-medium px-4">See it live →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY FEATURES -->
+  <section class="section panel py-6">
+    <div class="container max-w-900px">
+      <div class="vstack gap-5">
+        <div class="hstack gap-2 items-center">
+          <div class="w-8px h-8px rounded-circle flex-shrink-0" style="background:#2ECC71"></div>
+          <h2 class="h5 fw-bold m-0 dark:text-white">Key features</h2>
+        </div>
+        <div class="row child-cols-12 sm:child-cols-6 lg:child-cols-4 gx-3 gy-3" id="detail-features">
+
+          <div>
+            <div class="panel border rounded-2 p-4 bg-white dark:bg-gray-900 h-100 vstack gap-2" style="border-top:3px solid #2ECC71">
+              <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="width:20px;height:20px"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" stroke="#2ECC71" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="#2ECC71" stroke-width="2"/></svg>
+              </div>
+              <div class="fw-medium fs-7 dark:text-white">Zoom API setup</div>
+              <div class="fs-8 text-muted">Connect with your Zoom API credentials.</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="panel border rounded-2 p-4 bg-white dark:bg-gray-900 h-100 vstack gap-2" style="border-top:3px solid #1A2456">
+              <div class="cstack w-40px h-40px rounded" style="background:rgba(26,36,86,0.12);flex-shrink:0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="width:20px;height:20px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#1A2456" stroke-width="2"/><polyline points="14,2 14,8 20,8" stroke="#1A2456" stroke-width="2"/></svg>
+              </div>
+              <div class="fw-medium fs-7 dark:text-white">Schedule video meetings</div>
+              <div class="fs-8 text-muted">Set up Zoom meetings from your workspace.</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="panel border rounded-2 p-4 bg-white dark:bg-gray-900 h-100 vstack gap-2" style="border-top:3px solid #F5A623">
+              <div class="cstack w-40px h-40px rounded" style="background:rgba(245,166,35,0.12);flex-shrink:0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="width:20px;height:20px"><polyline points="23 4 23 10 17 10" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="1 20 1 14 7 14" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="fw-medium fs-7 dark:text-white">Auto-generated join & host URLs</div>
+              <div class="fs-8 text-muted">Join and host links created automatically.</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="panel border rounded-2 p-4 bg-white dark:bg-gray-900 h-100 vstack gap-2" style="border-top:3px solid #EF4444">
+              <div class="cstack w-40px h-40px rounded" style="background:rgba(239,68,68,0.12);flex-shrink:0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="width:20px;height:20px"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="fw-medium fs-7 dark:text-white">Multi-participant invitations</div>
+              <div class="fs-8 text-muted">Invite multiple participants to each meeting.</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="panel border rounded-2 p-4 bg-white dark:bg-gray-900 h-100 vstack gap-2" style="border-top:3px solid #2ECC71">
+              <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="width:20px;height:20px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#2ECC71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="fw-medium fs-7 dark:text-white">Password protection</div>
+              <div class="fs-8 text-muted">Secure meetings with passwords.</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="panel border rounded-2 p-4 bg-white dark:bg-gray-900 h-100 vstack gap-2" style="border-top:3px solid #1A2456">
+              <div class="cstack w-40px h-40px rounded" style="background:rgba(26,36,86,0.12);flex-shrink:0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" style="width:20px;height:20px"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="#1A2456" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="#1A2456" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="fw-medium fs-7 dark:text-white">Calendar integration</div>
+              <div class="fs-8 text-muted">Sync meetings with your DoQuill calendar.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IS IT FOR -->
+  <section class="section panel py-6 bg-white dark:bg-gray-900">
+    <div class="container max-w-900px">
+      <div class="vstack gap-5">
+        <div class="hstack gap-2 items-center">
+          <div class="w-8px h-8px rounded-circle flex-shrink-0" style="background:#2ECC71"></div>
+          <h2 class="h5 fw-bold m-0 dark:text-white">Who is it for</h2>
+        </div>
+        <div class="row child-cols-12 sm:child-cols-4 gx-3 gy-3">
+
+          <div>
+            <div class="panel border rounded-2 p-4 bg-white dark:bg-gray-900 text-center vstack gap-3 h-100">
+              <div class="cstack w-48px h-48px rounded-circle mx-auto fw-bold fs-7" style="background:#1A2456;color:#2ECC71">OPS</div>
+              <div>
+                <div class="fw-medium fs-7 dark:text-white mb-1">Operations Lead</div>
+                <div class="fs-8 text-muted">Schedule meetings from the platform</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="panel border rounded-2 p-4 bg-white dark:bg-gray-900 text-center vstack gap-3 h-100">
+              <div class="cstack w-48px h-48px rounded-circle mx-auto fw-bold fs-7" style="background:#1A2456;color:#2ECC71">SAL</div>
+              <div>
+                <div class="fw-medium fs-7 dark:text-white mb-1">Sales Lead</div>
+                <div class="fs-8 text-muted">Host client meetings with secure links</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="panel border rounded-2 p-4 bg-white dark:bg-gray-900 text-center vstack gap-3 h-100">
+              <div class="cstack w-48px h-48px rounded-circle mx-auto fw-bold fs-7" style="background:#1A2456;color:#2ECC71">HR</div>
+              <div>
+                <div class="fw-medium fs-7 dark:text-white mb-1">HR Manager</div>
+                <div class="fs-8 text-muted">Run interviews on Zoom</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED -->
+  <section class="section panel py-6">
+    <div class="container max-w-900px">
+      <div class="vstack gap-5">
+        <div class="hstack gap-2 items-center">
+          <div class="w-8px h-8px rounded-circle flex-shrink-0" style="background:#2ECC71"></div>
+          <h2 class="h5 fw-bold m-0 dark:text-white">Related integrations</h2>
+        </div>
+        <div class="row child-cols-12 sm:child-cols-4 gx-3 gy-3">
+
+          <div>
+            <a href="integration-google-meet.html" class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 hstack gap-3 items-center hover:-translate-y-1 duration-150 transition-all hover:border-tertiary text-decoration-none">
+              <div class="cstack w-40px h-40px rounded flex-shrink-0" style="background:rgba(46,204,113,0.12)">
+                <img src="../assets/images/modules/doquill-icons-integrations/doquill-google-meet.svg" style="width:24px;height:24px" alt="Google Meet">
+              </div>
+              <div>
+                <div class="fw-medium fs-7 dark:text-white">Google Meet</div>
+                <div class="fs-8 text-muted">Video calls</div>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="integration-outlook.html" class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 hstack gap-3 items-center hover:-translate-y-1 duration-150 transition-all hover:border-tertiary text-decoration-none">
+              <div class="cstack w-40px h-40px rounded flex-shrink-0" style="background:rgba(46,204,113,0.12)">
+                <img src="../assets/images/modules/doquill-icons-integrations/doquill-outlook.svg" style="width:24px;height:24px" alt="Outlook">
+              </div>
+              <div>
+                <div class="fw-medium fs-7 dark:text-white">Outlook</div>
+                <div class="fs-8 text-muted">Email & calendar</div>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="integration-google-drive.html" class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 hstack gap-3 items-center hover:-translate-y-1 duration-150 transition-all hover:border-tertiary text-decoration-none">
+              <div class="cstack w-40px h-40px rounded flex-shrink-0" style="background:rgba(46,204,113,0.12)">
+                <img src="../assets/images/modules/doquill-icons-integrations/doquill-google-drive.svg" style="width:24px;height:24px" alt="Google Drive">
+              </div>
+              <div>
+                <div class="fw-medium fs-7 dark:text-white">Google Drive</div>
+                <div class="fs-8 text-muted">Cloud file storage</div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="hstack justify-center mt-2">
+          <a href="page-integrations.html" class="btn btn-sm btn-outline-primary rounded-pill fw-bold px-4" style="border-color:#2ECC71;color:#2ECC71">Explore more integrations →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section panel py-6" style="background:#1A2456">
+    <div class="container text-center">
+      <h2 class="h4 fw-bold mb-2" style="color:#FFFFFF">Ready to connect Zoom to DoQuill?</h2>
+      <p class="fs-7 mb-4" style="color:#B0B7CC">Schedule and manage video meetings from one workspace.</p>
+      <div class="hstack gap-3 justify-center flex-wrap">
+        <a href="https://app.doquill.io/register" class="btn btn-primary rounded-pill fw-bold px-5">Activate now</a>
+        <a href="page-contact.html" class="btn rounded-pill fw-bold px-5" style="border:1px solid #2ECC71;color:#2ECC71">Book a demo</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+    <!-- Wrapper end -->
+
+    <!-- Footer start -->
+    <footer id="uc-footer" class="uc-footer panel overflow-hidden ft-tertiary ">
+        <div class="footer-outer py-4 lg:py-6 xl:py-10 bg-gradient-to-t from-tertiary-200 dark:from-primary-700 to-primary-25 dark:to-gray-900 dark:text-white">
+            <div class="uc-footer-content">
+                <div class="container">
+                    <div class="uc-footer-inner vstack gap-4 lg:gap-6 xl:gap-8">
+                        <div class="uc-footer-widgets panel">
+                            <div class="row child-cols-6 md:child-cols col-match g-4">
+                                <div class="col-12 md:col-6">
+                                    <div class="panel vstack items-start gap-3 xl:gap-4 md:max-w-1/2">
+                                        <div>
+                                            <a href="index-7.html" style="width: 140px">
+                                                <img class="dark:d-none" src="../assets/images/common/doquill-light.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
+                                                <img class="d-none dark:d-block" src="../assets/images/common/doquill-dark.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
+                                            </a>
+                                            <p class="lg:fs-5 mt-2 fw-medium">Intelligent Systems.<br><span class="text-tertiary fw-bold">Stronger</span> businesses.</p>
+                                        </div>
+                                        <div class="d-inline-block">
+                                            <a href="#" class="hstack gap-1 text-none fw-bold">
+                                                <i class="icon icon-1 unicon-earth-filled"></i>
+                                                <span>English</span>
+                                                <span data-uc-drop-parent-icon=""></span>
+                                            </a>
+                                            <div class="p-2 bg-white dark:bg-gray-800 shadow-xs rounded w-150px" data-uc-drop="mode: click; offset: 28; pos: top-right; boundary: !.uc-footer-bottom; animation: uc-animation-slide-top-small; duration: 150;">
+                                                <ul class="nav-y gap-1 fw-medium items-end">
+                                                    <li><a href="#en">English</a></li>
+                                                    <li><a href="#ar">العربية</a></li>
+                                                    <li><a href="#ch">中文</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="nav-y gap-2 fw-bold">
+                                        <li class="h6 fs-8 text-uppercase mb-2 opacity-60">Product</li>
+                                        <li><a href="page-features.html">Core Modules</a></li>
+                                        <li><a href="page-industries.html">Industry Verticals</a></li>
+                                        <li><a href="index-7.html#ai_automation">AI Automation</a></li>
+                                        <li><a href="page-pricing-2.html">Pricing</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="nav-y gap-2 fw-bold">
+                                        <li class="h6 fs-8 text-uppercase mb-2 opacity-60">Company</li>
+                                        <li><a href="page-about.html">About DoQuill</a></li>
+                                        <li><a href="page-contact.html">Book a demo</a></li>
+                                        <li><a href="page-contact-2.html">Contact us</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-none lg:d-block">
+                                    <ul class="nav-y gap-2 fw-bold">
+                                        <li class="h6 fs-8 text-uppercase mb-2 opacity-60">Resources</li>
+                                        <li><a href="blog-sidebar.html">Blog & Insights</a></li>
+                                        <li><a href="page-docs.html">Documentation</a></li>
+                                        <li><a href="page-api.html">API Docs</a></li>
+                                        <li><a href="page-status.html">System Status</a></li>
+                                    </ul>
+                                </div>
+                                <div class="d-none lg:d-block">
+                                    <ul class="nav-y gap-2 fw-bold">
+                                        <li class="h6 fs-8 text-uppercase mb-2 opacity-60">Legal</li>
+                                        <li><a href="page-cookie.html">Cookie Policy</a></li>
+                                        <li><a href="page-gdpr.html">GDPR</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uc-footer-bottom panel vstack md:hstack gap-2 justify-between items-center text-center pt-4 lg:pt-6 border-top dark:text-white">
+                            <p>DoQuill © 2026. All rights reserved.</p>
+                            <ul class="nav-x gap-1">
+                                <li><a href="page-privacy.html">Privacy Policy</a></li>
+                                <li class="mx-2 lg:mx-3"><a href="page-terms.html">Terms of Service</a></li>
+                                <li><a href="https://x.com/doquill" target="_blank" class="btn btn-sm btn-primary text-tertiary dark:bg-tertiary dark:text-white p-0 w-32px h-32px rounded-circle" style="position:relative;z-index:10"><i class="icon icon-1 unicon-logo-x-filled"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/doquill/" target="_blank" class="btn btn-sm btn-primary text-tertiary dark:bg-tertiary dark:text-white p-0 w-32px h-32px rounded-circle" style="position:relative;z-index:10"><i class="icon icon-1 unicon-logo-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer end -->
+
+    <!-- include jquery & bootstrap js -->
+    <script defer src="../assets/js/libs/jquery.min.js"></script>
+    <script defer src="../assets/js/libs/bootstrap.min.js"></script>
+
+    <!-- include scripts -->
+    <script defer src="../assets/js/libs/anime.min.js"></script>
+    <script defer src="../assets/js/libs/swiper-bundle.min.js"></script>
+    <script defer src="../assets/js/libs/scrollmagic.min.js"></script>
+    <script defer src="../assets/js/libs/typed.min.js"></script>
+    <script defer src="../assets/js/libs/tilt.min.js"></script>
+    <script defer src="../assets/js/libs/split-type.min.js"></script>
+    <script defer src="../assets/js/libs/prettify.min.js"></script>
+    <script defer src="../assets/js/libs/gsap.min.js"></script>
+    <script defer src="../assets/js/libs/smooth-scroll.min.js"></script>
+    <script defer src="../assets/js/core/magic-cursor.js"></script>
+    <script defer src="../assets/js/helpers/data-attr-helper.js"></script>
+    <script defer src="../assets/js/helpers/swiper-helper.js"></script>
+    <script defer src="../assets/js/helpers/splitype-helper.js"></script>
+    <script defer src="../assets/js/helpers/anime-helper.js"></script>
+    <script defer src="../assets/js/helpers/typed-helper.js"></script>
+    <script defer src="../assets/js/helpers/tilt-helper.js"></script>
+    <script defer src="../assets/js/core/marquee.js"></script>
+    <script defer src="../assets/js/uikit-components-bs.js"></script>
+
+    <!-- include app script -->
+    <script defer src="../assets/js/form.js"></script>
+    <script defer src="../assets/js/app.js"></script>
+
+    <script>
+        // Schema toggle via URL
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const getSchema = urlParams.get('schema');
+        if ( getSchema === 'dark' ) {
+            setDarkMode(1);
+        } else if ( getSchema === 'light' ) {
+            setDarkMode(0);
+        }
+    </script>
+</body>
+
+</html>
