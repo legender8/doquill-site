@@ -94,6 +94,15 @@ button.btn-primary:hover {
   color:            #0B0F1E !important;
 }
 
+/* Force white text on green button hover
+   when text-tertiary class is present */
+.btn-primary.text-tertiary:hover,
+a.btn-primary.text-tertiary:hover,
+.btn-primary.dark\:text-primary:hover,
+a.btn-primary.dark\:text-primary:hover {
+  color: #FFFFFF !important;
+}
+
 /* ── OUTLINE / SECONDARY BUTTONS ── */
 .btn-outline-primary,
 .btn-outline-tertiary {
@@ -391,6 +400,7 @@ html:not(.uc-dark) .about_values .cstack {
 .uc-dark .uc-footer li a.btn:hover {
   box-shadow: 0 4px 12px rgba(46,204,113,0.3) !important;
   filter: none !important;
+  color: #FFFFFF !important;
 }
 
 /* ── Article hero overlay
