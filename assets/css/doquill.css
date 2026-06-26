@@ -4,6 +4,48 @@
    template.css
 ═══════════════════════════════════════ */
 
+:root {
+  /* DoQuill Typography — Syne + DM Sans */
+  --font-family-primary: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-secondary: 'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-mono: 'DM Mono', 'Courier New', monospace;
+}
+
+/* Body text — DM Sans */
+body,
+p, span, div, li, td, th, label, input,
+textarea, select, button, a {
+  font-family: var(--font-family-primary);
+}
+
+/* Headlines — Syne */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3,
+.display-4, .display-5, .display-6 {
+  font-family: var(--font-family-secondary);
+  font-weight: 700;
+}
+
+/* Heavier weight for large display headlines */
+h1, .h1, .display-1, .display-2,
+.display-3, .display-4, .display-5,
+.display-6 {
+  font-weight: 800;
+}
+
+/* Nav items — DM Sans medium */
+nav a, .nav-link, .uc-nav a {
+  font-family: var(--font-family-primary);
+  font-weight: 500;
+}
+
+/* Buttons — DM Sans semibold */
+.btn, button[type="submit"] {
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+}
+
 /* ── Core brand tokens ── */
 :root {
   --color-tertiary:       #2ECC71;
