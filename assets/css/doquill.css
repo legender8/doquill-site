@@ -800,3 +800,11 @@ html:not(.uc-dark) .features-hero .stat-num {
   font-size: 11px !important;
   font-weight: 700 !important;
 }
+
+/* ── Prevent mega-menu flash on page load ── */
+.uc-dropbar {
+  display: none !important;
+}
+.uc-dropbar.uc-open {
+  display: block !important;
+}
