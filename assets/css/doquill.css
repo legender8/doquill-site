@@ -808,3 +808,61 @@ html:not(.uc-dark) .features-hero .stat-num {
 .uc-dropbar.uc-open {
   display: block !important;
 }
+
+/* Language Switcher */
+.language-switcher {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.lang-current {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary, #fff);
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #111827;
+  border: 1px solid #1E2640;
+  border-radius: 8px;
+  padding: 4px;
+  min-width: 140px;
+  z-index: 9999;
+  margin-top: 4px;
+}
+.language-switcher:hover .lang-dropdown {
+  display: block;
+}
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #B0B7CC;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.lang-option:hover {
+  background: rgba(46,204,113,0.1);
+  color: #2ECC71;
+}
+.lang-option img {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 2px;
+}
