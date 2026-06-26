@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preload" href="assets/css/theme/main.purge.css" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoQuill — Coming Soon</title>
@@ -57,7 +60,7 @@
     <link rel="preload" href="assets/js/app.js" as="script">
 
     <!-- app head for bootstrap core -->
-    <script src="assets/js/app-head-bs.js"></script>
+    <script defer src="assets/js/app-head-bs.js"></script>
 
     <!-- include uni-core components -->
     <link rel="stylesheet" href="assets/js/uni-core/css/uni-core.min.css">
@@ -76,7 +79,7 @@
     <link rel="stylesheet" href="assets/css/doquill.css">
 
     <!-- include scripts -->
-    <script src="assets/js/uni-core/js/uni-core-bundle.min.js"></script>
+    <script defer src="assets/js/uni-core/js/uni-core-bundle.min.js"></script>
 <link rel="icon" type="image/png" href="assets/images/common/doquill-icon.png">
 <link rel="apple-touch-icon" href="assets/images/common/doquill-icon.png">
 </head>
@@ -103,8 +106,8 @@
             <div class="container max-w-xl">
                 <div class="panel vstack justify-center items-center gap-2 sm:gap-4 text-center h-screen">
                     <div class="mb-4">
-                        <img class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:48px;width:auto;max-width:180px;object-fit:contain;">
-                        <img class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:48px;width:auto;max-width:180px;object-fit:contain;">
+                        <img loading="lazy" class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:48px;width:auto;max-width:180px;object-fit:contain;">
+                        <img loading="lazy" class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:48px;width:auto;max-width:180px;object-fit:contain;">
                     </div>
                     <h2 class="h1 lg:display-6 xl:display-3 text-primary dark:text-tertiary" data-uc-splitext="types: 'chars'" data-anime="targets: &gt; *; keyframes: [ {translateY: -10}, {rotateX: 180}, {translateY: 0}, {rotateX: 0}, ]; easing: easeOutElastic(1, .8); duration: 500; delay: anime.stagger(50); direction: alternate; loop: true;">Something powerful<br>is almost ready.</h2>
                     <div class="row child-cols-3 items-center justify-center g-1 sm:g-2" data-uc-countdown="date: 2025-09-01T00:00:00+00:00">

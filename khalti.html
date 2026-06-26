@@ -16,6 +16,9 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preload" href="assets/css/theme/main.purge.css" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khalti Integration | DoQuill — Enterprise AI ERP</title>
@@ -71,7 +74,7 @@
     <link rel="preload" href="assets/js/app.js" as="script">
 
     <!-- app head for bootstrap core -->
-    <script src="assets/js/app-head-bs.js"></script>
+    <script defer src="assets/js/app-head-bs.js"></script>
 
     <!-- include uni-core components -->
     <link rel="stylesheet" href="assets/js/uni-core/css/uni-core.min.css">
@@ -88,7 +91,7 @@
     <link rel="stylesheet" href="assets/css/theme/theme-three.purge.css">
 
     <!-- include scripts -->
-    <script src="assets/js/uni-core/js/uni-core-bundle.min.js"></script>
+    <script defer src="assets/js/uni-core/js/uni-core-bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/doquill.css">
 <link rel="icon" type="image/png" href="assets/images/common/doquill-icon.png">
 <link rel="apple-touch-icon" href="assets/images/common/doquill-icon.png">
@@ -105,7 +108,7 @@
             <header class="uc-offcanvas-header hstack justify-between items-center pb-2 bg-white dark:bg-gray-900">
                 <div class="uc-logo">
                     <a href="index.html" class="h5 text-none text-gray-900 dark:text-white">
-                        <img src="assets/images/common/doquill-icon.png" alt="DoQuill" style="height:32px;width:auto;">
+                        <img loading="lazy" src="assets/images/common/doquill-icon.png" alt="DoQuill" style="height:32px;width:auto;">
                     </a>
                 </div>
                 <button class="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 icon-3 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all" type="button">
@@ -196,8 +199,8 @@
                         <div class="uc-navbar-left">
                             <div class="uc-logo">
                                 <a class="panel text-none" href="index.html" style="width: 140px;">
-                                    <img class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
-                                    <img class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
+                                    <img loading="lazy" class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
+                                    <img loading="lazy" class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
                                 </a>
                             </div>
                             <ul class="uc-navbar-nav gap-3 d-none lg:d-flex ltr:ms-2 rtl:me-2">
@@ -222,7 +225,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="hospital.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-hospital-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-hospital-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Hospital Management</b>
                                                                                         <span class="fs-8 text-muted">Doctors, beds, lab, pharmacy & billing.</span>
@@ -231,7 +234,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="pharmacy.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-pharmacy-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-pharmacy-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Pharmacy</b>
                                                                                         <span class="fs-8 text-muted">Medicines, prescriptions & stock.</span>
@@ -240,7 +243,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="medical-lab.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-medical-lab.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-medical-lab.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Medical Lab</b>
                                                                                         <span class="fs-8 text-muted">Tests, results & patient records.</span>
@@ -253,7 +256,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="construction.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-construction-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-construction-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Construction Management</b>
                                                                                         <span class="fs-8 text-muted">Projects, materials & contractors.</span>
@@ -262,7 +265,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="property.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-property-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-property-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Property Management</b>
                                                                                         <span class="fs-8 text-muted">Units, tenants, leases & maintenance.</span>
@@ -278,7 +281,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="school.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-school-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-school-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">School & Institute</b>
                                                                                         <span class="fs-8 text-muted">Admissions, exams, library & fees.</span>
@@ -287,7 +290,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="driving-school.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-driving-school.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-driving-school.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Driving School</b>
                                                                                         <span class="fs-8 text-muted">Enrollment, scheduling & tracking.</span>
@@ -296,7 +299,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="sports-academy.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-sports-club-academy.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-sports-club-academy.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Sports & Academy</b>
                                                                                         <span class="fs-8 text-muted">Members, classes & schedules.</span>
@@ -309,7 +312,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="agriculture.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-agriculture.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-agriculture.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Agriculture Management</b>
                                                                                         <span class="fs-8 text-muted">Crops, livestock & supply chain.</span>
@@ -318,7 +321,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="dairy.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-dairy-cattle.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-dairy-cattle.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Dairy & Cattle</b>
                                                                                         <span class="fs-8 text-muted">Herd, milk production & health.</span>
@@ -334,7 +337,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="freight.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-freight-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-freight-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Freight Management</b>
                                                                                         <span class="fs-8 text-muted">Shipments, routes & tracking.</span>
@@ -343,7 +346,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="courier.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-courier-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-courier-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Courier Management</b>
                                                                                         <span class="fs-8 text-muted">Parcels, delivery & tracking.</span>
@@ -352,7 +355,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="fleet.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-fleet.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-fleet.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Fleet Management</b>
                                                                                         <span class="fs-8 text-muted">Vehicles, drivers & maintenance.</span>
@@ -365,7 +368,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="cmms.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-cmms.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-cmms.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">CMMS</b>
                                                                                         <span class="fs-8 text-muted">Maintenance, assets & work orders.</span>
@@ -374,7 +377,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="repair.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-repair-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-repair-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Repair Management</b>
                                                                                         <span class="fs-8 text-muted">Jobs, parts & technician tracking.</span>
@@ -455,7 +458,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="accounting.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-accounting.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-accounting.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Accounting & Finance</b>
                                                                                         <span class="fs-8 text-muted">Real-time P&L, invoicing & double entry.</span>
@@ -464,7 +467,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="sales.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-sales.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-sales.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Sales</b>
                                                                                         <span class="fs-8 text-muted">Accounts, opportunities, orders & invoicing.</span>
@@ -473,7 +476,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="hrm.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-hrm.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-hrm.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">HRM & People</b>
                                                                                         <span class="fs-8 text-muted">Payroll, attendance & recruitment.</span>
@@ -482,7 +485,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="inventory.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Inventory Management</b>
                                                                                         <span class="fs-8 text-muted">Stock, warehousing & procurement.</span>
@@ -498,7 +501,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="ai-agent.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-ai-agent.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-ai-agent.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">AI Agent</b>
                                                                                         <span class="fs-8 text-muted">Intelligent automation across every module.</span>
@@ -507,7 +510,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="workflow-automation.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Workflow Automation</b>
                                                                                         <span class="fs-8 text-muted">Build, trigger & automate any process.</span>
@@ -516,7 +519,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="project.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-project.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-project.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Project Management</b>
                                                                                         <span class="fs-8 text-muted">Tasks, timelines & team collaboration.</span>
@@ -525,7 +528,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="crm.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-crm.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-crm.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">CRM</b>
                                                                                         <span class="fs-8 text-muted">Leads, pipeline & customer relationships.</span>
@@ -541,7 +544,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="api-webhooks.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-api.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-api.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">API & Webhooks</b>
                                                                                         <span class="fs-8 text-muted">Connect DoQuill to any system.</span>
@@ -550,7 +553,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="whatsapp-automation.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-whatsapp-api.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-whatsapp-api.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">WhatsApp Automation</b>
                                                                                         <span class="fs-8 text-muted">Instant alerts for orders, invoices & POs.</span>
@@ -559,7 +562,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="payment-gateways.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-integrations/doquill-stripe.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-stripe.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Payment Gateways</b>
                                                                                         <span class="fs-8 text-muted">108 integrations including Stripe & PayPal.</span>
@@ -568,7 +571,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="integrations.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-integrations/doquill-zapier.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-zapier.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Third-party Integrations</b>
                                                                                         <span class="fs-8 text-muted">Shopify, QuickBooks, Zapier & more.</span>
@@ -668,7 +671,7 @@
         <div class="col-12 lg:col-7 vstack gap-4">
           <div class="hstack gap-3 items-center">
             <div class="cstack w-64px h-64px rounded-2 flex-shrink-0" style="background:rgba(46,204,113,0.15)">
-              <img src="assets/images/modules/doquill-icons-integrations/doquill-khalti.svg" alt="Khalti Icon" id="detail-icon" style="width:36px;height:36px">
+              <img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-khalti.svg" alt="Khalti Icon" id="detail-icon" style="width:36px;height:36px">
             </div>
             <div>
               <div class="hstack gap-2 flex-wrap">
@@ -686,7 +689,7 @@
         </div>
         <div class="col-12 lg:col-5 d-none lg:d-block">
           <div class="panel rounded-2 p-5 text-center" style="background:rgba(46,204,113,0.06);border:1px solid rgba(46,204,113,0.2)">
-            <img src="assets/images/modules/doquill-icons-integrations/doquill-khalti.svg" alt="Khalti" style="width:120px;height:120px;opacity:0.9">
+            <img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-khalti.svg" alt="Khalti" style="width:120px;height:120px;opacity:0.9">
           </div>
         </div>
       </div>
@@ -852,7 +855,7 @@
           <div>
             <a href="esewa.html" class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 hstack gap-3 items-center hover:-translate-y-1 duration-150 transition-all hover:border-tertiary text-decoration-none">
               <div class="cstack w-40px h-40px rounded flex-shrink-0" style="background:rgba(46,204,113,0.12)">
-                <img src="assets/images/modules/doquill-icons-integrations/doquill-esewa.svg" style="width:24px;height:24px" alt="eSewa">
+                <img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-esewa.svg" style="width:24px;height:24px" alt="eSewa">
               </div>
               <div>
                 <div class="fw-medium fs-7 dark:text-white">eSewa</div>
@@ -864,7 +867,7 @@
           <div>
             <a href="sslcommerz.html" class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 hstack gap-3 items-center hover:-translate-y-1 duration-150 transition-all hover:border-tertiary text-decoration-none">
               <div class="cstack w-40px h-40px rounded flex-shrink-0" style="background:rgba(46,204,113,0.12)">
-                <img src="assets/images/modules/doquill-icons-integrations/doquill-sslcommerz.svg" style="width:24px;height:24px" alt="SSLCommerz">
+                <img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-sslcommerz.svg" style="width:24px;height:24px" alt="SSLCommerz">
               </div>
               <div>
                 <div class="fw-medium fs-7 dark:text-white">SSLCommerz</div>
@@ -876,7 +879,7 @@
           <div>
             <a href="aamarpay.html" class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 hstack gap-3 items-center hover:-translate-y-1 duration-150 transition-all hover:border-tertiary text-decoration-none">
               <div class="cstack w-40px h-40px rounded flex-shrink-0" style="background:rgba(46,204,113,0.12)">
-                <img src="assets/images/modules/doquill-icons-integrations/doquill-aamarpay.svg" style="width:24px;height:24px" alt="aamarPay">
+                <img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-aamarpay.svg" style="width:24px;height:24px" alt="aamarPay">
               </div>
               <div>
                 <div class="fw-medium fs-7 dark:text-white">aamarPay</div>
@@ -921,8 +924,8 @@
                                     <div class="panel vstack items-start gap-3 xl:gap-4 md:max-w-1/2">
                                         <div>
                                             <a href="index.html" style="width: 140px">
-                                                <img class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
-                                                <img class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
+                                                <img loading="lazy" class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
+                                                <img loading="lazy" class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
                                             </a>
                                             <p class="lg:fs-5 mt-2 fw-medium">Intelligent Systems.<br><span class="text-tertiary fw-bold">Stronger</span> businesses.</p>
                                         </div>

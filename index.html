@@ -16,7 +16,12 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preload" href="assets/css/theme/main.purge.css" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+    <!-- Prioritize hero video poster (above-the-fold) -->
+    <link rel="preload" as="image" href="assets/images/media/lexend-home-7.png" fetchpriority="high">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoQuill — Enterprise AI ERP</title>
     <meta name="description" content="Run your entire enterprise from one platform. DoQuill is an AI-powered ERP with 13 core modules, 96 industry verticals, and 108 integrations — built for mid-market and enterprise businesses.">
@@ -71,7 +76,7 @@
     <link rel="preload" href="assets/js/app.js" as="script">
 
     <!-- app head for bootstrap core -->
-    <script src="assets/js/app-head-bs.js"></script>
+    <script defer src="assets/js/app-head-bs.js"></script>
 
     <!-- include uni-core components -->
     <link rel="stylesheet" href="assets/js/uni-core/css/uni-core.min.css">
@@ -88,7 +93,7 @@
     <link rel="stylesheet" href="assets/css/theme/theme-three.purge.css">
 
     <!-- include scripts -->
-    <script src="assets/js/uni-core/js/uni-core-bundle.min.js"></script>
+    <script defer src="assets/js/uni-core/js/uni-core-bundle.min.js"></script>
     <link rel="stylesheet" href="assets/css/doquill.css">
 <link rel="icon" type="image/png" href="assets/images/common/doquill-icon.png">
 <link rel="apple-touch-icon" href="assets/images/common/doquill-icon.png">
@@ -340,7 +345,7 @@
             <header class="uc-offcanvas-header hstack justify-between items-center pb-2 bg-white dark:bg-gray-900">
                 <div class="uc-logo">
                     <a href="index.html" class="h5 text-none text-gray-900 dark:text-white">
-                        <img src="assets/images/common/doquill-icon.png" alt="DoQuill" style="height:32px;width:auto;">
+                        <img loading="lazy" src="assets/images/common/doquill-icon.png" alt="DoQuill" style="height:32px;width:auto;">
                     </a>
                 </div>
                 <button class="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 icon-3 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all" type="button">
@@ -497,8 +502,8 @@
                         <div class="uc-navbar-left">
                             <div class="uc-logo">
                                 <a class="panel text-none" href="index.html" style="width: 140px;">
-                                    <img class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
-                                    <img class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
+                                    <img loading="lazy" class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
+                                    <img loading="lazy" class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
                                 </a>
                             </div>
                             <ul class="uc-navbar-nav gap-3 d-none lg:d-flex ltr:ms-2 rtl:me-2">
@@ -523,7 +528,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="hospital.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-hospital-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-hospital-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Hospital Management</b>
                                                                                         <span class="fs-8 text-muted">Doctors, beds, lab, pharmacy & billing.</span>
@@ -532,7 +537,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="pharmacy.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-pharmacy-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-pharmacy-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Pharmacy</b>
                                                                                         <span class="fs-8 text-muted">Medicines, prescriptions & stock.</span>
@@ -541,7 +546,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="medical-lab.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-medical-lab.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-medical-lab.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Medical Lab</b>
                                                                                         <span class="fs-8 text-muted">Tests, results & patient records.</span>
@@ -554,7 +559,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="construction.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-construction-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-construction-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Construction Management</b>
                                                                                         <span class="fs-8 text-muted">Projects, materials & contractors.</span>
@@ -563,7 +568,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="property.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-property-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-property-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Property Management</b>
                                                                                         <span class="fs-8 text-muted">Units, tenants, leases & maintenance.</span>
@@ -579,7 +584,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="school.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-school-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-school-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">School & Institute</b>
                                                                                         <span class="fs-8 text-muted">Admissions, exams, library & fees.</span>
@@ -588,7 +593,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="driving-school.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-driving-school.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-driving-school.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Driving School</b>
                                                                                         <span class="fs-8 text-muted">Enrollment, scheduling & tracking.</span>
@@ -597,7 +602,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="sports-academy.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-sports-club-academy.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-sports-club-academy.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Sports & Academy</b>
                                                                                         <span class="fs-8 text-muted">Members, classes & schedules.</span>
@@ -610,7 +615,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="agriculture.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-agriculture.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-agriculture.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Agriculture Management</b>
                                                                                         <span class="fs-8 text-muted">Crops, livestock & supply chain.</span>
@@ -619,7 +624,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="dairy.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-dairy-cattle.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-dairy-cattle.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Dairy & Cattle</b>
                                                                                         <span class="fs-8 text-muted">Herd, milk production & health.</span>
@@ -635,7 +640,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="freight.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-freight-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-freight-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Freight Management</b>
                                                                                         <span class="fs-8 text-muted">Shipments, routes & tracking.</span>
@@ -644,7 +649,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="courier.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-courier-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-courier-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Courier Management</b>
                                                                                         <span class="fs-8 text-muted">Parcels, delivery & tracking.</span>
@@ -653,7 +658,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="fleet.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-fleet.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-fleet.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Fleet Management</b>
                                                                                         <span class="fs-8 text-muted">Vehicles, drivers & maintenance.</span>
@@ -666,7 +671,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="cmms.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-cmms.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-cmms.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">CMMS</b>
                                                                                         <span class="fs-8 text-muted">Maintenance, assets & work orders.</span>
@@ -675,7 +680,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="repair.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-repair-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-repair-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Repair Management</b>
                                                                                         <span class="fs-8 text-muted">Jobs, parts & technician tracking.</span>
@@ -756,7 +761,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="accounting.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-accounting.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-accounting.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Accounting & Finance</b>
                                                                                         <span class="fs-8 text-muted">Real-time P&L, invoicing & double entry.</span>
@@ -765,7 +770,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="sales.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-sales.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-sales.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Sales</b>
                                                                                         <span class="fs-8 text-muted">Accounts, opportunities, orders & invoicing.</span>
@@ -774,7 +779,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="hrm.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-hrm.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-hrm.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">HRM & People</b>
                                                                                         <span class="fs-8 text-muted">Payroll, attendance & recruitment.</span>
@@ -783,7 +788,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="inventory.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Inventory Management</b>
                                                                                         <span class="fs-8 text-muted">Stock, warehousing & procurement.</span>
@@ -799,7 +804,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="ai-agent.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-ai-agent.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-ai-agent.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">AI Agent</b>
                                                                                         <span class="fs-8 text-muted">Intelligent automation across every module.</span>
@@ -808,7 +813,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="workflow-automation.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Workflow Automation</b>
                                                                                         <span class="fs-8 text-muted">Build, trigger & automate any process.</span>
@@ -817,7 +822,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="project.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-project.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-project.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Project Management</b>
                                                                                         <span class="fs-8 text-muted">Tasks, timelines & team collaboration.</span>
@@ -826,7 +831,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="crm.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-crm.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-crm.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">CRM</b>
                                                                                         <span class="fs-8 text-muted">Leads, pipeline & customer relationships.</span>
@@ -842,7 +847,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="api-webhooks.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-api.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-api.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">API & Webhooks</b>
                                                                                         <span class="fs-8 text-muted">Connect DoQuill to any system.</span>
@@ -851,7 +856,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="whatsapp-automation.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-whatsapp-api.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-whatsapp-api.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">WhatsApp Automation</b>
                                                                                         <span class="fs-8 text-muted">Instant alerts for orders, invoices & POs.</span>
@@ -860,7 +865,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="payment-gateways.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-integrations/doquill-stripe.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-stripe.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Payment Gateways</b>
                                                                                         <span class="fs-8 text-muted">108 integrations including Stripe & PayPal.</span>
@@ -869,7 +874,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="integrations.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-integrations/doquill-zapier.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-zapier.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Third-party Integrations</b>
                                                                                         <span class="fs-8 text-muted">Shopify, QuickBooks, Zapier & more.</span>
@@ -957,16 +962,16 @@
             <div class="position-absolute top-0 start-0 end-0 h-screen bg-gradient-to-b from-transparent via-transparent to-white dark:to-black"></div>
             <div class="section-outer panel pb-6 sm:pb-8 pt-9 xl:pt-10 xl:pb-9">
                 <div class="d-none lg:d-block" data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 750; delay: anime.stagger(150, {start: 500});">
-                    <img src="assets/images/vectors/marketing.svg" alt="Icon" class="d-inline-block position-absolute w-72px dark:d-none" style="top: 15%; left: 10%;">
-                    <img src="assets/images/vectors/charts-pc.svg" alt="Icon" class="d-inline-block position-absolute w-72px dark:d-none" style="top: 15%; right: 10%;">
-                    <img src="assets/images/vectors/group.svg" alt="Icon" class="d-inline-block position-absolute w-64px dark:d-none" style="top: 35%; right: -1%; transform: rotate(45deg);">
-                    <img src="assets/images/vectors/idea.svg" alt="Icon" class="d-inline-block position-absolute w-48px dark:d-none" style="top: 40%; left: 15%;">
-                    <img src="assets/images/vectors/group.svg" alt="Icon" class="d-inline-block position-absolute w-64px dark:d-none" style="top: 30%; left: -1%;">
-                    <img src="assets/images/vectors/marketing-dark.svg" alt="Icon" class="d-inline-block position-absolute w-72px d-none dark:d-block" style="top: 15%; left: 10%;">
-                    <img src="assets/images/vectors/charts-pc-dark.svg" alt="Icon" class="d-inline-block position-absolute w-72px d-none dark:d-block" style="top: 15%; right: 10%;">
-                    <img src="assets/images/vectors/group-dark.svg" alt="Icon" class="d-inline-block position-absolute w-64px d-none dark:d-block" style="top: 35%; right: -1%; transform: rotate(45deg);">
-                    <img src="assets/images/vectors/idea-dark.svg" alt="Icon" class="d-inline-block position-absolute w-48px d-none dark:d-block" style="top: 40%; left: 15%;">
-                    <img src="assets/images/vectors/group-dark.svg" alt="Icon" class="d-inline-block position-absolute w-64px d-none dark:d-block" style="top: 30%; left: -1%;">
+                    <img loading="lazy" src="assets/images/vectors/marketing.svg" alt="Icon" class="d-inline-block position-absolute w-72px dark:d-none" style="top: 15%; left: 10%;">
+                    <img loading="lazy" src="assets/images/vectors/charts-pc.svg" alt="Icon" class="d-inline-block position-absolute w-72px dark:d-none" style="top: 15%; right: 10%;">
+                    <img loading="lazy" src="assets/images/vectors/group.svg" alt="Icon" class="d-inline-block position-absolute w-64px dark:d-none" style="top: 35%; right: -1%; transform: rotate(45deg);">
+                    <img loading="lazy" src="assets/images/vectors/idea.svg" alt="Icon" class="d-inline-block position-absolute w-48px dark:d-none" style="top: 40%; left: 15%;">
+                    <img loading="lazy" src="assets/images/vectors/group.svg" alt="Icon" class="d-inline-block position-absolute w-64px dark:d-none" style="top: 30%; left: -1%;">
+                    <img loading="lazy" src="assets/images/vectors/marketing-dark.svg" alt="Icon" class="d-inline-block position-absolute w-72px d-none dark:d-block" style="top: 15%; left: 10%;">
+                    <img loading="lazy" src="assets/images/vectors/charts-pc-dark.svg" alt="Icon" class="d-inline-block position-absolute w-72px d-none dark:d-block" style="top: 15%; right: 10%;">
+                    <img loading="lazy" src="assets/images/vectors/group-dark.svg" alt="Icon" class="d-inline-block position-absolute w-64px d-none dark:d-block" style="top: 35%; right: -1%; transform: rotate(45deg);">
+                    <img loading="lazy" src="assets/images/vectors/idea-dark.svg" alt="Icon" class="d-inline-block position-absolute w-48px d-none dark:d-block" style="top: 40%; left: 15%;">
+                    <img loading="lazy" src="assets/images/vectors/group-dark.svg" alt="Icon" class="d-inline-block position-absolute w-64px d-none dark:d-block" style="top: 30%; left: -1%;">
                 </div>
                 <div class="container max-w-xl">
                     <div class="section-inner panel">
@@ -993,8 +998,8 @@
                                             <div>
                                                 <div class="hstack justify-center gap-1">
                                                     <span class="icon mb-narrow">
-                                                        <img class="w-24px dark:d-none" src="assets/images/custom-icons/icon-08.svg" alt="icon">
-                                                        <img class="w-24px d-none dark:d-block" src="assets/images/custom-icons/dark-icon-08.svg" alt="icon">
+                                                        <img loading="lazy" class="w-24px dark:d-none" src="assets/images/custom-icons/icon-08.svg" alt="icon">
+                                                        <img loading="lazy" class="w-24px d-none dark:d-block" src="assets/images/custom-icons/dark-icon-08.svg" alt="icon">
                                                     </span>
                                                     <span class="fs-7 fw-medium mb-narrow text-inherit">50+ Industry Verticals</span>
                                                 </div>
@@ -1002,8 +1007,8 @@
                                             <div>
                                                 <div class="hstack justify-center gap-1">
                                                     <span class="icon mb-narrow">
-                                                        <img class="w-24px dark:d-none" src="assets/images/custom-icons/icon-07.svg" alt="icon">
-                                                        <img class="w-24px d-none dark:d-block" src="assets/images/custom-icons/dark-icon-07.svg" alt="icon">
+                                                        <img loading="lazy" class="w-24px dark:d-none" src="assets/images/custom-icons/icon-07.svg" alt="icon">
+                                                        <img loading="lazy" class="w-24px d-none dark:d-block" src="assets/images/custom-icons/dark-icon-07.svg" alt="icon">
                                                     </span>
                                                     <span class="fs-7 fw-medium mb-narrow text-inherit">296+ Addons On Demand</span>
                                                 </div>
@@ -1011,8 +1016,8 @@
                                             <div>
                                                 <div class="hstack justify-center gap-1">
                                                     <span class="icon mb-narrow">
-                                                        <img class="w-24px dark:d-none" src="assets/images/custom-icons/icon-04.svg" alt="icon">
-                                                        <img class="w-24px d-none dark:d-block" src="assets/images/custom-icons/dark-icon-04.svg" alt="icon">
+                                                        <img loading="lazy" class="w-24px dark:d-none" src="assets/images/custom-icons/icon-04.svg" alt="icon">
+                                                        <img loading="lazy" class="w-24px d-none dark:d-block" src="assets/images/custom-icons/dark-icon-04.svg" alt="icon">
                                                     </span>
                                                     <span class="fs-7 fw-medium mb-narrow text-inherit">15+ Languages Supported</span>
                                                 </div>
@@ -1046,32 +1051,32 @@
                                     <div class="swiper" data-uc-swiper="items: 2.25; center: true; center-bounds: true; autoplay: 7000; loop: true; speed: 7000; autoplay-delay: -1; allowTouchMove: false; disableOnInteraction: true;" data-uc-swiper-s="items: 4; center: false; center-bounds: false;" data-uc-swiper-m="items: 6; gap: 100;">
                                         <div class="swiper-wrapper items-center ease-linear">
                                             <div class="brand-item swiper-slide text-center">
-                                                <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-01.png" alt="Client 1">
-                                                <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-01-dark.png" alt="Client 1">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-01.png" alt="Client 1">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-01-dark.png" alt="Client 1">
                                             </div>
                                             <div class="brand-item swiper-slide text-center">
-                                                <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-02.png" alt="Client 2">
-                                                <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-02-dark.png" alt="Client 2">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-02.png" alt="Client 2">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-02-dark.png" alt="Client 2">
                                             </div>
                                             <div class="brand-item swiper-slide text-center">
-                                                <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-03.png" alt="Client 3">
-                                                <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-03-dark.png" alt="Client 3">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-03.png" alt="Client 3">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-03-dark.png" alt="Client 3">
                                             </div>
                                             <div class="brand-item swiper-slide text-center">
-                                                <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-04.png" alt="Client 4">
-                                                <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-04-dark.png" alt="Client 4">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-04.png" alt="Client 4">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-04-dark.png" alt="Client 4">
                                             </div>
                                             <div class="brand-item swiper-slide text-center">
-                                                <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-05.png" alt="Client 5">
-                                                <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-05-dark.png" alt="Client 5">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-05.png" alt="Client 5">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-05-dark.png" alt="Client 5">
                                             </div>
                                             <div class="brand-item swiper-slide text-center">
-                                                <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-06.png" alt="Client 6">
-                                                <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-06-dark.png" alt="Client 6">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-06.png" alt="Client 6">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-06-dark.png" alt="Client 6">
                                             </div>
                                             <div class="brand-item swiper-slide text-center">
-                                                <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-07.png" alt="Client 7">
-                                                <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-07-dark.png" alt="Client 7">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-07.png" alt="Client 7">
+                                                <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-07-dark.png" alt="Client 7">
                                             </div>
                                         </div>
                                     </div>
@@ -1110,7 +1115,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-email-box.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-email-box.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1128,7 +1133,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-contract-template.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-contract-template.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1146,7 +1151,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-documents.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-documents.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1164,7 +1169,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-custom-alert.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-custom-alert.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1182,7 +1187,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-signature.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-signature.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1200,7 +1205,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-integrations/doquill-google-docs.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-integrations/doquill-google-docs.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1224,7 +1229,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-ai-agent.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-ai-agent.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1242,7 +1247,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1260,7 +1265,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-custom-alert.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-custom-alert.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1278,7 +1283,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-sales-mobile-app.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-sales-mobile-app.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1296,7 +1301,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1314,7 +1319,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-support-ticket.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-support-ticket.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1338,7 +1343,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-double-entry.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-double-entry.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1356,7 +1361,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-sales.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-sales.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1374,7 +1379,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-payment-gateways.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-payment-gateways.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1392,7 +1397,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-integrations/doquill-paystack.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-integrations/doquill-paystack.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1410,7 +1415,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-integrations/doquill-flutterwave.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-integrations/doquill-flutterwave.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1428,7 +1433,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-integrations/doquill-xero.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-integrations/doquill-xero.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1452,7 +1457,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-hr-core.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-hr-core.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1470,7 +1475,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-job-search.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-job-search.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1488,7 +1493,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-attendance-app.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-attendance-app.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1506,7 +1511,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-financial-goal.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-financial-goal.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1524,7 +1529,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-calendar.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-calendar.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1542,7 +1547,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-training.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-training.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1566,7 +1571,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1584,7 +1589,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-procurement.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-procurement.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1602,7 +1607,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-assets.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-assets.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1620,7 +1625,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-contract-template.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-contract-template.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1638,7 +1643,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-project.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-project.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1656,7 +1661,7 @@
                                             <div>
                                                 <div class="panel overflow-hidden border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-3x2 rounded-0 border-bottom border-dark border-opacity-20 uc-transition-toggle overflow-hidden dark:bg-gray-900">
-                                                        <img class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" alt="Title">
+                                                        <img loading="lazy" class="media-cover uc-transition-scale-up uc-transition-opaque" style="object-fit:contain;padding:20px;background:#F0FDF4" src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" alt="Title">
                                                     </figure>
                                                     <div class="content vstack items-start gap-4 p-2 lg:p-4">
                                                         <div class="vstack gap-1">
@@ -1687,8 +1692,8 @@
         <!-- Section start -->
         <div id="key_features" class="key-features section panel overflow-hidden uc-dark lg:px-6">
             <div class="section-outer panel py-4 md:py-6 xl:py-10 bg-secondary dark:bg-primary-700 dark:text-white dark:text-opacity-60 rounded-2 lg:rounded-4" data-anime="onscroll: .key-features; onscroll-trigger: 1; onscoll-duration: 150%; translateY: [-80, 0]; scale: [0.85, 1]; opacity: [0.85, 1]; easing: linear;">
-                <img class="d-none lg:d-inline-block w-200px position-absolute" src="assets/images/vectors/man-trigger.svg" alt="man-trigger" style="bottom: -5%; left: 20%;" data-anime="onview: -200; scale: [0.8, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 500;">
-                <img class="d-none lg:d-inline-block w-32px position-absolute text-white" src="assets/images/vectors/appostrof.svg" alt="appostrof" style="bottom: 16%; right: 33%; transform: rotate(45deg);" data-uc-svg data-anime="onview: -200; scale: [0.8, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 500;">
+                <img loading="lazy" class="d-none lg:d-inline-block w-200px position-absolute" src="assets/images/vectors/man-trigger.svg" alt="man-trigger" style="bottom: -5%; left: 20%;" data-anime="onview: -200; scale: [0.8, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 500;">
+                <img loading="lazy" class="d-none lg:d-inline-block w-32px position-absolute text-white" src="assets/images/vectors/appostrof.svg" alt="appostrof" style="bottom: 16%; right: 33%; transform: rotate(45deg);" data-uc-svg data-anime="onview: -200; scale: [0.8, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 500;">
                 <div class="container sm:max-w-lg">
                     <div class="section-inner panel">
                         <div class="panel vstack items-center gap-2 xl:gap-3 mb-4 sm:mb-6 lg:mb-8 sm:max-w-600px lg:max-w-700px xl:max-w-800px mx-auto text-center" data-anime="onview: -200; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});">
@@ -1700,7 +1705,7 @@
                             <div class="order-1 lg:order-0">
                                 <div class="features-item vstack items-center justify-center text-center gap-4">
                                     <div class="icon-box cstack w-48px h-48px dark:bg-tertiary rounded">
-                                        <img class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-01.svg" alt="feature-icon">
+                                        <img loading="lazy" class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-01.svg" alt="feature-icon">
                                     </div>
                                     <div class="panel">
                                         <div class="vstack gap-1">
@@ -1713,7 +1718,7 @@
                             <div class="order-0">
                                 <div class="features-item vstack items-center justify-center text-center gap-4">
                                     <div class="icon-box cstack w-48px h-48px dark:bg-tertiary rounded">
-                                        <img class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-02.svg" alt="feature-icon">
+                                        <img loading="lazy" class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-02.svg" alt="feature-icon">
                                     </div>
                                     <div class="panel">
                                         <div class="vstack gap-1">
@@ -1726,7 +1731,7 @@
                             <div class="order-2 sm:order-1 lg:order-0">
                                 <div class="features-item vstack items-center justify-center text-center gap-4">
                                     <div class="icon-box cstack w-48px h-48px dark:bg-tertiary rounded">
-                                        <img class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-03.svg" alt="feature-icon">
+                                        <img loading="lazy" class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-03.svg" alt="feature-icon">
                                     </div>
                                     <div class="panel">
                                         <div class="vstack gap-1">
@@ -1739,7 +1744,7 @@
                             <div class="order-1 lg:order-0">
                                 <div class="features-item vstack items-center justify-center text-center gap-4">
                                     <div class="icon-box cstack w-48px h-48px dark:bg-tertiary rounded">
-                                        <img class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-07.svg" alt="feature-icon">
+                                        <img loading="lazy" class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-07.svg" alt="feature-icon">
                                     </div>
                                     <div class="panel">
                                         <div class="vstack gap-1">
@@ -1752,7 +1757,7 @@
                             <div class="order-3 lg:order-0">
                                 <div class="features-item vstack items-center justify-center text-center gap-4">
                                     <div class="icon-box cstack w-48px h-48px dark:bg-tertiary rounded">
-                                        <img class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-05.svg" alt="feature-icon">
+                                        <img loading="lazy" class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-05.svg" alt="feature-icon">
                                     </div>
                                     <div class="panel">
                                         <div class="vstack gap-1">
@@ -1765,7 +1770,7 @@
                             <div class="order-2 lg:order-0">
                                 <div class="features-item vstack items-center justify-center text-center gap-4">
                                     <div class="icon-box cstack w-48px h-48px dark:bg-tertiary rounded">
-                                        <img class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-06.svg" alt="feature-icon">
+                                        <img loading="lazy" class="w-24px xl:w-32px text-primary-400 dark:text-tertiary" src="assets/images/custom-icons/icon-06.svg" alt="feature-icon">
                                     </div>
                                     <div class="panel">
                                         <div class="vstack gap-1">
@@ -1808,8 +1813,8 @@
                                 <div class="panel">
                                     <div class="row child-cols-12 g-0">
                                         <div class="panel d-none lg:d-block lg:col-3">
-                                            <img class="w-128px position-absolute d-inline-block dark:d-none" src="assets/images/vectors/man-upside-down.svg" alt="man-upside-down" style="top: -2%; left: 30%;" data-anime="onview: -200; scale: [0.8, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 500;">
-                                            <img class="w-128px position-absolute d-none dark:d-inline-block" src="assets/images/vectors/man-upside-down-dark.svg" alt="man-upside-down" style="top: -2%; left: 30%;" data-anime="onview: -200; scale: [0.8, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 500;">
+                                            <img loading="lazy" class="w-128px position-absolute d-inline-block dark:d-none" src="assets/images/vectors/man-upside-down.svg" alt="man-upside-down" style="top: -2%; left: 30%;" data-anime="onview: -200; scale: [0.8, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 500;">
+                                            <img loading="lazy" class="w-128px position-absolute d-none dark:d-inline-block" src="assets/images/vectors/man-upside-down-dark.svg" alt="man-upside-down" style="top: -2%; left: 30%;" data-anime="onview: -200; scale: [0.8, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: 500;">
                                             <div class="vstack border border-end-0 rounded-start-2 overflow-hidden" style="margin-top: 211px">
                                                 <div class="panel p-2 lg:px-3 bg-gray-25 dark:bg-gray-800"><span class="text-truncate-1">Core ERP modules</span></div>
                                                 <div class="panel p-2 lg:px-3"><span class="text-truncate-1">AI Agent</span></div>
@@ -2105,32 +2110,32 @@
                                             <div class="swiper" data-uc-swiper="items: 2.25; center: true; center-bounds: true; autoplay: 7000; loop: true; speed: 7000; autoplay-delay: -1; allowTouchMove: false; disableOnInteraction: true;" data-uc-swiper-s="items: 4; center: false; center-bounds: false;" data-uc-swiper-m="items: 6; gap: 100;">
                                                 <div class="swiper-wrapper items-center ease-linear">
                                                     <div class="brand-item swiper-slide text-center">
-                                                        <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-01.png" alt="Client 1">
-                                                        <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-01-dark.png" alt="Client 1">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-01.png" alt="Client 1">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-01-dark.png" alt="Client 1">
                                                     </div>
                                                     <div class="brand-item swiper-slide text-center">
-                                                        <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-02.png" alt="Client 2">
-                                                        <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-02-dark.png" alt="Client 2">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-02.png" alt="Client 2">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-02-dark.png" alt="Client 2">
                                                     </div>
                                                     <div class="brand-item swiper-slide text-center">
-                                                        <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-03.png" alt="Client 3">
-                                                        <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-03-dark.png" alt="Client 3">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-03.png" alt="Client 3">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-03-dark.png" alt="Client 3">
                                                     </div>
                                                     <div class="brand-item swiper-slide text-center">
-                                                        <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-04.png" alt="Client 4">
-                                                        <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-04-dark.png" alt="Client 4">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-04.png" alt="Client 4">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-04-dark.png" alt="Client 4">
                                                     </div>
                                                     <div class="brand-item swiper-slide text-center">
-                                                        <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-05.png" alt="Client 5">
-                                                        <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-05-dark.png" alt="Client 5">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-05.png" alt="Client 5">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-05-dark.png" alt="Client 5">
                                                     </div>
                                                     <div class="brand-item swiper-slide text-center">
-                                                        <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-06.png" alt="Client 6">
-                                                        <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-06-dark.png" alt="Client 6">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-06.png" alt="Client 6">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-06-dark.png" alt="Client 6">
                                                     </div>
                                                     <div class="brand-item swiper-slide text-center">
-                                                        <img class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-07.png" alt="Client 7">
-                                                        <img class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-07-dark.png" alt="Client 7">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px dark:d-none" src="assets/images/brands/brand-client-07.png" alt="Client 7">
+                                                        <img loading="lazy" class="brand-item-image h-40px xl:h-48px d-none dark:d-inline-flex" src="assets/images/brands/brand-client-07-dark.png" alt="Client 7">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2145,7 +2150,7 @@
                                                     <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">"We sell across the UK, EU and increasingly the US. Managing finance, workflow and growth across multiple markets was becoming a nightmare. DoQuill solved it. What really won us over was the Shopify integration — our online store and our ERP finally talk to each other. We have one clear view of our entire business for the first time."</p>
                                                 </div>
                                                 <div class="panel hstack gap-2 mt-2">
-                                                    <img class="w-40px rounded-circle" src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=40" alt="Head of Operations">
+                                                    <img loading="lazy" class="w-40px rounded-circle" src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=40" alt="Head of Operations">
                                                     <div class="panel vstack justify-center gap-narrow">
                                                         <ul class="nav-x gap-0 text-warning">
                                                             <li><i class="icon icon-narrow unicon-star-filled"></i></li>
@@ -2165,7 +2170,7 @@
                                                     <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">"We were running our entire supply chain on WhatsApp. Quotes got lost, deliveries were delayed, and nobody had visibility on what was happening. DoQuill gave us a structured ERP built specifically for our operations. Now every purchase order is captured automatically, our team gets WhatsApp notifications the moment a document arrives, and the AI extracts and routes everything without anyone lifting a finger. The chaos is gone."</p>
                                                 </div>
                                                 <div class="panel hstack gap-2 mt-2">
-                                                    <img class="w-40px rounded-circle" src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=40" alt="Operations Director">
+                                                    <img loading="lazy" class="w-40px rounded-circle" src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=40" alt="Operations Director">
                                                     <div class="panel vstack justify-center gap-narrow">
                                                         <ul class="nav-x gap-0 text-warning">
                                                             <li><i class="icon icon-narrow unicon-star-filled"></i></li>
@@ -2185,7 +2190,7 @@
                                                     <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">"Before DoQuill we were juggling separate tools for inventory, delivery and invoicing. Nothing talked to each other. DoQuill replaced all of it in one platform. Our team now has everything they need for daily operations — from quotations to delivery tracking to inventory — all in one place. Our productivity has improved significantly and we finally have full visibility over our business."</p>
                                                 </div>
                                                 <div class="panel hstack gap-2 mt-2">
-                                                    <img class="w-40px rounded-circle" src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=40" alt="CEO, Kavod">
+                                                    <img loading="lazy" class="w-40px rounded-circle" src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=40" alt="CEO, Kavod">
                                                     <div class="panel vstack justify-center gap-narrow">
                                                         <ul class="nav-x gap-0 text-warning">
                                                             <li><i class="icon icon-narrow unicon-star-filled"></i></li>
@@ -2205,7 +2210,7 @@
                                                     <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">"The AI document processing alone saved us hours every week. Invoices and purchase orders now flow directly into the ERP the moment they arrive. Our finance team spends their time on decisions not data entry. DoQuill is the infrastructure our growth needed."</p>
                                                 </div>
                                                 <div class="panel hstack gap-2 mt-2">
-                                                    <img class="w-40px rounded-circle" src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=40" alt="Finance Director">
+                                                    <img loading="lazy" class="w-40px rounded-circle" src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=40" alt="Finance Director">
                                                     <div class="panel vstack justify-center gap-narrow">
                                                         <ul class="nav-x gap-0 text-warning">
                                                             <li><i class="icon icon-narrow unicon-star-filled"></i></li>
@@ -2228,7 +2233,7 @@
                                                 <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">"We sell across the UK, EU and increasingly the US. Managing finance, workflow and growth across multiple markets was becoming a nightmare. DoQuill solved it. What really won us over was the Shopify integration — our online store and our ERP finally talk to each other. We have one clear view of our entire business for the first time."</p>
                                             </div>
                                             <div class="panel hstack gap-2 mt-2">
-                                                <img class="w-40px rounded-circle" src="assets/images/avatars/01.png" alt="Head of Operations">
+                                                <img loading="lazy" class="w-40px rounded-circle" src="assets/images/avatars/01.png" alt="Head of Operations">
                                                 <div class="panel vstack justify-center gap-narrow">
                                                     <ul class="nav-x gap-0 text-warning">
                                                         <li><i class="icon icon-narrow unicon-star-filled"></i></li>
@@ -2248,7 +2253,7 @@
                                                 <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">"We were running our entire supply chain on WhatsApp. Quotes got lost, deliveries were delayed, and nobody had visibility on what was happening. DoQuill gave us a structured ERP built specifically for our operations. Now every purchase order is captured automatically, our team gets WhatsApp notifications the moment a document arrives, and the AI extracts and routes everything without anyone lifting a finger. The chaos is gone."</p>
                                             </div>
                                             <div class="panel hstack gap-2 mt-2">
-                                                <img class="w-40px rounded-circle" src="assets/images/avatars/04.png" alt="Operations Director">
+                                                <img loading="lazy" class="w-40px rounded-circle" src="assets/images/avatars/04.png" alt="Operations Director">
                                                 <div class="panel vstack justify-center gap-narrow">
                                                     <ul class="nav-x gap-0 text-warning">
                                                         <li><i class="icon icon-narrow unicon-star-filled"></i></li>
@@ -2268,7 +2273,7 @@
                                                 <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">"Before DoQuill we were juggling separate tools for inventory, delivery and invoicing. Nothing talked to each other. DoQuill replaced all of it in one platform. Our team now has everything they need for daily operations — from quotations to delivery tracking to inventory — all in one place. Our productivity has improved significantly and we finally have full visibility over our business."</p>
                                             </div>
                                             <div class="panel hstack gap-2 mt-2">
-                                                <img class="w-40px rounded-circle" src="assets/images/avatars/03.png" alt="CEO, Kavod">
+                                                <img loading="lazy" class="w-40px rounded-circle" src="assets/images/avatars/03.png" alt="CEO, Kavod">
                                                 <div class="panel vstack justify-center gap-narrow">
                                                     <ul class="nav-x gap-0 text-warning">
                                                         <li><i class="icon icon-narrow unicon-star-filled"></i></li>
@@ -2288,7 +2293,7 @@
                                                 <p class="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70">"The AI document processing alone saved us hours every week. Invoices and purchase orders now flow directly into the ERP the moment they arrive. Our finance team spends their time on decisions not data entry. DoQuill is the infrastructure our growth needed."</p>
                                             </div>
                                             <div class="panel hstack gap-2 mt-2">
-                                                <img class="w-40px rounded-circle" src="assets/images/avatars/08.png" alt="Finance Director">
+                                                <img loading="lazy" class="w-40px rounded-circle" src="assets/images/avatars/08.png" alt="Finance Director">
                                                 <div class="panel vstack justify-center gap-narrow">
                                                     <ul class="nav-x gap-0 text-warning">
                                                         <li><i class="icon icon-narrow unicon-star-filled"></i></li>
@@ -2388,8 +2393,8 @@
                                             <h2 class="h6 lg:h5 m-0">Still have questions?</h2>
                                             <p class="lg:fs-5 text-dark dark:text-white text-opacity-70">Talk to our team. We will show you exactly how DoQuill works for your specific industry.</p>
                                             <div class="hstack justify-center gap-0">
-                                                <img src="assets/images/avatars/02.jpg" alt="Avatar-image" class="w-48px h-48px rounded-circle border border-2 border-white dark:border-primary">
-                                                <img src="assets/images/avatars/01.jpg" alt="Avatar-image" class="w-48px h-48px rounded-circle border border-2 border-white dark:border-primary ms-n2">
+                                                <img loading="lazy" src="assets/images/avatars/02.jpg" alt="Avatar-image" class="w-48px h-48px rounded-circle border border-2 border-white dark:border-primary">
+                                                <img loading="lazy" src="assets/images/avatars/01.jpg" alt="Avatar-image" class="w-48px h-48px rounded-circle border border-2 border-white dark:border-primary ms-n2">
                                             </div>
                                         </div>
                                     </div>
@@ -2422,7 +2427,7 @@
                                             <div class="swiper-slide">
                                                 <article class="post type-post panel overflow-hidden vstack border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-16x9 rounded-0 uc-transition-toggle overflow-hidden">
-                                                        <img class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/blog/post-4.jpg" alt="Unlock productivity potential with AI">
+                                                        <img loading="lazy" class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/blog/post-4.jpg" alt="Unlock productivity potential with AI">
                                                         <a href="african-businesses-replacing-spreadsheets-with-erp.html" class="position-cover" data-caption="Unlock productivity potential with AI"></a>
                                                     </figure>
                                                     <div class="panel vstack gap-1 p-2">
@@ -2442,7 +2447,7 @@
                                             <div class="swiper-slide">
                                                 <article class="post type-post panel overflow-hidden vstack border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-16x9 rounded-0 uc-transition-toggle overflow-hidden">
-                                                        <img class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/blog/post-5.jpg" alt="Automate as fast as you can type with AI">
+                                                        <img loading="lazy" class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/blog/post-5.jpg" alt="Automate as fast as you can type with AI">
                                                         <a href="ai-document-processing-eliminates-data-entry.html" class="position-cover" data-caption="Automate as fast as you can type with AI"></a>
                                                     </figure>
                                                     <div class="panel vstack gap-1 p-2">
@@ -2462,7 +2467,7 @@
                                             <div class="swiper-slide">
                                                 <article class="post type-post panel overflow-hidden vstack border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-16x9 rounded-0 uc-transition-toggle overflow-hidden">
-                                                        <img class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/blog/post-6.jpg" alt="Intuitive & powerful AI automation app">
+                                                        <img loading="lazy" class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/blog/post-6.jpg" alt="Intuitive & powerful AI automation app">
                                                         <a href="why-generic-erp-no-longer-makes-sense.html" class="position-cover" data-caption="Intuitive & powerful AI automation app"></a>
                                                     </figure>
                                                     <div class="panel vstack gap-1 p-2">
@@ -2482,7 +2487,7 @@
                                             <div class="swiper-slide">
                                                 <article class="post type-post panel overflow-hidden vstack border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-16x9 rounded-0 uc-transition-toggle overflow-hidden">
-                                                        <img class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/blog/img-01.jpg" alt="Team solve today’s biggest challenges">
+                                                        <img loading="lazy" class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/blog/img-01.jpg" alt="Team solve today’s biggest challenges">
                                                         <a href="insights.html" class="position-cover" data-caption="Team solve today’s biggest challenges"></a>
                                                     </figure>
                                                     <div class="panel vstack gap-1 p-2">
@@ -2502,7 +2507,7 @@
                                             <div class="swiper-slide">
                                                 <article class="post type-post panel overflow-hidden vstack border bg-white dark:bg-gray-900 dark:text-white hover:border-dark hover:contrast-shadow duration-150 hover:-translate-y-1 rounded-1-5">
                                                     <figure class="featured-image m-0 rounded ratio ratio-16x9 rounded-0 uc-transition-toggle overflow-hidden">
-                                                        <img class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/blog/img-02.jpg" alt="Leading work from tasks management">
+                                                        <img loading="lazy" class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/blog/img-02.jpg" alt="Leading work from tasks management">
                                                         <a href="insights.html" class="position-cover" data-caption="Leading work from tasks management"></a>
                                                     </figure>
                                                     <div class="panel vstack gap-1 p-2">
@@ -2547,8 +2552,8 @@
         <div id="uc_cta" class="uc-cta panel mb-n4 z-1" data-anime="onview: -200; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500;">
             <div class="container">
                 <div class="panel vstack items-center gap-2 p-4 lg:p-6 xl:p-9 bg-gradient-45 from-primary to-primary-800 rounded-2 text-center text-white uc-dark">
-                    <img class="position-absolute text-tertiary d-none lg:d-block" src="assets/images/common/stars.svg" alt="stars" style="bottom: 25%; left: 10%" data-uc-svg>
-                    <img class="position-absolute text-tertiary d-none lg:d-block" src="assets/images/common/star.svg" alt="star" style="top: 25%; right: 10%" data-uc-svg>
+                    <img loading="lazy" class="position-absolute text-tertiary d-none lg:d-block" src="assets/images/common/stars.svg" alt="stars" style="bottom: 25%; left: 10%" data-uc-svg>
+                    <img loading="lazy" class="position-absolute text-tertiary d-none lg:d-block" src="assets/images/common/star.svg" alt="star" style="top: 25%; right: 10%" data-uc-svg>
                     <h2 class="h3 xl:display-6 lh-lg m-0 max-w-md mx-auto text-inherit">One platform. Every industry. Built for businesses that mean business.</h2>
                     <p class="fs-6 sm:fs-5">13 core modules. 96 industry vertical systems. 296+ addons. Start today — no credit card required.</p>
                     <div class="vstack md:hstack justify-center gap-2 mt-3">
@@ -2578,8 +2583,8 @@
                                     <div class="panel vstack items-start gap-3 xl:gap-4 md:max-w-1/2">
                                         <div>
                                             <a href="index.html" style="width: 140px">
-                                                <img class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
-                                                <img class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
+                                                <img loading="lazy" class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
+                                                <img loading="lazy" class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
                                             </a>
                                             <p class="lg:fs-5 mt-2 fw-medium">Intelligent Systems.<br><span class="text-tertiary fw-bold">Stronger</span> businesses.</p>
                                         </div>

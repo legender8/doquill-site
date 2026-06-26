@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preload" href="assets/css/theme/main.purge.css" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Core Modules | DoQuill — Enterprise AI ERP</title>
@@ -60,7 +63,7 @@
     <link rel="preload" href="assets/js/app.js" as="script">
 
     <!-- app head for bootstrap core -->
-    <script src="assets/js/app-head-bs.js"></script>
+    <script defer src="assets/js/app-head-bs.js"></script>
 
     <!-- include uni-core components -->
     <link rel="stylesheet" href="assets/js/uni-core/css/uni-core.min.css">
@@ -76,7 +79,7 @@
     <link rel="stylesheet" href="assets/css/theme/main.purge.css">
 
     <!-- include scripts -->
-    <script src="assets/js/uni-core/js/uni-core-bundle.min.js"></script>
+    <script defer src="assets/js/uni-core/js/uni-core-bundle.min.js"></script>
 <link rel="stylesheet" href="assets/css/doquill.css">
 <link rel="icon" type="image/png" href="assets/images/common/doquill-icon.png">
 <link rel="apple-touch-icon" href="assets/images/common/doquill-icon.png">
@@ -126,7 +129,7 @@
             <div class="row md:child-cols-6 col-match g-0">
                 <div class="d-none md:d-flex">
                     <div class="position-relative w-100 ratio-1x1 rounded-2 overflow-hidden">
-                        <img class="media-cover" src="assets/images/common/newsletter.jpg" alt="Newsletter image">
+                        <img loading="lazy" class="media-cover" src="assets/images/common/newsletter.jpg" alt="Newsletter image">
                     </div>
                 </div>
                 <div>
@@ -284,7 +287,7 @@
             <header class="uc-offcanvas-header hstack justify-between items-center pb-2 bg-white dark:bg-gray-900">
                 <div class="uc-logo">
                     <a href="index.html" class="h5 text-none text-gray-900 dark:text-white">
-                        <img src="assets/images/common/doquill-icon.png" alt="DoQuill" style="height:32px;width:auto;">
+                        <img loading="lazy" src="assets/images/common/doquill-icon.png" alt="DoQuill" style="height:32px;width:auto;">
                     </a>
                 </div>
                 <button class="uc-offcanvas-close rtl:end-auto rtl:start-0 m-1 mt-2 icon-3 btn border-0 dark:text-white dark:text-opacity-50 hover:text-primary hover:rotate-90 duration-150 transition-all" type="button">
@@ -441,8 +444,8 @@
                         <div class="uc-navbar-left">
                             <div class="uc-logo">
                                 <a class="panel text-none" href="index.html" style="width: 140px;">
-                                    <img class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
-                                    <img class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
+                                    <img loading="lazy" class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
+                                    <img loading="lazy" class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:32px;width:auto;max-width:160px;object-fit:contain;">
                                 </a>
                             </div>
                             <ul class="uc-navbar-nav gap-3 d-none lg:d-flex ltr:ms-2 rtl:me-2">
@@ -467,7 +470,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="hospital.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-hospital-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-hospital-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Hospital Management</b>
                                                                                         <span class="fs-8 text-muted">Doctors, beds, lab, pharmacy & billing.</span>
@@ -476,7 +479,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="pharmacy.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-pharmacy-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-pharmacy-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Pharmacy</b>
                                                                                         <span class="fs-8 text-muted">Medicines, prescriptions & stock.</span>
@@ -485,7 +488,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="medical-lab.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-medical-lab.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-medical-lab.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Medical Lab</b>
                                                                                         <span class="fs-8 text-muted">Tests, results & patient records.</span>
@@ -498,7 +501,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="construction.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-construction-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-construction-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Construction Management</b>
                                                                                         <span class="fs-8 text-muted">Projects, materials & contractors.</span>
@@ -507,7 +510,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="property.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-property-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-property-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Property Management</b>
                                                                                         <span class="fs-8 text-muted">Units, tenants, leases & maintenance.</span>
@@ -523,7 +526,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="school.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-school-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-school-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">School & Institute</b>
                                                                                         <span class="fs-8 text-muted">Admissions, exams, library & fees.</span>
@@ -532,7 +535,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="driving-school.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-driving-school.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-driving-school.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Driving School</b>
                                                                                         <span class="fs-8 text-muted">Enrollment, scheduling & tracking.</span>
@@ -541,7 +544,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="sports-academy.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-sports-club-academy.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-sports-club-academy.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Sports & Academy</b>
                                                                                         <span class="fs-8 text-muted">Members, classes & schedules.</span>
@@ -554,7 +557,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="agriculture.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-agriculture.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-agriculture.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Agriculture Management</b>
                                                                                         <span class="fs-8 text-muted">Crops, livestock & supply chain.</span>
@@ -563,7 +566,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="dairy.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-dairy-cattle.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-dairy-cattle.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Dairy & Cattle</b>
                                                                                         <span class="fs-8 text-muted">Herd, milk production & health.</span>
@@ -579,7 +582,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="freight.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-freight-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-freight-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Freight Management</b>
                                                                                         <span class="fs-8 text-muted">Shipments, routes & tracking.</span>
@@ -588,7 +591,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="courier.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-courier-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-courier-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Courier Management</b>
                                                                                         <span class="fs-8 text-muted">Parcels, delivery & tracking.</span>
@@ -597,7 +600,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="fleet.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-fleet.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-fleet.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Fleet Management</b>
                                                                                         <span class="fs-8 text-muted">Vehicles, drivers & maintenance.</span>
@@ -610,7 +613,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="cmms.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-cmms.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-cmms.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">CMMS</b>
                                                                                         <span class="fs-8 text-muted">Maintenance, assets & work orders.</span>
@@ -619,7 +622,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="repair.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-repair-management.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-repair-management.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Repair Management</b>
                                                                                         <span class="fs-8 text-muted">Jobs, parts & technician tracking.</span>
@@ -700,7 +703,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="accounting.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-accounting.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-accounting.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Accounting & Finance</b>
                                                                                         <span class="fs-8 text-muted">Real-time P&L, invoicing & double entry.</span>
@@ -709,7 +712,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="sales.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-sales.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-sales.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Sales</b>
                                                                                         <span class="fs-8 text-muted">Accounts, opportunities, orders & invoicing.</span>
@@ -718,7 +721,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="hrm.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-hrm.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-hrm.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">HRM & People</b>
                                                                                         <span class="fs-8 text-muted">Payroll, attendance & recruitment.</span>
@@ -727,7 +730,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="inventory.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Inventory Management</b>
                                                                                         <span class="fs-8 text-muted">Stock, warehousing & procurement.</span>
@@ -743,7 +746,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="ai-agent.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-ai-agent.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-ai-agent.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">AI Agent</b>
                                                                                         <span class="fs-8 text-muted">Intelligent automation across every module.</span>
@@ -752,7 +755,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="workflow-automation.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Workflow Automation</b>
                                                                                         <span class="fs-8 text-muted">Build, trigger & automate any process.</span>
@@ -761,7 +764,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="project.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-project.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-project.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Project Management</b>
                                                                                         <span class="fs-8 text-muted">Tasks, timelines & team collaboration.</span>
@@ -770,7 +773,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="crm.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-crm.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-crm.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">CRM</b>
                                                                                         <span class="fs-8 text-muted">Leads, pipeline & customer relationships.</span>
@@ -786,7 +789,7 @@
                                                                         <ul class="uc-nav uc-navbar-dropdown-nav vstack flex-auto gap-2">
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="api-webhooks.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-api.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-api.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">API & Webhooks</b>
                                                                                         <span class="fs-8 text-muted">Connect DoQuill to any system.</span>
@@ -795,7 +798,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="whatsapp-automation.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-modules/doquill-whatsapp-api.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-whatsapp-api.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">WhatsApp Automation</b>
                                                                                         <span class="fs-8 text-muted">Instant alerts for orders, invoices & POs.</span>
@@ -804,7 +807,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="payment-gateways.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-integrations/doquill-stripe.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-stripe.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Payment Gateways</b>
                                                                                         <span class="fs-8 text-muted">108 integrations including Stripe & PayPal.</span>
@@ -813,7 +816,7 @@
                                                                             </li>
                                                                             <li>
                                                                                 <a class="hstack items-start gap-2" href="integrations.html">
-                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img src="assets/images/modules/doquill-icons-integrations/doquill-zapier.svg" style="width:20px;height:20px"></div>
+                                                                                    <div class="cstack min-w-32px h-32px rounded bg-tertiary"><img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-zapier.svg" style="width:20px;height:20px"></div>
                                                                                     <span class="vstack gap-narrow mt-nnarrow">
                                                                                         <b class="fw-medium dark:text-white">Third-party Integrations</b>
                                                                                         <span class="fs-8 text-muted">Shopify, QuickBooks, Zapier & more.</span>
@@ -953,7 +956,7 @@
 
             <div class="module-card" data-cat="core" data-name="Accounting" data-desc="Full double-entry accounting P&L invoicing and bank reconciliation">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-accounting.svg" alt="Accounting" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AC</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-accounting.svg" alt="Accounting" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AC</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Accounting</div>
                 <div class="fs-8 text-muted flex-grow-1">Full double-entry accounting, P&L, invoicing and bank reconciliation</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="accounting.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -962,7 +965,7 @@
 
             <div class="module-card" data-cat="core" data-name="HRM" data-desc="Employee records payroll attendance leave management and performance">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-hrm.svg" alt="HRM" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">HR</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-hrm.svg" alt="HRM" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">HR</span></div>
                 <div class="fw-medium fs-7 dark:text-white">HRM</div>
                 <div class="fs-8 text-muted flex-grow-1">Employee records, payroll, attendance, leave management and performance</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="hrm.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -971,7 +974,7 @@
 
             <div class="module-card" data-cat="core" data-name="CRM" data-desc="Lead and deal pipeline contact management and customer relationship tracking">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-crm.svg" alt="CRM" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">CR</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-crm.svg" alt="CRM" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">CR</span></div>
                 <div class="fw-medium fs-7 dark:text-white">CRM</div>
                 <div class="fs-8 text-muted flex-grow-1">Lead and deal pipeline, contact management and customer relationship tracking</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="crm.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -980,7 +983,7 @@
 
             <div class="module-card" data-cat="core" data-name="Inventory" data-desc="Stock tracking warehouse management product categories and stock movements">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" alt="Inventory" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">IN</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" alt="Inventory" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">IN</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Inventory</div>
                 <div class="fs-8 text-muted flex-grow-1">Stock tracking, warehouse management, product categories and stock movements</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="inventory.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -989,7 +992,7 @@
 
             <div class="module-card" data-cat="core" data-name="Sales" data-desc="Accounts opportunities orders invoicing and analytics in one CRM-driven sales platform">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-sales.svg" alt="Sales" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SA</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-sales.svg" alt="Sales" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SA</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Sales</div>
                 <div class="fs-8 text-muted flex-grow-1">Accounts, opportunities, orders and invoicing with built-in analytics</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="sales.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -998,7 +1001,7 @@
 
             <div class="module-card" data-cat="core" data-name="POS" data-desc="Retail and service point of sale with receipt generation and sales reporting">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-pos.svg" alt="POS" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PO</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-pos.svg" alt="POS" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PO</span></div>
                 <div class="fw-medium fs-7 dark:text-white">POS</div>
                 <div class="fs-8 text-muted flex-grow-1">Retail and service point of sale with receipt generation and sales reporting</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="pos.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1007,7 +1010,7 @@
 
             <div class="module-card" data-cat="core" data-name="Project" data-desc="Tasks milestones team collaboration and project reporting">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-project.svg" alt="Project" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PJ</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-project.svg" alt="Project" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PJ</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Project</div>
                 <div class="fs-8 text-muted flex-grow-1">Tasks, milestones, team collaboration and project reporting</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="project.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1016,7 +1019,7 @@
 
 <div class="module-card" data-cat="core" data-name="Make" data-desc="Connect DoQuill to 1000+ apps via Make automation platform">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-integrations/doquill-make.svg" alt="Make" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">MK</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-make.svg" alt="Make" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">MK</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Make</div>
                 <div class="fs-8 text-muted flex-grow-1">Connect DoQuill to 1000+ apps via Make automation platform</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="make.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1025,7 +1028,7 @@
 
             <div class="module-card" data-cat="core" data-name="PayPal" data-desc="Accept PayPal payments directly through your DoQuill platform">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-integrations/doquill-paypal.svg" alt="PayPal" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PP</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-integrations/doquill-paypal.svg" alt="PayPal" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PP</span></div>
                 <div class="fw-medium fs-7 dark:text-white">PayPal</div>
                 <div class="fs-8 text-muted flex-grow-1">Accept PayPal payments directly through your DoQuill platform</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="paypal.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1034,7 +1037,7 @@
 
             <div class="module-card" data-cat="core" data-name="Stripe" data-desc="Accept Stripe payments and manage subscriptions seamlessly">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-stripe.svg" alt="Stripe" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">ST</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-stripe.svg" alt="Stripe" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">ST</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Stripe</div>
                 <div class="fs-8 text-muted flex-grow-1">Accept Stripe payments and manage subscriptions seamlessly</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="stripe.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1043,7 +1046,7 @@
 
             <div class="module-card" data-cat="core" data-name="Webhook" data-desc="Real-time event notifications sent to your systems the moment data changes">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-webhook.svg" alt="Webhook" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">WB</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-webhook.svg" alt="Webhook" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">WB</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Webhook</div>
                 <div class="fs-8 text-muted flex-grow-1">Real-time event notifications sent to your systems the moment data changes</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="webhook.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1052,7 +1055,7 @@
 
             <div class="module-card" data-cat="core" data-name="Workflow Automation" data-desc="Build automated workflows triggered by events across any module">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" alt="Workflow Automation" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">WA</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-workflow-automation.svg" alt="Workflow Automation" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">WA</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Workflow Automation</div>
                 <div class="fs-8 text-muted flex-grow-1">Build automated workflows triggered by events across any module</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="workflow-automation.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1061,7 +1064,7 @@
 
             <div class="module-card" data-cat="core" data-name="Proposal" data-desc="Create and send professional proposals to clients">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-proposal.svg" alt="Proposal" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PR</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-proposal.svg" alt="Proposal" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PR</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Proposal</div>
                 <div class="fs-8 text-muted flex-grow-1">Create and send professional proposals to clients</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="proposal.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1070,7 +1073,7 @@
 
             <div class="module-card" data-cat="core" data-name="Sales Invoice" data-desc="Generate and manage sales invoices with automated delivery">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-sales-invoice.svg" alt="Sales Invoice" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SI</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-sales-invoice.svg" alt="Sales Invoice" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SI</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Sales Invoice</div>
                 <div class="fs-8 text-muted flex-grow-1">Generate and manage sales invoices with automated delivery</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="sales-invoice.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1079,7 +1082,7 @@
 
             <div class="module-card" data-cat="core" data-name="Purchase" data-desc="Purchase orders supplier management invoice matching and delivery tracking">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-purchase.svg" alt="Purchase" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PU</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-purchase.svg" alt="Purchase" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PU</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Purchase</div>
                 <div class="fs-8 text-muted flex-grow-1">Purchase orders, supplier management, invoice matching and delivery tracking</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="purchase.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1088,7 +1091,7 @@
 
             <div class="module-card" data-cat="core" data-name="Product & Service" data-desc="Manage your full product and service catalog with pricing">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-product-service.svg" alt="Product & Service" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PS</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-product-service.svg" alt="Product & Service" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PS</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Product & Service</div>
                 <div class="fs-8 text-muted flex-grow-1">Manage your full product and service catalog with pricing</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="product-service.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1097,7 +1100,7 @@
 
             <div class="module-card" data-cat="core" data-name="Media Library" data-desc="Centralized media storage and management for your workspace">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-media-library.svg" alt="Media Library" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">ML</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-media-library.svg" alt="Media Library" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">ML</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Media Library</div>
                 <div class="fs-8 text-muted flex-grow-1">Centralized media storage and management for your workspace</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="media-library.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1106,7 +1109,7 @@
 
             <div class="module-card" data-cat="core" data-name="Messenger" data-desc="Internal team messaging built into the platform">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-messenger.svg" alt="Messenger" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">ME</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-messenger.svg" alt="Messenger" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">ME</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Messenger</div>
                 <div class="fs-8 text-muted flex-grow-1">Internal team messaging built into the platform</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="messenger.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1115,7 +1118,7 @@
 
             <div class="module-card" data-cat="core" data-name="AI Agent" data-desc="Intelligent automation across every module — processes documents routes tasks and generates insights">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-ai-agent.svg" alt="AI Agent" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AG</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-ai-agent.svg" alt="AI Agent" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AG</span></div>
                 <div class="fw-medium fs-7 dark:text-white">AI Agent</div>
                 <div class="fs-8 text-muted flex-grow-1">Intelligent automation across every module — processes documents, routes tasks and generates insights</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 fw-medium" style="color:#2ECC71">Included in all plans</span><a href="ai-agent.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1125,7 +1128,7 @@
             <div class="module-card" data-cat="core" data-name="Calendar" data-desc="Schedule and manage events tasks and appointments">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-calendar.svg" alt="Calendar" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-calendar.svg" alt="Calendar" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">CA</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Calendar</div>
@@ -1140,7 +1143,7 @@
             <div class="module-card" data-cat="core" data-name="Support Ticket" data-desc="Streamline customer support with efficient ticketing">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-support-ticket.svg" alt="Support Ticket" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-support-ticket.svg" alt="Support Ticket" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">ST</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Support Ticket</div>
@@ -1155,7 +1158,7 @@
             <div class="module-card" data-cat="core" data-name="Inventory" data-desc="Track and manage stock levels with precision">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" alt="Inventory" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-inventory.svg" alt="Inventory" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">IN</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Inventory</div>
@@ -1170,7 +1173,7 @@
             <div class="module-card" data-cat="core" data-name="Assets" data-desc="Comprehensive asset lifecycle management">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-assets.svg" alt="Assets" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-assets.svg" alt="Assets" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AS</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Assets</div>
@@ -1185,7 +1188,7 @@
             <div class="module-card" data-cat="core" data-name="Email Box" data-desc="Real-time webmail sync with stored and folder actions">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-email-box.svg" alt="Email Box" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-email-box.svg" alt="Email Box" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">EB</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Email Box</div>
@@ -1200,7 +1203,7 @@
             <div class="module-card" data-cat="core" data-name="Timesheet" data-desc="Optimize project management by tracking time">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-timesheet.svg" alt="Timesheet" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-timesheet.svg" alt="Timesheet" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">TS</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Timesheet</div>
@@ -1215,7 +1218,7 @@
             <div class="module-card" data-cat="core" data-name="Rotas" data-desc="Simplified rota creation for better workforce management">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-rotas.svg" alt="Rotas" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-rotas.svg" alt="Rotas" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">RO</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Rotas</div>
@@ -1230,7 +1233,7 @@
             <div class="module-card" data-cat="core" data-name="API" data-desc="Programmatic access to every module — read and write data via REST API">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-api.svg" alt="API" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-api.svg" alt="API" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AP</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">API</div>
@@ -1245,7 +1248,7 @@
             <div class="module-card" data-cat="core" data-name="Activity Log" data-desc="Track all system activities for productivity">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-activity-log.svg" alt="Activity Log" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-activity-log.svg" alt="Activity Log" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AL</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Activity Log</div>
@@ -1260,7 +1263,7 @@
             <div class="module-card" data-cat="core" data-name="Performance" data-desc="Boost employee performance with data-driven insights">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-performance.svg" alt="Performance" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-performance.svg" alt="Performance" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PE</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Performance</div>
@@ -1275,7 +1278,7 @@
             <div class="module-card" data-cat="core" data-name="File Sharing" data-desc="Seamlessly manage and share files across organization">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-file-sharing.svg" alt="File Sharing" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-file-sharing.svg" alt="File Sharing" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">FS</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">File Sharing</div>
@@ -1290,7 +1293,7 @@
             <div class="module-card" data-cat="core" data-name="Notes" data-desc="Streamline note-taking across teams and projects">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-notes.svg" alt="Notes" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-notes.svg" alt="Notes" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">NO</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Notes</div>
@@ -1305,7 +1308,7 @@
             <div class="module-card" data-cat="core" data-name="Financial Goal" data-desc="Set and track financial goals with smart analytics">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-financial-goal.svg" alt="Financial Goal" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-financial-goal.svg" alt="Financial Goal" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">FG</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Financial Goal</div>
@@ -1320,7 +1323,7 @@
             <div class="module-card" data-cat="core" data-name="Training" data-desc="Enhance employee development with structured training">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-training.svg" alt="Training" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-training.svg" alt="Training" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">TR</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Training</div>
@@ -1335,7 +1338,7 @@
             <div class="module-card" data-cat="core" data-name="LMS" data-desc="Comprehensive Learning Management System">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-lms.svg" alt="LMS" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-lms.svg" alt="LMS" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">LM</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">LMS</div>
@@ -1350,7 +1353,7 @@
             <div class="module-card" data-cat="core" data-name="Recurring Invoice" data-desc="Automate billing for timely payments and cash flow">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-recurring-invoice.svg" alt="Recurring Invoice" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-recurring-invoice.svg" alt="Recurring Invoice" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">RI</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Recurring Invoice</div>
@@ -1365,7 +1368,7 @@
             <div class="module-card" data-cat="core" data-name="Documents" data-desc="Simplify document creation and management workflows">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-documents.svg" alt="Documents" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-documents.svg" alt="Documents" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">DO</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Documents</div>
@@ -1380,7 +1383,7 @@
             <div class="module-card" data-cat="core" data-name="Attendance App" data-desc="Effortless check-in/out and leave management">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-attendance-app.svg" alt="Attendance App" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-attendance-app.svg" alt="Attendance App" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AA</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Attendance App</div>
@@ -1395,7 +1398,7 @@
             <div class="module-card" data-cat="core" data-name="vCard" data-desc="Empower growth and share digital business cards easily">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-vcard.svg" alt="vCard" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-vcard.svg" alt="vCard" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">VC</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">vCard</div>
@@ -1410,7 +1413,7 @@
             <div class="module-card" data-cat="core" data-name="Backup & Restore" data-desc="One-click backups for your project and database">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-backup-restore.svg" alt="Backup & Restore" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-backup-restore.svg" alt="Backup & Restore" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">BR</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Backup & Restore</div>
@@ -1425,7 +1428,7 @@
             <div class="module-card" data-cat="core" data-name="Knowledge Base" data-desc="Easily access and share internal knowledge">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-knowledge-base.svg" alt="Knowledge Base" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-knowledge-base.svg" alt="Knowledge Base" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">KB</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Knowledge Base</div>
@@ -1440,7 +1443,7 @@
             <div class="module-card" data-cat="core" data-name="Spreadsheet" data-desc="Collaborate on project data with an easy spreadsheet tool">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-spreadsheet.svg" alt="Spreadsheet" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-spreadsheet.svg" alt="Spreadsheet" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SP</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Spreadsheet</div>
@@ -1455,7 +1458,7 @@
             <div class="module-card" data-cat="core" data-name="Retainer" data-desc="Streamline retainer invoices and client billing">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-retainer.svg" alt="Retainer" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-retainer.svg" alt="Retainer" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">RE</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Retainer</div>
@@ -1470,7 +1473,7 @@
             <div class="module-card" data-cat="core" data-name="Biometric Attendance" data-desc="Time tracking with secure biometric verification">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-biometric-attendance.svg" alt="Biometric Attendance" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-biometric-attendance.svg" alt="Biometric Attendance" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">BA</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Biometric Attendance</div>
@@ -1485,7 +1488,7 @@
             <div class="module-card" data-cat="core" data-name="To Do" data-desc="Boost productivity with comprehensive task management">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-to-do.svg" alt="To Do" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-to-do.svg" alt="To Do" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">TD</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">To Do</div>
@@ -1500,7 +1503,7 @@
             <div class="module-card" data-cat="core" data-name="Newsletter" data-desc="Engage your audience by automating outreach campaigns">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-newsletter.svg" alt="Newsletter" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-newsletter.svg" alt="Newsletter" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">NL</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Newsletter</div>
@@ -1515,7 +1518,7 @@
             <div class="module-card" data-cat="core" data-name="Time Tracker" data-desc="Track time effortlessly across projects and teams">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-time-tracker.svg" alt="Time Tracker" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-time-tracker.svg" alt="Time Tracker" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">TT</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Time Tracker</div>
@@ -1530,7 +1533,7 @@
             <div class="module-card" data-cat="core" data-name="Team Workload" data-desc="Balance team tasks and monitor capacity">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-team-workload.svg" alt="Team Workload" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-team-workload.svg" alt="Team Workload" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">TW</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Team Workload</div>
@@ -1557,7 +1560,7 @@
             <div class="module-card" data-cat="ai" data-name="AI Document" data-desc="Create content with AI for engaging and dynamic experiences">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-ai-document.svg" alt="AI Document" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-ai-document.svg" alt="AI Document" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AD</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">AI Document</div>
@@ -1572,7 +1575,7 @@
             <div class="module-card" data-cat="ai" data-name="AI Assistant" data-desc="Revolutionize workflow with AI-powered task automation">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-ai-assistant.svg" alt="AI Assistant" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-ai-assistant.svg" alt="AI Assistant" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AA</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">AI Assistant</div>
@@ -1587,7 +1590,7 @@
             <div class="module-card" data-cat="ai" data-name="AI Image" data-desc="Generate and edit images with AI capabilities">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-ai-image.svg" alt="AI Image" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-ai-image.svg" alt="AI Image" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AI</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">AI Image</div>
@@ -1614,7 +1617,7 @@
             <div class="module-card" data-cat="ops" data-name="Procurement" data-desc="Streamline purchasing and vendor management">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-procurement.svg" alt="Procurement" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-procurement.svg" alt="Procurement" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PR</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Procurement</div>
@@ -1629,7 +1632,7 @@
             <div class="module-card" data-cat="ops" data-name="Budget Planner" data-desc="Plan and control budgets effectively">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-budget-planner.svg" alt="Budget Planner" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-budget-planner.svg" alt="Budget Planner" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">BP</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Budget Planner</div>
@@ -1644,7 +1647,7 @@
             <div class="module-card" data-cat="ops" data-name="Quotation" data-desc="Create and manage professional quotations">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-quotation.svg" alt="Quotation" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-quotation.svg" alt="Quotation" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">QU</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Quotation</div>
@@ -1659,7 +1662,7 @@
             <div class="module-card" data-cat="ops" data-name="Contract Template" data-desc="Manage contracts with reusable templates">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-contract-template.svg" alt="Contract Template" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-contract-template.svg" alt="Contract Template" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">CT</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Contract Template</div>
@@ -1674,7 +1677,7 @@
             <div class="module-card" data-cat="ops" data-name="Document Template" data-desc="Standardize documents with pre-built templates">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-document-template.svg" alt="Document Template" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-document-template.svg" alt="Document Template" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">DT</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Document Template</div>
@@ -1689,7 +1692,7 @@
             <div class="module-card" data-cat="ops" data-name="Requests" data-desc="Manage and track internal requests efficiently">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-requests.svg" alt="Requests" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-requests.svg" alt="Requests" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">RQ</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Requests</div>
@@ -1704,7 +1707,7 @@
             <div class="module-card" data-cat="ops" data-name="Feedback" data-desc="Collect and analyze team and customer feedback">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-feedback.svg" alt="Feedback" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-feedback.svg" alt="Feedback" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">FB</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Feedback</div>
@@ -1719,7 +1722,7 @@
             <div class="module-card" data-cat="ops" data-name="Reminder" data-desc="Set smart reminders for deadlines and tasks">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-reminder.svg" alt="Reminder" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-reminder.svg" alt="Reminder" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">RM</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Reminder</div>
@@ -1734,7 +1737,7 @@
             <div class="module-card" data-cat="ops" data-name="Custom Alert" data-desc="Create and manage custom alerts with ease">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-custom-alert.svg" alt="Custom Alert" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-custom-alert.svg" alt="Custom Alert" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">CA</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Custom Alert</div>
@@ -1749,7 +1752,7 @@
             <div class="module-card" data-cat="ops" data-name="Appointment" data-desc="Manage appointments with streamlined scheduling">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-appointment.svg" alt="Appointment" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-appointment.svg" alt="Appointment" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AP</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Appointment</div>
@@ -1764,7 +1767,7 @@
             <div class="module-card" data-cat="ops" data-name="WhatsApp API" data-desc="Boost collaboration with WhatsApp integration">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-whatsapp-api.svg" alt="WhatsApp API" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-whatsapp-api.svg" alt="WhatsApp API" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">WA</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">WhatsApp API</div>
@@ -1779,7 +1782,7 @@
             <div class="module-card" data-cat="ops" data-name="Planning" data-desc="Visual planning tools for project success">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-planning.svg" alt="Planning" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-planning.svg" alt="Planning" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PL</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Planning</div>
@@ -1794,7 +1797,7 @@
             <div class="module-card" data-cat="ops" data-name="Digital Certificate" data-desc="Generate and share digital certificates instantly">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-digital-certificate.svg" alt="Digital Certificate" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-digital-certificate.svg" alt="Digital Certificate" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">DC</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Digital Certificate</div>
@@ -1809,7 +1812,7 @@
             <div class="module-card" data-cat="ops" data-name="Signature" data-desc="Add legally binding digital signatures with ease">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-signature.svg" alt="Signature" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-signature.svg" alt="Signature" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SI</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Signature</div>
@@ -1824,7 +1827,7 @@
             <div class="module-card" data-cat="ops" data-name="Business Process Mapping" data-desc="Map and optimize your business workflows">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-business-process-mapping.svg" alt="Business Process Mapping" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-business-process-mapping.svg" alt="Business Process Mapping" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">BM</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Business Process Mapping</div>
@@ -1839,7 +1842,7 @@
             <div class="module-card" data-cat="ops" data-name="Project Template" data-desc="Templates for efficient project management">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-project-template.svg" alt="Project Template" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-project-template.svg" alt="Project Template" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PT</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Project Template</div>
@@ -1854,7 +1857,7 @@
             <div class="module-card" data-cat="ops" data-name="Video Hub" data-desc="Centralized video content management platform">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-video-hub.svg" alt="Video Hub" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-video-hub.svg" alt="Video Hub" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">VH</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Video Hub</div>
@@ -1869,7 +1872,7 @@
             <div class="module-card" data-cat="ops" data-name="Call Hub" data-desc="Centralize call management and tracking">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-call-hub.svg" alt="Call Hub" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-call-hub.svg" alt="Call Hub" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">CH</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Call Hub</div>
@@ -1884,7 +1887,7 @@
             <div class="module-card" data-cat="ops" data-name="ZATCA" data-desc="Saudi e-invoicing compliance for businesses">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-zatca.svg" alt="ZATCA" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-zatca.svg" alt="ZATCA" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">ZA</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">ZATCA</div>
@@ -1899,7 +1902,7 @@
             <div class="module-card" data-cat="ops" data-name="Bulk SMS" data-desc="Send bulk SMS instantly and easily">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
                 <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0">
-                  <img src="assets/images/modules/doquill-icons-modules/doquill-bulk-sms.svg" alt="Bulk SMS" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-bulk-sms.svg" alt="Bulk SMS" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                   <span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">BS</span>
                 </div>
                 <div class="fw-medium fs-7 dark:text-white">Bulk SMS</div>
@@ -1924,7 +1927,7 @@
           <div class="row child-cols-12 sm:child-cols-6 lg:child-cols-4 xl:child-cols-3 gx-3 gy-3">
             <div class="module-card" data-cat="sales" data-name="Marketing Plan" data-desc="Plan and execute marketing campaigns effectively">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-marketing-plan.svg" alt="Marketing Plan" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">MP</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-marketing-plan.svg" alt="Marketing Plan" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">MP</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Marketing Plan</div>
                 <div class="fs-8 text-muted flex-grow-1">Plan and execute marketing campaigns effectively</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Sales & Marketing</span><a href="marketing-plan.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1932,7 +1935,7 @@
             </div>
             <div class="module-card" data-cat="sales" data-name="Lead Management" data-desc="Track and convert leads efficiently on mobile">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-lead-management.svg" alt="Lead Management" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">LM</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-lead-management.svg" alt="Lead Management" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">LM</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Lead Management</div>
                 <div class="fs-8 text-muted flex-grow-1">Track and convert leads efficiently on mobile</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Sales & Marketing</span><a href="lead-management.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1940,7 +1943,7 @@
             </div>
             <div class="module-card" data-cat="sales" data-name="Sales Mobile App" data-desc="Manage sales operations on the go">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-sales-mobile-app.svg" alt="Sales Mobile App" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SM</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-sales-mobile-app.svg" alt="Sales Mobile App" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SM</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Sales Mobile App</div>
                 <div class="fs-8 text-muted flex-grow-1">Manage sales operations on the go</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Sales & Marketing</span><a href="sales-mobile-app.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1948,7 +1951,7 @@
             </div>
             <div class="module-card" data-cat="sales" data-name="Portfolio" data-desc="Showcase your work and completed projects">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-portfolio.svg" alt="Portfolio" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PO</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-portfolio.svg" alt="Portfolio" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PO</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Portfolio</div>
                 <div class="fs-8 text-muted flex-grow-1">Showcase your work and completed projects</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Sales & Marketing</span><a href="portfolio.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1956,7 +1959,7 @@
             </div>
             <div class="module-card" data-cat="sales" data-name="Social Analytics" data-desc="Track and analyze social media performance">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-social-analytics.svg" alt="Social Analytics" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SA</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-social-analytics.svg" alt="Social Analytics" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SA</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Social Analytics</div>
                 <div class="fs-8 text-muted flex-grow-1">Track and analyze social media performance</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Sales & Marketing</span><a href="social-analytics.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1964,7 +1967,7 @@
             </div>
             <div class="module-card" data-cat="sales" data-name="Meeting Hub" data-desc="Schedule and manage meetings efficiently">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-meeting-hub.svg" alt="Meeting Hub" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">MH</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-meeting-hub.svg" alt="Meeting Hub" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">MH</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Meeting Hub</div>
                 <div class="fs-8 text-muted flex-grow-1">Schedule and manage meetings efficiently</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Sales & Marketing</span><a href="meeting-hub.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1983,7 +1986,7 @@
           <div class="row child-cols-12 sm:child-cols-6 lg:child-cols-4 xl:child-cols-3 gx-3 gy-3">
             <div class="module-card" data-cat="finance" data-name="Petty Cash" data-desc="Track and manage petty cash expenses">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-petty-cash.svg" alt="Petty Cash" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PC</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-petty-cash.svg" alt="Petty Cash" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PC</span></div>
                 <div class="fw-medium fs-7 dark:text-white">Petty Cash</div>
                 <div class="fs-8 text-muted flex-grow-1">Track and manage petty cash expenses</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Finance</span><a href="petty-cash.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -1991,7 +1994,7 @@
             </div>
             <div class="module-card" data-cat="finance" data-name="E-Invoice European" data-desc="Streamline European e-invoicing for compliance">
               <div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary">
-                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-e-invoice-european.svg" alt="E-Invoice European" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">EI</span></div>
+                <div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-e-invoice-european.svg" alt="E-Invoice European" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">EI</span></div>
                 <div class="fw-medium fs-7 dark:text-white">E-Invoice European</div>
                 <div class="fs-8 text-muted flex-grow-1">Streamline European e-invoicing for compliance</div>
                 <div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Finance</span><a href="e-invoice-european.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div>
@@ -2008,15 +2011,15 @@
             <span class="fs-8 text-muted">9 modules</span>
           </div>
           <div class="row child-cols-12 sm:child-cols-6 lg:child-cols-4 xl:child-cols-3 gx-3 gy-3">
-            <div class="module-card" data-cat="analytics" data-name="Business Model" data-desc="Explore the intricate dynamics of modern business models"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-business-model.svg" alt="Business Model" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">BM</span></div><div class="fw-medium fs-7 dark:text-white">Business Model</div><div class="fs-8 text-muted flex-grow-1">Explore the intricate dynamics of modern business models</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="business-model.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
-            <div class="module-card" data-cat="analytics" data-name="SWOT Analysis" data-desc="Analyze strengths, weaknesses, opportunities and threats"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-swot-analysis.svg" alt="SWOT Analysis" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SW</span></div><div class="fw-medium fs-7 dark:text-white">SWOT Analysis</div><div class="fs-8 text-muted flex-grow-1">Analyze strengths, weaknesses, opportunities and threats</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="swot-analysis.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
-            <div class="module-card" data-cat="analytics" data-name="PESTEL Analysis" data-desc="Political, Economic, Social, Tech, Environmental analysis"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-pestel-analysis.svg" alt="PESTEL Analysis" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PE</span></div><div class="fw-medium fs-7 dark:text-white">PESTEL Analysis</div><div class="fs-8 text-muted flex-grow-1">Political, Economic, Social, Tech, Environmental analysis</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="pestel-analysis.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
-            <div class="module-card" data-cat="analytics" data-name="PEST Analysis" data-desc="Political, Economic, Social and Technological analysis"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-pest-analysis.svg" alt="PEST Analysis" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PA</span></div><div class="fw-medium fs-7 dark:text-white">PEST Analysis</div><div class="fs-8 text-muted flex-grow-1">Political, Economic, Social and Technological analysis</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="pest-analysis.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
-            <div class="module-card" data-cat="analytics" data-name="Porter's Five Forces" data-desc="Strategic decision-making with industry dynamics"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-porter-s-five-forces.svg" alt="Porter's Five Forces" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PF</span></div><div class="fw-medium fs-7 dark:text-white">Porter's Five Forces</div><div class="fs-8 text-muted flex-grow-1">Strategic decision-making with industry dynamics</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="porters-five-forces.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
-            <div class="module-card" data-cat="analytics" data-name="McKinsey 7-S" data-desc="Framework for strategy, structure, systems and more"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-mckinsey-7-s.svg" alt="McKinsey 7-S" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">M7</span></div><div class="fw-medium fs-7 dark:text-white">McKinsey 7-S</div><div class="fs-8 text-muted flex-grow-1">Framework for strategy, structure, systems and more</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="mckinsey-7s.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
-            <div class="module-card" data-cat="analytics" data-name="RoadMap Central" data-desc="Planning with intuitive roadmaps and collaboration"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-roadmap-central.svg" alt="RoadMap Central" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">RC</span></div><div class="fw-medium fs-7 dark:text-white">RoadMap Central</div><div class="fs-8 text-muted flex-grow-1">Planning with intuitive roadmaps and collaboration</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="roadmap-central.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
-            <div class="module-card" data-cat="analytics" data-name="Diagram" data-desc="Visualize workflows and data connections"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-diagram.svg" alt="Diagram" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">DI</span></div><div class="fw-medium fs-7 dark:text-white">Diagram</div><div class="fs-8 text-muted flex-grow-1">Visualize workflows and data connections</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="diagram.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
-            <div class="module-card" data-cat="analytics" data-name="Innovation Center" data-desc="Drive innovation with structured tools and frameworks"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-innovation-center.svg" alt="Innovation Center" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">IC</span></div><div class="fw-medium fs-7 dark:text-white">Innovation Center</div><div class="fs-8 text-muted flex-grow-1">Drive innovation with structured tools and frameworks</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="innovation-center.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="analytics" data-name="Business Model" data-desc="Explore the intricate dynamics of modern business models"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-business-model.svg" alt="Business Model" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">BM</span></div><div class="fw-medium fs-7 dark:text-white">Business Model</div><div class="fs-8 text-muted flex-grow-1">Explore the intricate dynamics of modern business models</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="business-model.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="analytics" data-name="SWOT Analysis" data-desc="Analyze strengths, weaknesses, opportunities and threats"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-swot-analysis.svg" alt="SWOT Analysis" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SW</span></div><div class="fw-medium fs-7 dark:text-white">SWOT Analysis</div><div class="fs-8 text-muted flex-grow-1">Analyze strengths, weaknesses, opportunities and threats</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="swot-analysis.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="analytics" data-name="PESTEL Analysis" data-desc="Political, Economic, Social, Tech, Environmental analysis"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-pestel-analysis.svg" alt="PESTEL Analysis" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PE</span></div><div class="fw-medium fs-7 dark:text-white">PESTEL Analysis</div><div class="fs-8 text-muted flex-grow-1">Political, Economic, Social, Tech, Environmental analysis</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="pestel-analysis.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="analytics" data-name="PEST Analysis" data-desc="Political, Economic, Social and Technological analysis"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-pest-analysis.svg" alt="PEST Analysis" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PA</span></div><div class="fw-medium fs-7 dark:text-white">PEST Analysis</div><div class="fs-8 text-muted flex-grow-1">Political, Economic, Social and Technological analysis</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="pest-analysis.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="analytics" data-name="Porter's Five Forces" data-desc="Strategic decision-making with industry dynamics"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-porter-s-five-forces.svg" alt="Porter's Five Forces" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PF</span></div><div class="fw-medium fs-7 dark:text-white">Porter's Five Forces</div><div class="fs-8 text-muted flex-grow-1">Strategic decision-making with industry dynamics</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="porters-five-forces.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="analytics" data-name="McKinsey 7-S" data-desc="Framework for strategy, structure, systems and more"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-mckinsey-7-s.svg" alt="McKinsey 7-S" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">M7</span></div><div class="fw-medium fs-7 dark:text-white">McKinsey 7-S</div><div class="fs-8 text-muted flex-grow-1">Framework for strategy, structure, systems and more</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="mckinsey-7s.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="analytics" data-name="RoadMap Central" data-desc="Planning with intuitive roadmaps and collaboration"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-roadmap-central.svg" alt="RoadMap Central" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">RC</span></div><div class="fw-medium fs-7 dark:text-white">RoadMap Central</div><div class="fs-8 text-muted flex-grow-1">Planning with intuitive roadmaps and collaboration</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="roadmap-central.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="analytics" data-name="Diagram" data-desc="Visualize workflows and data connections"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-diagram.svg" alt="Diagram" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">DI</span></div><div class="fw-medium fs-7 dark:text-white">Diagram</div><div class="fs-8 text-muted flex-grow-1">Visualize workflows and data connections</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="diagram.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="analytics" data-name="Innovation Center" data-desc="Drive innovation with structured tools and frameworks"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-innovation-center.svg" alt="Innovation Center" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">IC</span></div><div class="fw-medium fs-7 dark:text-white">Innovation Center</div><div class="fs-8 text-muted flex-grow-1">Drive innovation with structured tools and frameworks</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Analytics</span><a href="innovation-center.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
           </div>
         </div>
 
@@ -2028,8 +2031,8 @@
             <span class="fs-8 text-muted">2 modules</span>
           </div>
           <div class="row child-cols-12 sm:child-cols-6 lg:child-cols-4 xl:child-cols-3 gx-3 gy-3">
-            <div class="module-card" data-cat="hr" data-name="Job Search" data-desc="Empower your hiring process with advanced job search"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-job-search.svg" alt="Job Search" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">JS</span></div><div class="fw-medium fs-7 dark:text-white">Job Search</div><div class="fs-8 text-muted flex-grow-1">Empower your hiring process with advanced job search</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">HR & Workforce</span><a href="job-search.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
-            <div class="module-card" data-cat="hr" data-name="Resume Builder" data-desc="Create professional and customized resumes"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-resume-builder.svg" alt="Resume Builder" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">RB</span></div><div class="fw-medium fs-7 dark:text-white">Resume Builder</div><div class="fs-8 text-muted flex-grow-1">Create professional and customized resumes</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">HR & Workforce</span><a href="resume-builder.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="hr" data-name="Job Search" data-desc="Empower your hiring process with advanced job search"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-job-search.svg" alt="Job Search" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">JS</span></div><div class="fw-medium fs-7 dark:text-white">Job Search</div><div class="fs-8 text-muted flex-grow-1">Empower your hiring process with advanced job search</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">HR & Workforce</span><a href="job-search.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="hr" data-name="Resume Builder" data-desc="Create professional and customized resumes"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-resume-builder.svg" alt="Resume Builder" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">RB</span></div><div class="fw-medium fs-7 dark:text-white">Resume Builder</div><div class="fs-8 text-muted flex-grow-1">Create professional and customized resumes</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">HR & Workforce</span><a href="resume-builder.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
           </div>
         </div>
 
@@ -2041,8 +2044,8 @@
             <span class="fs-8 text-muted">2 modules</span>
           </div>
           <div class="row child-cols-12 sm:child-cols-6 lg:child-cols-4 xl:child-cols-3 gx-3 gy-3">
-            <div class="module-card" data-cat="cx" data-name="Support Ticket App" data-desc="Mobile customer support ticket management"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-support-ticket-app.svg" alt="Support Ticket App" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SA</span></div><div class="fw-medium fs-7 dark:text-white">Support Ticket App</div><div class="fs-8 text-muted flex-grow-1">Mobile customer support ticket management</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Customer Experience</span><a href="support-ticket-app.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
-            <div class="module-card" data-cat="cx" data-name="Project Management App" data-desc="Manage projects from your mobile device"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-project-mgmt-app.svg" alt="Project Management App" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PM</span></div><div class="fw-medium fs-7 dark:text-white">Project Management App</div><div class="fs-8 text-muted flex-grow-1">Manage projects from your mobile device</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Customer Experience</span><a href="project-management-app.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="cx" data-name="Support Ticket App" data-desc="Mobile customer support ticket management"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-support-ticket-app.svg" alt="Support Ticket App" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">SA</span></div><div class="fw-medium fs-7 dark:text-white">Support Ticket App</div><div class="fs-8 text-muted flex-grow-1">Mobile customer support ticket management</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Customer Experience</span><a href="support-ticket-app.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="cx" data-name="Project Management App" data-desc="Manage projects from your mobile device"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-project-mgmt-app.svg" alt="Project Management App" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">PM</span></div><div class="fw-medium fs-7 dark:text-white">Project Management App</div><div class="fs-8 text-muted flex-grow-1">Manage projects from your mobile device</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">Customer Experience</span><a href="project-management-app.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
           </div>
         </div>
 
@@ -2054,7 +2057,7 @@
             <span class="fs-8 text-muted">2 modules</span>
           </div>
           <div class="row child-cols-12 sm:child-cols-6 lg:child-cols-4 xl:child-cols-3 gx-3 gy-3">
-            <div class="module-card" data-cat="it" data-name="Asset Borrow & Rent" data-desc="Manage asset borrowing and rental workflows"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img src="assets/images/modules/doquill-icons-modules/doquill-asset-borrow-rent.svg" alt="Asset Borrow & Rent" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AB</span></div><div class="fw-medium fs-7 dark:text-white">Asset Borrow & Rent</div><div class="fs-8 text-muted flex-grow-1">Manage asset borrowing and rental workflows</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">IT & Security</span><a href="asset-borrow-rent.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
+            <div class="module-card" data-cat="it" data-name="Asset Borrow & Rent" data-desc="Manage asset borrowing and rental workflows"><div class="panel border rounded-2 p-3 bg-white dark:bg-gray-900 h-100 vstack gap-2 hover:-translate-y-1 duration-150 transition-all hover:border-tertiary"><div class="cstack w-40px h-40px rounded" style="background:rgba(46,204,113,0.12);flex-shrink:0"><img loading="lazy" src="assets/images/modules/doquill-icons-modules/doquill-asset-borrow-rent.svg" alt="Asset Borrow & Rent" style="width:24px;height:24px" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none;width:24px;height:24px;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#2ECC71">AB</span></div><div class="fw-medium fs-7 dark:text-white">Asset Borrow & Rent</div><div class="fs-8 text-muted flex-grow-1">Manage asset borrowing and rental workflows</div><div class="hstack justify-between items-center pt-2 border-top"><span class="fs-9 text-muted">IT & Security</span><a href="asset-borrow-rent.html" class="fs-8 fw-medium" style="color:#2ECC71">Explore →</a></div></div></div>
           </div>
         </div>
 
@@ -2147,8 +2150,8 @@ function filterModules() {
                                     <div class="panel vstack items-start gap-3 xl:gap-4 md:max-w-1/2">
                                         <div>
                                             <a href="index.html" style="width: 140px">
-                                                <img class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
-                                                <img class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
+                                                <img loading="lazy" class="dark:d-none" src="assets/images/common/doquill-light.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
+                                                <img loading="lazy" class="d-none dark:d-block" src="assets/images/common/doquill-dark.png" alt="DoQuill" style="height:36px;width:auto;max-width:160px;object-fit:contain;">
                                             </a>
                                             <p class="lg:fs-5 mt-2 fw-medium">Intelligent Systems.<br><span class="text-tertiary fw-bold">Stronger</span> businesses.</p>
                                         </div>
