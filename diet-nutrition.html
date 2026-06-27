@@ -946,10 +946,13 @@
                                             </a>
                                             <div class="p-2 bg-white dark:bg-gray-800 shadow-xs rounded w-150px" data-uc-drop="mode: click; offset: 28; pos: top-right; boundary: !.uc-footer-bottom; animation: uc-animation-slide-top-small; duration: 150;">
                                                 <ul class="nav-y gap-1 fw-medium items-end">
-                                                    <li><a href="/fr/">Français</a></li>
-                                                    <li><a href="#ar">العربية</a></li>
-                                                    <li><a href="#ch">中文</a></li>
-                                                </ul>
+  <li>
+    <a href="/fr/" class="hstack gap-2 text-none py-1">
+      <img src="assets/images/common/fr.svg" alt="FR" width="20" height="14" style="border-radius:2px;object-fit:cover">
+      <span>Français</span>
+    </a>
+  </li>
+</ul>
                                             </div>
                                         </div>
                                     </div>
@@ -1046,6 +1049,8 @@
             setDarkMode(0);
         }
     </script>
+
+    <script src="assets/js/lang-detect.js" defer></script>
 </body>
 
 </html>

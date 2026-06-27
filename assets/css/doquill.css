@@ -809,37 +809,52 @@ html:not(.uc-dark) .features-hero .stat-num {
   display: block !important;
 }
 
-/* Language Switcher */
+/* ── Language Switcher ── */
 .language-switcher {
   position: relative;
   display: inline-flex;
   align-items: center;
+  margin-right: 8px;
 }
 .lang-current {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  padding: 4px 8px;
-  border-radius: 6px;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
   cursor: pointer;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--color-text-primary, #fff);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  color: #2ECC71;
   text-decoration: none;
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1.5px solid #2ECC71;
+  background: transparent;
+  transition: all 0.2s ease;
+  letter-spacing: 0.3px;
+}
+.lang-current:hover {
+  background: rgba(46,204,113,0.1);
+  color: #2ECC71;
+}
+.lang-current img {
+  width: 18px;
+  height: 13px;
+  object-fit: cover;
+  border-radius: 2px;
 }
 .lang-dropdown {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 8px);
   right: 0;
   background: #111827;
   border: 1px solid #1E2640;
-  border-radius: 8px;
-  padding: 4px;
-  min-width: 140px;
+  border-radius: 10px;
+  padding: 6px;
+  min-width: 150px;
   z-index: 9999;
-  margin-top: 4px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
 .language-switcher:hover .lang-dropdown {
   display: block;
@@ -847,17 +862,18 @@ html:not(.uc-dark) .features-hero .stat-num {
 .lang-option {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  border-radius: 6px;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 8px;
   text-decoration: none;
   color: #B0B7CC;
   font-size: 13px;
   font-weight: 500;
-  transition: all 0.15s;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.15s ease;
 }
 .lang-option:hover {
-  background: rgba(46,204,113,0.1);
+  background: rgba(46,204,113,0.12);
   color: #2ECC71;
 }
 .lang-option img {
@@ -865,6 +881,31 @@ html:not(.uc-dark) .features-hero .stat-num {
   height: 14px;
   object-fit: cover;
   border-radius: 2px;
+  flex-shrink: 0;
+}
+.lang-option span {
+  flex: 1;
+}
+
+/* Light mode adjustments */
+html:not(.uc-dark) .lang-current {
+  color: #1A2456;
+  border-color: #1A2456;
+}
+html:not(.uc-dark) .lang-current:hover {
+  background: rgba(26,36,86,0.08);
+}
+html:not(.uc-dark) .lang-dropdown {
+  background: #FFFFFF;
+  border-color: #E2E8F0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+html:not(.uc-dark) .lang-option {
+  color: #4A5568;
+}
+html:not(.uc-dark) .lang-option:hover {
+  background: rgba(46,204,113,0.08);
+  color: #1A2456;
 }
 
 /* ── French language button text fix ──
