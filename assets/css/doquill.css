@@ -866,3 +866,27 @@ html:not(.uc-dark) .features-hero .stat-num {
   object-fit: cover;
   border-radius: 2px;
 }
+
+/* ── French language button text fix ──
+   Prevents long French button text from
+   overflowing rounded-pill buttons */
+:lang(fr) .btn.rounded-pill,
+:lang(fr) .btn-primary.rounded-pill,
+:lang(fr) .btn-outline-primary.rounded-pill,
+:lang(fr) .btn-ghost-primary.rounded-pill {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.3;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: auto;
+  min-height: 40px;
+}
+
+/* Specifically fix the Enterprise CTA
+   w-100 button on pricing/homepage */
+:lang(fr) .btn.rounded-pill.w-100 {
+  font-size: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
