@@ -891,7 +891,7 @@
                                 <li><a href="https://app.doquill.io/">Se connecter</a></li>
                             </ul>
                             <div class="language-switcher">
-                                <a href="" class="lang-current">
+                                <a href="/fr/" class="lang-current" title="Langue actuelle : Français">
                                     <img src="../assets/images/common/fr.svg" alt="FR" width="20" height="20">
                                     <span>FR</span>
                                 </a>
@@ -1682,8 +1682,10 @@
     </script>
 
     <script>
-sessionStorage.setItem('lang-chosen', 'fr');
-    </script>
+if (!sessionStorage.getItem('lang-chosen')) {
+  sessionStorage.setItem('lang-chosen', 'fr');
+}
+</script>
 </body>
 
 </html>

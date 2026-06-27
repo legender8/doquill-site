@@ -1,34 +1,22 @@
 (function() {
-  // Only run on English root pages
   // Skip if already in /fr/ subfolder
-  if (window.location.pathname.indexOf('/fr/') === 0) return;
+  if (window.location.pathname.indexOf('/fr/') !== -1) return;
 
   // Check if user has manually chosen
-  // a language before (respect their choice)
+  // a language (respect their choice)
   if (sessionStorage.getItem('lang-chosen')) return;
 
   // Get browser language
   var lang = (navigator.language ||
     navigator.userLanguage || '').toLowerCase();
 
-  // French language codes
-  var frenchLangs = ['fr', 'fr-fr', 'fr-be',
-    'fr-ca', 'fr-ch', 'fr-lu', 'fr-mc',
-    'fr-cd', 'fr-ci', 'fr-sn', 'fr-ma',
-    'fr-dz', 'fr-tn', 'fr-cm'];
-
-  var isFrench = frenchLangs.some(function(code) {
-    return lang === code || lang.startsWith('fr');
-  });
-
-  if (isFrench) {
-    // Redirect to French version of
-    // current page
+  // Redirect if French browser
+  if (lang.startsWith('fr')) {
     var path = window.location.pathname;
     var page = path.split('/').pop() ||
       'index.html';
+    if (!page) page = 'index.html';
 
-    // Map current page to fr/ version
     var frPages = [
       'index.html', 'pricing.html',
       'solutions.html', 'industries.html',
@@ -43,21 +31,41 @@
 
     if (frPages.indexOf(page) !== -1 ||
         page === '') {
-      window.location.replace('/fr/' +
-        (page || 'index.html'));
+      // Save that we auto-redirected
+      // so we don't loop
+      sessionStorage.setItem('lang-chosen',
+        'fr-auto');
+      window.location.replace('/fr/' + page);
     }
   }
 })();
 
-// Clear lang-chosen when user manually
-// clicks a language option
+// When user manually clicks a language
+// option — save their explicit choice
 document.addEventListener('DOMContentLoaded',
 function() {
-  var langLinks = document.querySelectorAll(
-    '.lang-option, .nav-y .hstack');
-  langLinks.forEach(function(link) {
+  // EN switcher links (navbar + footer)
+  var enLinks = document.querySelectorAll(
+    '.lang-option[href="/"], ' +
+    '.lang-option[href="../"], ' +
+    '.nav-y a[href="/"], ' +
+    '.nav-y a[href="../"]'
+  );
+  enLinks.forEach(function(link) {
     link.addEventListener('click', function() {
-      sessionStorage.removeItem('lang-chosen');
+      sessionStorage.setItem('lang-chosen', 'en');
+    });
+  });
+
+  // FR switcher links (navbar + footer)
+  var frLinks = document.querySelectorAll(
+    '.lang-option[href="/fr/"], ' +
+    '.lang-option[href="fr/"], ' +
+    '.nav-y a[href="/fr/"]'
+  );
+  frLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      sessionStorage.setItem('lang-chosen', 'fr');
     });
   });
 });
