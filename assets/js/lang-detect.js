@@ -35,7 +35,13 @@
       // so we don't loop
       sessionStorage.setItem('lang-chosen',
         'fr-auto');
-      window.location.replace('/fr/' + page);
+      // Build relative path to /fr/
+      // works on both GitHub Pages and Hostinger
+      var basePath = window.location.pathname
+        .replace(/\/[^\/]*$/, '/');
+      // If we're at root of the site,
+      // just prepend fr/
+      window.location.replace(basePath + 'fr/' + page);
     }
   }
 })();
