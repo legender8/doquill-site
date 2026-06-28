@@ -21,7 +21,7 @@
     <link rel="preload" href="../assets/css/theme/main.purge.css" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
     <!-- Prioritize hero video poster (above-the-fold) -->
-    <link rel="preload" as="image" href="../assets/images/media/lexend-home-7.png" fetchpriority="high">
+    <link rel="preload" as="image" href="../assets/images/media/doquill-thumbnail.png" fetchpriority="high">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoQuill — ERP IA pour l'entreprise</title>
     <meta name="description" content="Pilotez toute votre entreprise depuis une seule plateforme. DoQuill est un ERP propulsé par l'IA avec 13 modules principaux, 96 secteurs d'activité et 108 intégrations — conçu pour les PME et les grandes entreprises.">
@@ -1044,8 +1044,20 @@
                                 </div>
                             </div>
                             <div class="uc-video-scene" data-anime="scale: [1.2, 1]; opacity: [0, 1]; easing: easeOutCubic; duration: 750; delay: 500;">
-                                <div class="panel max-w-1000px mx-auto mt-2 rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg overflow-hidden" data-anime="onscroll: .hero-header; onscroll-trigger: 0.5; translateY: [-80, 0]; scale: [0.8, 1]; easing: linear;">
-                                    <video preload="auto" data-uc-video="autoplay: true;" playsinline muted loop poster="../assets/images/media/lexend-home-7.png" src="../assets/images/media/lexend-home-7.webm" title="Video title"></video>
+                                <div class="panel max-w-1000px mx-auto mt-2 rounded lg:rounded-1-5 xl:rounded-2 border border-dark contrast-shadow-lg overflow-hidden" style="aspect-ratio:16/9;background:#0B0F1E;position:relative" data-anime="onscroll: .hero-header; onscroll-trigger: 0.5; translateY: [-80, 0]; scale: [0.8, 1]; easing: linear;">
+                                    <video
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="none"
+  poster="../assets/images/media/doquill-thumbnail.png"
+  data-uc-video="autoplay: true;"
+  title="DoQuill ERP Platform Demo"
+  style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0">
+  <source src="../assets/images/media/doquill-demo.webm" type="video/webm">
+  <source src="../assets/images/media/doquill-demo.mp4" type="video/mp4">
+</video>
                                 </div>
                             </div>
                         </div>
