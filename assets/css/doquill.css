@@ -941,3 +941,19 @@ html:not(.uc-dark) .lang-option:hover {
   padding-left: 12px;
   padding-right: 12px;
 }
+
+/* ── Hero video fix ── */
+/* Force video to fill its container
+   regardless of what the template JS
+   writes as inline width/height */
+.uc-video-scene video {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  min-width: 100% !important;
+}
+
+.uc-video-scene .panel {
+  width: 100%;
+  overflow: hidden;
+}
