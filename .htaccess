@@ -1,3 +1,4 @@
+DirectoryIndex index.html
 Options -Indexes
 RewriteEngine On
 
@@ -15,6 +16,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 # Clean URL redirects (with .html → without)
+RewriteCond %{THE_REQUEST} /index\.html
+RewriteRule ^ / [R=301,L]
 RewriteCond %{THE_REQUEST} /([^.]+)\.html
 RewriteRule ^ /%1 [R=301,L]
 
